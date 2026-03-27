@@ -5,11 +5,32 @@ import { FaArrowRight } from "react-icons/fa";
 
 const courses = [
   {
-    title: "Degree + CA/CMA",
-    desc: "Pursue your degree alongside CA or CMA preparation. Dual qualification pathway for maximum career advantage.",
+    title: "CA/CMA + Degree",
+    desc: "Pursue your degree alongside CA or CMA preparation. Triple qualification pathway for maximum career advantage.",
     duration: "3 Years",
     tag: "",
     href: "/courses",
+  },
+  {
+    title: "CMA Foundation",
+    desc: "Build strong fundamentals with objective exam practice, structured tests, and concept-focused coaching aligned to ICMAI.",
+    duration: "8 Months",
+    tag: "",
+    href: "/courses/cma-foundation",
+  },
+  {
+    title: "CMA Intermediate",
+    desc: "Group-wise preparation with answer-writing practice, problem-solving sessions, and mock exams for June/December attempts.",
+    duration: "9 Months",
+    tag: "",
+    href: "/courses/cma-intermediate",
+  },
+  {
+    title: "CMA Final",
+    desc: "Advanced, exam-focused coaching with amendments coverage, case-based learning, rigorous mocks, and revision planning support.",
+    duration: "1 Year",
+    tag: "Advanced",
+    href: "/courses/cma-final",
   },
   {
     title: "CA Foundation",
@@ -32,13 +53,7 @@ const courses = [
     tag: "Rank Course",
     href: "/courses/ca-final",
   },
-  {
-    title: "ACCA Course",
-    desc: "Globally recognized qualification. Applied Knowledge, Applied Skills & Strategic Professional. 13 exams + Professional Ethics. Recognized in 180+ countries.",
-    duration: "3–4 Years",
-    tag: "Global",
-    href: "/courses/acca-course",
-  },
+  
 ];
 
 export default function CoursesSection() {
@@ -60,7 +75,7 @@ export default function CoursesSection() {
           </h2>
           <div className="royal-divider mb-6" />
           <p className="text-muted max-w-xl mx-auto text-[15px] leading-relaxed font-sans">
-            Carefully designed programs that cater to every stage of your professional journey.
+            Structured designed programs that cater to every stage of your professional journey.
           </p>
         </motion.div>
 

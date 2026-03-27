@@ -3,8 +3,8 @@ import PageHeader from "@/components/shared/PageHeader";
 import OurGalleryClient from "./OurGalleryClient";
 
 export const metadata = {
-  title: "Our Gallery | Vyasas Studies",
-  description: "Explore our campus, classrooms, facilities, and student life at Vyasas Studies through our photo gallery.",
+  title: "Our Gallery | Vyasa Institute",
+  description: "Explore our campus, classrooms, facilities, and student life at Vyasa Institute through our photo gallery.",
 };
 
 export default function OurGalleryPage() {
@@ -13,7 +13,7 @@ export default function OurGalleryPage() {
       <PageHeader
         tag="Campus & Life"
         title="Our Gallery"
-        description="A glimpse into our campus, facilities, and the vibrant student life at Vyasas Studies."
+        description="A glimpse into our campus, facilities, and the vibrant student life at Vyasa Institute."
       />
       <OurGalleryClient />
     </PageLayout>

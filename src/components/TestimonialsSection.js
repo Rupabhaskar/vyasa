@@ -8,7 +8,7 @@ const testimonials = [
     name: "Sneha Agarwal",
     role: "AIR 2 \u2013 CA Final",
     type: "Student",
-    text: "Vyasas Studies transformed my preparation completely. The structured approach, disciplined environment, and personal mentorship helped me secure a top rank. I owe my success to this institution.",
+    text: "Vyasa Institute transformed my preparation completely. The structured approach, disciplined environment, and personal mentorship helped me secure a top rank. I owe my success to this institution.",
   },
   {
     name: "Mr. Ramesh Agarwal",

@@ -2,7 +2,7 @@ export const blogPosts = [
   {
     slug: "how-to-prepare-for-ca-foundation-2026",
     title: "How to Prepare for CA Foundation 2026: Complete Strategy Guide",
-    metaTitle: "How to Prepare for CA Foundation 2026 | Study Strategy – Vyasas Studies",
+    metaTitle: "How to Prepare for CA Foundation 2026 | Study Strategy – Vyasa Institute",
     metaDescription:
       "Complete CA Foundation 2026 preparation guide. Study plan, subject-wise strategy, time management tips, and recommended resources from top CA coaching experts.",
     keywords: "CA Foundation preparation, CA Foundation 2026, CA Foundation study plan, how to crack CA Foundation, CA Foundation tips",
@@ -18,7 +18,7 @@ export const blogPosts = [
 
 The CA Foundation exam is the first step in your Chartered Accountancy journey, and how you approach it sets the tone for everything that follows. While the exam is often considered "easier" compared to Inter and Final, underestimating it is the biggest mistake students make.
 
-In this comprehensive guide, we'll walk you through a proven preparation strategy that has helped thousands of our students at Vyasas Studies crack CA Foundation in their first attempt — many with exceptional scores.
+In this comprehensive guide, we'll walk you through a proven preparation strategy that has helped thousands of our students at Vyasa Institute crack CA Foundation in their first attempt — many with exceptional scores.
 
 ## Understanding the Exam Pattern
 
@@ -75,9 +75,9 @@ A recommended daily study schedule during preparation:
 4. **Over-relying on guides** — ICAI study material should be your primary source
 5. **Neglecting revision** — Plan for at least 3 rounds of revision
 
-## The Vyasas Studies Advantage
+## The Vyasa Institute Advantage
 
-At Vyasas Studies, our CA Foundation program is designed around these principles. Our structured curriculum, regular testing, and personal mentorship ensure that every student has the best possible chance of success.
+At Vyasa Institute, our CA Foundation program is designed around these principles. Our structured curriculum, regular testing, and personal mentorship ensure that every student has the best possible chance of success.
 
 ## Conclusion
 
@@ -89,7 +89,7 @@ CA Foundation is very much clearable in the first attempt with the right strateg
   {
     slug: "ca-vs-cma-which-is-better",
     title: "CA vs CMA: Which Professional Course Should You Choose?",
-    metaTitle: "CA vs CMA – Comparison, Salary, Scope | Vyasas Studies",
+    metaTitle: "CA vs CMA – Comparison, Salary, Scope | Vyasa Institute",
     metaDescription:
       "Detailed comparison of CA vs CMA courses. Understand the differences in syllabus, career scope, salary, difficulty, and which course is right for you.",
     keywords: "CA vs CMA, CA or CMA which is better, CA CMA comparison, CA salary vs CMA salary, CA scope vs CMA scope",
@@ -147,9 +147,9 @@ Choose **CMA** if you're drawn to cost management, strategic planning, and manuf
 
 The truth is, both qualifications are excellent, and many successful professionals hold both. The key is to choose based on your interests and career goals, not just perceived prestige.
 
-## The Vyasas Studies Approach
+## The Vyasa Institute Approach
 
-At Vyasas Studies, we offer comprehensive coaching for both CA and CMA. Our counselors help students understand their aptitude and career goals before recommending a path. Many of our students pursue dual qualifications, and we support them through both journeys.
+At Vyasa Institute, we offer comprehensive coaching for both CA and CMA. Our counselors help students understand their aptitude and career goals before recommending a path. Many of our students pursue dual qualifications, and we support them through both journeys.
 
 ## Conclusion
 
@@ -159,7 +159,7 @@ There's no universally "better" option — it depends on your individual strengt
   {
     slug: "importance-of-mock-tests-in-ca-preparation",
     title: "Why Mock Tests Are Non-Negotiable in CA Exam Preparation",
-    metaTitle: "Importance of Mock Tests in CA Preparation | Vyasas Studies",
+    metaTitle: "Importance of Mock Tests in CA Preparation | Vyasa Institute",
     metaDescription:
       "Discover why mock tests are essential for CA exam success. Learn how regular testing improves time management, builds confidence, and helps identify weak areas.",
     keywords: "CA mock tests, importance of mock tests, CA exam preparation, CA practice tests, mock test benefits CA",
@@ -170,10 +170,10 @@ There's no universally "better" option — it depends on your individual strengt
     category: "Study Tips",
     featured: false,
     excerpt:
-      "Mock tests can make or break your CA preparation. Learn why they're essential, how to use them effectively, and how Vyasas Studies' test series helps students succeed.",
+      "Mock tests can make or break your CA preparation. Learn why they're essential, how to use them effectively, and how Vyasa Institute' test series helps students succeed.",
     content: `## Why Mock Tests Matter
 
-If there's one thing that separates successful CA candidates from those who fall short, it's the quality and quantity of their mock test practice. At Vyasas Studies, we've observed this pattern consistently over the years — students who take mock tests seriously almost always perform better than those who rely solely on studying.
+If there's one thing that separates successful CA candidates from those who fall short, it's the quality and quantity of their mock test practice. At Vyasa Institute, we've observed this pattern consistently over the years — students who take mock tests seriously almost always perform better than those who rely solely on studying.
 
 ## The Benefits
 
@@ -200,7 +200,7 @@ Walking into the exam hall with 30+ mock tests under your belt gives you a confi
 4. **Gradually increase difficulty** — Start with chapter-wise tests and progress to full-length papers
 5. **Time your progression** — Begin mock tests at least 2 months before the exam
 
-## The Vyasas Studies Test Series
+## The Vyasa Institute Test Series
 
 Our test series is designed by faculty who understand ICAI's marking patterns intimately. Each test is carefully crafted to cover the exact topics and question styles that ICAI favors. With 50+ tests per level, including chapter tests, revision tests, and full-length mocks, students get more than enough practice to be thoroughly prepared.
 
@@ -212,7 +212,7 @@ If you're serious about clearing your CA exams, make mock tests a non-negotiable
   {
     slug: "benefits-of-starting-ca-from-intermediate",
     title: "Why Starting CA Preparation from 11th Class Gives You an Edge",
-    metaTitle: "Start CA from 11th Class – Benefits of Early Preparation | Vyasas Studies",
+    metaTitle: "Start CA from 11th Class – Benefits of Early Preparation | Vyasa Institute",
     metaDescription:
       "Discover the advantages of starting CA preparation during Intermediate (11th & 12th). Learn how integrated coaching saves time and builds a stronger foundation.",
     keywords: "CA from 11th class, integrated CA coaching, early CA preparation, CA with Intermediate, start CA early",
@@ -245,9 +245,9 @@ Students in integrated programs become comfortable with the exam pattern and rig
 ### 5. Reduced Financial Burden
 Combining board preparation with CA coaching is more cost-effective than pursuing them separately. The family saves on tuition fees and the student saves time.
 
-## The Vyasas Studies Integrated Approach
+## The Vyasa Institute Integrated Approach
 
-At Vyasas Studies, our Intermediate program is designed from the ground up to integrate board exam preparation with CA/CMA foundation coaching. The curriculum is carefully structured so that:
+At Vyasa Institute, our Intermediate program is designed from the ground up to integrate board exam preparation with CA/CMA foundation coaching. The curriculum is carefully structured so that:
 
 - Morning sessions focus on board subjects
 - Afternoon sessions cover CA Foundation concepts
@@ -331,31 +331,31 @@ Starting your own business — fintech, edtech, consulting firm — with the fin
 
 ## Conclusion
 
-The CA qualification is truly versatile. Your career path will depend on your interests, skills, and aspirations. At Vyasas Studies, we expose our students to these various career options through guest lectures, industry interactions, and career counseling sessions.`,
+The CA qualification is truly versatile. Your career path will depend on your interests, skills, and aspirations. At Vyasa Institute, we expose our students to these various career options through guest lectures, industry interactions, and career counseling sessions.`,
     tags: ["Career Guidance", "CA Career", "Jobs"],
   },
   {
     slug: "best-ca-coaching-in-vijayawada",
     title: "Best CA Coaching in Vijayawada 2026 | Top Institute for CA, CMA & ACCA",
-    metaTitle: "Best CA Coaching in Vijayawada | CA Foundation, Inter, Final – Vyasas Studies",
+    metaTitle: "Best CA Coaching in Vijayawada | CA Foundation, Inter, Final – Vyasa Institute",
     metaDescription:
-      "Looking for the best CA coaching in Vijayawada? Vyasas Studies offers CA Foundation, Inter & Final, CMA, and ACCA with expert faculty, proven All India Ranks. Visit our Vijayawada campus.",
+      "Looking for the best CA coaching in Vijayawada? Vyasa Institute offers CA Foundation, Inter & Final, CMA, and ACCA with expert faculty, proven All India Ranks. Visit our Vijayawada campus.",
     keywords: "CA coaching Vijayawada, best CA institute Vijayawada, CA Foundation Vijayawada, CA classes Vijayawada, CA coaching Andhra Pradesh",
-    author: "Vyasas Studies",
+    author: "Vyasa Institute",
     authorRole: "Admissions Team",
     date: "2026-03-01",
     readTime: "8 min read",
     category: "Locations",
     featured: true,
     excerpt:
-      "Vijayawada is the education hub of Andhra Pradesh. Discover why Vyasas Studies is the top choice for CA, CMA & ACCA coaching in Vijayawada — expert faculty, proven results, and a legacy of All India Ranks.",
+      "Vijayawada is the education hub of Andhra Pradesh. Discover why Vyasa Institute is the top choice for CA, CMA & ACCA coaching in Vijayawada — expert faculty, proven results, and a legacy of All India Ranks.",
     content: `## Why Choose CA Coaching in Vijayawada?
 
 Vijayawada has emerged as one of Andhra Pradesh's premier education hubs. Students from across the state and neighbouring regions flock to the city for quality professional education. When it comes to CA, CMA, and ACCA coaching, Vijayawada offers access to institutes that rival those in metros.
 
-## Vyasas Studies Vijayawada — Your Path to CA Success
+## Vyasa Institute Vijayawada — Your Path to CA Success
 
-Our Vijayawada campus on MG Road is strategically located in the heart of the city, easily accessible from all areas including Guntur, Tenali, Mangalagiri, and Eluru. We offer the complete range of programs — CA Foundation, CA Intermediate, CA Final, CMA, and ACCA — all delivered with the same premium quality that defines Vyasas Studies.
+Our Vijayawada campus on MG Road is strategically located in the heart of the city, easily accessible from all areas including Guntur, Tenali, Mangalagiri, and Eluru. We offer the complete range of programs — CA Foundation, CA Intermediate, CA Final, CMA, and ACCA — all delivered with the same premium quality that defines Vyasa Institute.
 
 ## What Sets Us Apart in Vijayawada
 
@@ -375,21 +375,21 @@ Many of our students commute daily from Guntur (25 km), Tenali (35 km), Mangalag
   {
     slug: "best-ca-coaching-in-guntur",
     title: "Best CA Coaching in Guntur 2026 | CA Foundation, Inter & Final Classes",
-    metaTitle: "Best CA Coaching in Guntur | Top CA Institute – Vyasas Studies",
+    metaTitle: "Best CA Coaching in Guntur | Top CA Institute – Vyasa Institute",
     metaDescription:
-      "Top CA coaching in Guntur by Vyasas Studies. CA Foundation, CA Inter, CA Final, CMA & ACCA coaching with expert faculty and proven results. Limited seats. Enroll now.",
+      "Top CA coaching in Guntur by Vyasa Institute. CA Foundation, CA Inter, CA Final, CMA & ACCA coaching with expert faculty and proven results. Limited seats. Enroll now.",
     keywords: "CA coaching Guntur, best CA institute Guntur, CA classes Guntur, CA Foundation Guntur, CMA coaching Guntur",
-    author: "Vyasas Studies",
+    author: "Vyasa Institute",
     authorRole: "Admissions Team",
     date: "2026-02-28",
     readTime: "7 min read",
     category: "Locations",
     featured: false,
     excerpt:
-      "Quality CA education is now in Guntur. Vyasas Studies brings premier CA, CMA & ACCA coaching to the heart of Guntur district. Expert faculty, modern campus, and a track record of success.",
+      "Quality CA education is now in Guntur. Vyasa Institute brings premier CA, CMA & ACCA coaching to the heart of Guntur district. Expert faculty, modern campus, and a track record of success.",
     content: `## CA Coaching in Guntur — Quality Education, Closer to Home
 
-Guntur is one of Andhra Pradesh's most important educational cities. Students from Guntur district and surrounding areas no longer need to travel to Hyderabad or Vijayawada for quality CA coaching. Vyasas Studies has brought premium CA and CMA education to Guntur.
+Guntur is one of Andhra Pradesh's most important educational cities. Students from Guntur district and surrounding areas no longer need to travel to Hyderabad or Vijayawada for quality CA coaching. Vyasa Institute has brought premium CA and CMA education to Guntur.
 
 ## Our Guntur Campus
 
@@ -405,7 +405,7 @@ Located in the centrally accessible Brodipet area, our Guntur campus features we
 
 ## Who We Serve
 
-Students from Narasaraopet, Bapatla, Chilakaluripet, Sattenapalli, and other towns in Guntur district find our center conveniently located. Our faculty bring the same expertise that defines Vyasas Studies across all locations.
+Students from Narasaraopet, Bapatla, Chilakaluripet, Sattenapalli, and other towns in Guntur district find our center conveniently located. Our faculty bring the same expertise that defines Vyasa Institute across all locations.
 
 ## Results Speak
 
@@ -417,23 +417,23 @@ The Guntur center has shown remarkable results since its inception, with a growi
   {
     slug: "best-ca-coaching-in-hyderabad",
     title: "Best CA Coaching in Hyderabad 2026 | Top CA Institute with All India Ranks",
-    metaTitle: "Best CA Coaching in Hyderabad | CA Foundation, Inter, Final – Vyasas Studies",
+    metaTitle: "Best CA Coaching in Hyderabad | CA Foundation, Inter, Final – Vyasa Institute",
     metaDescription:
-      "Best CA coaching in Hyderabad at Vyasas Studies. CA Foundation, Inter, Final & CMA coaching with proven results, expert faculty, and modern infrastructure. Ameerpet campus.",
+      "Best CA coaching in Hyderabad at Vyasa Institute. CA Foundation, Inter, Final & CMA coaching with proven results, expert faculty, and modern infrastructure. Ameerpet campus.",
     keywords: "CA coaching Hyderabad, best CA institute Hyderabad, CA classes Hyderabad, CA coaching Ameerpet, CA Foundation Hyderabad",
-    author: "Vyasas Studies",
+    author: "Vyasa Institute",
     authorRole: "Admissions Team",
     date: "2026-02-25",
     readTime: "8 min read",
     category: "Locations",
     featured: true,
     excerpt:
-      "Hyderabad is India's coaching capital. Vyasas Studies Hyderabad in Ameerpet offers world-class CA, CMA & ACCA coaching with the highest number of All India Rank holders among our campuses.",
+      "Hyderabad is India's coaching capital. Vyasa Institute Hyderabad in Ameerpet offers world-class CA, CMA & ACCA coaching with the highest number of All India Rank holders among our campuses.",
     content: `## CA Coaching in Hyderabad — Where Excellence Meets Opportunity
 
 Hyderabad has earned its reputation as India's premier destination for competitive exam coaching. For CA and CMA aspirants, the city offers access to top institutes, vibrant academic community, and networking opportunities with industry professionals.
 
-## Vyasas Studies Hyderabad — Flagship Campus
+## Vyasa Institute Hyderabad — Flagship Campus
 
 Our Hyderabad campus in Ameerpet, the coaching hub of the twin cities, is our largest and most established center. Easily accessible via metro, bus, and other public transport, the campus houses 15+ smart classrooms, a dedicated library with over 5,000 reference books, and a technology-enabled test center.
 
@@ -454,22 +454,22 @@ We serve students from Warangal, Karimnagar, Nizamabad, and across Telangana. Ou
   },
   {
     slug: "best-ca-coaching-in-eluru",
-    title: "CA Coaching Near Eluru | Best CA Institute — Vyasas Studies Vijayawada",
-    metaTitle: "CA Coaching for Eluru Students | Vyasas Studies Vijayawada – Best Option",
+    title: "CA Coaching Near Eluru | Best CA Institute — Vyasa Institute Vijayawada",
+    metaTitle: "CA Coaching for Eluru Students | Vyasa Institute Vijayawada – Best Option",
     metaDescription:
-      "Looking for CA coaching near Eluru? Vyasas Studies Vijayawada is the top choice. Just 60 km away — CA Foundation, Inter, Final, CMA & ACCA. Hostel available for Eluru students.",
+      "Looking for CA coaching near Eluru? Vyasa Institute Vijayawada is the top choice. Just 60 km away — CA Foundation, Inter, Final, CMA & ACCA. Hostel available for Eluru students.",
     keywords: "CA coaching Eluru, CA coaching near Eluru, best CA institute for Eluru students, CA classes West Godavari",
-    author: "Vyasas Studies",
+    author: "Vyasa Institute",
     authorRole: "Admissions Team",
     date: "2026-02-22",
     readTime: "6 min read",
     category: "Locations",
     featured: false,
     excerpt:
-      "Eluru students don't have to compromise on CA coaching. Vyasas Studies Vijayawada is easily accessible and offers hostel facility. Many Eluru students have cleared CA with us.",
+      "Eluru students don't have to compromise on CA coaching. Vyasa Institute Vijayawada is easily accessible and offers hostel facility. Many Eluru students have cleared CA with us.",
     content: `## CA Coaching for Eluru Students — Vijayawada is Your Best Bet
 
-Eluru, the headquarters of West Godavari district, is home to many bright students aspiring for professional qualifications. While Eluru doesn't have large-scale CA coaching institutes, students have an excellent option just 60 km away — Vyasas Studies in Vijayawada.
+Eluru, the headquarters of West Godavari district, is home to many bright students aspiring for professional qualifications. While Eluru doesn't have large-scale CA coaching institutes, students have an excellent option just 60 km away — Vyasa Institute in Vijayawada.
 
 ## Why Eluru Students Choose Vyasas Vijayawada
 
@@ -492,25 +492,25 @@ Many Eluru students stay in our hostel during the week and go home on weekends. 
   {
     slug: "best-ca-coaching-in-andhra-pradesh",
     title: "Best CA Coaching in Andhra Pradesh | Top Institutes in Vijayawada, Guntur & Hyderabad",
-    metaTitle: "CA Coaching in Andhra Pradesh | Vijayawada, Guntur, Hyderabad – Vyasas Studies",
+    metaTitle: "CA Coaching in Andhra Pradesh | Vijayawada, Guntur, Hyderabad – Vyasa Institute",
     metaDescription:
-      "Complete guide to CA coaching in Andhra Pradesh. Vyasas Studies offers top CA, CMA & ACCA coaching across Vijayawada, Guntur, and Hyderabad. Covering all of AP and Telangana.",
+      "Complete guide to CA coaching in Andhra Pradesh. Vyasa Institute offers top CA, CMA & ACCA coaching across Vijayawada, Guntur, and Hyderabad. Covering all of AP and Telangana.",
     keywords: "CA coaching Andhra Pradesh, CA coaching AP, best CA institute Andhra Pradesh, CA coaching Vijayawada Guntur, CA classes Telangana",
-    author: "Vyasas Studies",
+    author: "Vyasa Institute",
     authorRole: "Admissions Team",
     date: "2026-02-18",
     readTime: "9 min read",
     category: "Locations",
     featured: true,
     excerpt:
-      "Andhra Pradesh and Telangana are home to some of India's best CA coaching. Vyasas Studies serves students across the region with campuses in Vijayawada, Guntur, and Hyderabad.",
+      "Andhra Pradesh and Telangana are home to some of India's best CA coaching. Vyasa Institute serves students across the region with campuses in Vijayawada, Guntur, and Hyderabad.",
     content: `## CA Coaching in Andhra Pradesh — A Complete Overview
 
 Andhra Pradesh has a rich tradition of producing Chartered Accountants and finance professionals. Cities like Vijayawada, Guntur, Visakhapatnam, and Tirupati have long been education hubs. Today, students from across AP — including Eluru, Kakinada, Rajahmundry, Nellore, Anantapur, and Kurnool — seek quality CA coaching.
 
-## Vyasas Studies — Serving All of AP and Beyond
+## Vyasa Institute — Serving All of AP and Beyond
 
-With campuses in **Vijayawada** (education capital of AP), **Guntur** (central AP), and **Hyderabad** (serving both Telangana and AP), Vyasas Studies reaches students across the region. Our integrated approach ensures the same quality, faculty expertise, and results-oriented methodology at every center.
+With campuses in **Vijayawada** (education capital of AP), **Guntur** (central AP), and **Hyderabad** (serving both Telangana and AP), Vyasa Institute reaches students across the region. Our integrated approach ensures the same quality, faculty expertise, and results-oriented methodology at every center.
 
 ## Coverage Map
 
@@ -530,13 +530,13 @@ With campuses in **Vijayawada** (education capital of AP), **Guntur** (central A
 
 Our students from Andhra Pradesh have consistently achieved All India Ranks and high pass rates. The discipline, structured learning, and expert mentorship we provide resonates with the ambitious youth of the region.
 
-*Wherever you are in Andhra Pradesh or Telangana, Vyasas Studies has a pathway for your CA journey. Book a free counseling session.*`,
+*Wherever you are in Andhra Pradesh or Telangana, Vyasa Institute has a pathway for your CA journey. Book a free counseling session.*`,
     tags: ["Andhra Pradesh", "CA Coaching", "Vijayawada", "Guntur", "Hyderabad", "Locations"],
   },
   {
     slug: "ca-intermediate-preparation-guide-2026",
     title: "How to Prepare for CA Intermediate 2026: Group 1 & Group 2 Strategy",
-    metaTitle: "CA Intermediate Preparation Guide 2026 | Study Plan & Strategy – Vyasas Studies",
+    metaTitle: "CA Intermediate Preparation Guide 2026 | Study Plan & Strategy – Vyasa Institute",
     metaDescription:
       "Complete CA Inter preparation guide. Subject-wise strategy for Group 1 & 2, time management, articleship balance, and exam tips from top CA coaching experts.",
     keywords: "CA Intermediate preparation, CA Inter 2026, CA Inter study plan, CA Inter Group 1 Group 2, how to clear CA Inter",
@@ -575,7 +575,7 @@ Many students struggle to balance work and preparation. Our recommendations:
 
 Taking one group at a time allows focused preparation. Combined attempt works for those with strong Foundation base. Assess your readiness honestly before deciding.
 
-## The Vyasas Studies CA Inter Program
+## The Vyasa Institute CA Inter Program
 
 Our CA Intermediate coaching covers both groups with expert faculty, 60+ mock tests, and personalized mentorship. Many of our students clear both groups in their first attempt.
 
@@ -585,11 +585,11 @@ Our CA Intermediate coaching covers both groups with expert faculty, 60+ mock te
   {
     slug: "how-to-choose-the-right-ca-coaching-institute",
     title: "How to Choose the Right CA Coaching Institute: 10 Factors to Consider",
-    metaTitle: "Choosing CA Coaching Institute | What to Look For – Vyasas Studies",
+    metaTitle: "Choosing CA Coaching Institute | What to Look For – Vyasa Institute",
     metaDescription:
       "Selecting the best CA coaching institute? Consider faculty, results, infrastructure, batch size, and more. A parent and student guide to making the right choice.",
     keywords: "choose CA coaching, best CA institute, how to select CA coaching, CA coaching factors, CA institute selection",
-    author: "Vyasas Studies",
+    author: "Vyasa Institute",
     authorRole: "Admissions Team",
     date: "2026-02-12",
     readTime: "9 min read",
@@ -640,13 +640,13 @@ Visit the campus. Observe the environment. Does it feel conducive to focused stu
 - No transparent fee structure
 - Faculty changes frequently
 
-*Visit Vyasas Studies for a free campus tour and counseling session. See the difference for yourself.*`,
+*Visit Vyasa Institute for a free campus tour and counseling session. See the difference for yourself.*`,
     tags: ["Career Guidance", "CA Coaching", "Institute Selection", "Students"],
   },
   {
     slug: "ca-vs-acca-which-should-you-choose",
     title: "CA vs ACCA: Which Global Accounting Qualification is Right for You?",
-    metaTitle: "CA vs ACCA Comparison | India vs Global Qualification – Vyasas Studies",
+    metaTitle: "CA vs ACCA Comparison | India vs Global Qualification – Vyasa Institute",
     metaDescription:
       "CA (India) vs ACCA (global) — detailed comparison. Syllabus, duration, cost, recognition, career scope. Choose the right qualification for your goals.",
     keywords: "CA vs ACCA, CA or ACCA, ACCA vs CA India, global accounting qualification, CA ACCA comparison",
@@ -695,11 +695,11 @@ Many professionals pursue both qualifications for maximum career flexibility. It
   {
     slug: "parents-guide-to-ca-journey",
     title: "A Parent's Guide to the CA Journey: What to Expect and How to Support",
-    metaTitle: "Parent's Guide to CA Journey | Supporting Your Child – Vyasas Studies",
+    metaTitle: "Parent's Guide to CA Journey | Supporting Your Child – Vyasa Institute",
     metaDescription:
       "Parents of CA aspirants: understand the CA journey, exam schedule, timeline, and how to support your child through Foundation, Inter, and Final.",
     keywords: "CA for parents, parent guide CA, supporting CA aspirant, CA journey parents, CA exam timeline",
-    author: "Vyasas Studies",
+    author: "Vyasa Institute",
     authorRole: "Admissions Team",
     date: "2026-02-08",
     readTime: "8 min read",
@@ -739,13 +739,13 @@ The Chartered Accountancy course is demanding — typically 4-5 years from regis
 
 Visit campuses, meet faculty, check results. Involve your child in the decision but guide them with these factors. A good institute reduces stress and improves outcomes.
 
-*Vyasas Studies offers regular parent-teacher interactions. We believe in partnering with families for student success.*`,
+*Vyasa Institute offers regular parent-teacher interactions. We believe in partnering with families for student success.*`,
     tags: ["Parents", "Career Guidance", "CA Journey", "Support"],
   },
   {
     slug: "time-management-for-ca-students",
     title: "Time Management for CA Students: Balance Studies, Articleship & Life",
-    metaTitle: "Time Management for CA Students | Study Schedule – Vyasas Studies",
+    metaTitle: "Time Management for CA Students | Study Schedule – Vyasa Institute",
     metaDescription:
       "Master time management as a CA student. Balance classes, self-study, articleship, and revision. Practical tips and sample schedules for Foundation, Inter & Final.",
     keywords: "CA time management, CA study schedule, balance articleship studies, CA student tips, daily routine CA",
@@ -791,13 +791,13 @@ Group doubt-clearing, group revision sessions. Reduces context-switching.
 - **Afternoon**: Analysis and weak area focus
 - **Evening**: Revision of next day's paper
 
-*At Vyasas Studies, we help students create personalized study plans based on their schedule and strengths.*`,
+*At Vyasa Institute, we help students create personalized study plans based on their schedule and strengths.*`,
     tags: ["Study Tips", "Time Management", "CA Students", "Articleship"],
   },
   {
     slug: "cma-course-complete-guide-india",
     title: "CMA Course Complete Guide: Foundation, Intermediate & Final in India",
-    metaTitle: "CMA Course Guide India | ICMAI Syllabus, Eligibility, Exams – Vyasas Studies",
+    metaTitle: "CMA Course Guide India | ICMAI Syllabus, Eligibility, Exams – Vyasa Institute",
     metaDescription:
       "Complete guide to CMA (Cost and Management Accountancy) in India. Foundation, Inter, Final syllabus, eligibility, exam pattern, and career scope. ICMAI explained.",
     keywords: "CMA course India, CMA Foundation Intermediate Final, ICMAI, CMA syllabus, CMA career scope",
@@ -843,17 +843,17 @@ Exams held in **June and December** every year. Registration through ICMAI porta
 
 Both are excellent. Choose based on your interest in cost management vs audit/taxation.
 
-*Vyasas Studies offers comprehensive CMA coaching for all three stages. Book a free counseling session.*`,
+*Vyasa Institute offers comprehensive CMA coaching for all three stages. Book a free counseling session.*`,
     tags: ["CMA", "Career Guidance", "ICMAI", "Cost Accounting"],
   },
   {
     slug: "managing-stress-during-ca-exams",
     title: "Managing Stress During CA Exams: Mental Health Tips for Aspirants",
-    metaTitle: "CA Exam Stress Management | Mental Health for Students – Vyasas Studies",
+    metaTitle: "CA Exam Stress Management | Mental Health for Students – Vyasa Institute",
     metaDescription:
       "CA exam stress is real. Practical tips to manage anxiety, stay focused, sleep well, and perform your best. Mental health matters for CA aspirants.",
     keywords: "CA exam stress, CA stress management, mental health CA students, CA exam anxiety, study stress",
-    author: "Vyasas Studies",
+    author: "Vyasa Institute",
     authorRole: "Faculty Team",
     date: "2026-02-01",
     readTime: "7 min read",
@@ -887,17 +887,17 @@ It's normal to feel anxious before CA exams. The syllabus is vast, the stakes ar
 
 If stress is affecting your sleep, appetite, or daily functioning consistently, consider speaking to a counselor. Mental health is as important as exam preparation.
 
-*At Vyasas Studies, our mentors are trained to support students through exam anxiety. We're here for you.*`,
+*At Vyasa Institute, our mentors are trained to support students through exam anxiety. We're here for you.*`,
     tags: ["Study Tips", "Mental Health", "Stress Management", "CA Exam"],
   },
   {
     slug: "online-vs-offline-ca-coaching",
     title: "Online vs Offline CA Coaching: Which Mode is Right for You?",
-    metaTitle: "Online vs Offline CA Coaching | Pros & Cons – Vyasas Studies",
+    metaTitle: "Online vs Offline CA Coaching | Pros & Cons – Vyasa Institute",
     metaDescription:
       "Comparing online and offline CA coaching. Flexibility vs discipline, cost, interaction, and which students benefit from each mode.",
     keywords: "online CA coaching, offline CA classes, CA coaching comparison, online vs offline coaching, CA classes mode",
-    author: "Vyasas Studies",
+    author: "Vyasa Institute",
     authorRole: "Admissions Team",
     date: "2026-01-28",
     readTime: "8 min read",
@@ -933,7 +933,7 @@ Today's CA aspirants have more choices than ever. Online coaching has matured si
 
 ## Hybrid — Best of Both?
 
-Many institutes (including Vyasas Studies) offer hybrid options — attend in person when possible, access online when you can't. This works well for articleship students and those with variable schedules.
+Many institutes (including Vyasa Institute) offer hybrid options — attend in person when possible, access online when you can't. This works well for articleship students and those with variable schedules.
 
 *Not sure which mode suits you? Discuss with our counselors during a free session.*`,
     tags: ["Career Guidance", "Online Coaching", "CA Coaching", "Study Tips"],

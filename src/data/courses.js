@@ -3,9 +3,9 @@ export const courses = [
     slug: "ca-foundation",
     title: "CA Foundation Course",
     shortTitle: "CA Foundation",
-    metaTitle: "CA Foundation Coaching | Best CA Foundation Classes – Vyasas Studies",
+    metaTitle: "CA Foundation Coaching | Best CA Foundation Classes – Vyasa Institute",
     metaDescription:
-      "Join Vyasas Studies for CA Foundation coaching. Expert faculty, comprehensive study material, mock test series, and proven results with All India Ranks. Enroll now.",
+      "Join Vyasa Institute for CA Foundation coaching. Expert faculty, comprehensive study material, mock test series, and proven results with All India Ranks. Enroll now.",
     keywords: "CA Foundation coaching, CA Foundation classes, CA CPT coaching, best CA Foundation institute, CA Foundation Hyderabad",
     heroTag: "Most Popular",
     icon: "FaCalculator",
@@ -13,7 +13,7 @@ export const courses = [
     fee: "₹45,000",
     nextBatch: "July 2026",
     eligibility: "Class 12 Pass / Appearing",
-    overview: `The CA Foundation course at Vyasas Studies is meticulously designed to give students a rock-solid foundation for their Chartered Accountancy journey. Our integrated approach ensures that students not only clear the exam but develop a deep conceptual understanding that serves them through all levels of CA.
+    overview: `The CA Foundation course at Vyasa Institute is meticulously designed to give students a rock-solid foundation for their Chartered Accountancy journey. Our integrated approach ensures that students not only clear the exam but develop a deep conceptual understanding that serves them through all levels of CA.
 
 Our CA Foundation program covers all four papers — Principles and Practices of Accounting, Business Laws and Business Correspondence, Business Mathematics and Logical Reasoning & Statistics, and Business Economics and Business and Commercial Knowledge. Each paper is taught by subject-matter experts who have years of experience in CA education.
 
@@ -42,8 +42,8 @@ The results speak for themselves — our CA Foundation students consistently ach
     ],
     faqs: [
       { q: "Who is eligible for CA Foundation?", a: "Students who have passed or are appearing for Class 12 examinations are eligible to register for CA Foundation with ICAI." },
-      { q: "How long is the CA Foundation course at Vyasas Studies?", a: "Our CA Foundation course runs for approximately 8 months, covering all 4 papers with ample revision and mock test time built in." },
-      { q: "What is the pass rate for Vyasas Studies CA Foundation students?", a: "Our CA Foundation students consistently achieve pass rates above 85%, significantly higher than the national average of around 25-30%." },
+      { q: "How long is the CA Foundation course at Vyasa Institute?", a: "Our CA Foundation course runs for approximately 8 months, covering all 4 papers with ample revision and mock test time built in." },
+      { q: "What is the pass rate for Vyasa Institute CA Foundation students?", a: "Our CA Foundation students consistently achieve pass rates above 85%, significantly higher than the national average of around 25-30%." },
       { q: "Do you provide study material?", a: "Yes, we provide comprehensive in-house study material that is regularly updated to reflect the latest ICAI syllabus and exam patterns." },
       { q: "Are online classes available for CA Foundation?", a: "Yes, we offer both offline and online live classes for CA Foundation. Online students also get access to recorded lectures and our digital test platform." },
       { q: "Is there a scholarship program?", a: "Yes, we offer merit-based scholarships of up to 50% for students who demonstrate exceptional academic ability in our entrance assessment." },
@@ -55,23 +55,23 @@ The results speak for themselves — our CA Foundation students consistently ach
     slug: "ca-intermediate",
     title: "CA Intermediate Course",
     shortTitle: "CA Inter",
-    metaTitle: "CA Intermediate Coaching | Best CA Inter Classes – Vyasas Studies",
+    metaTitle: "CA Intermediate Coaching | Best CA Inter Classes – Vyasa Institute",
     metaDescription:
-      "Top CA Intermediate coaching at Vyasas Studies. Group-wise coaching, mock tests, practical training, and rank-oriented preparation. Join the best CA Inter institute.",
+      "Top CA Intermediate coaching at Vyasa Institute. Group-wise coaching, mock tests, practical training, and rank-oriented preparation. Join the best CA Inter institute.",
     keywords: "CA Intermediate coaching, CA Inter classes, best CA Inter institute, CA Inter coaching Hyderabad, CA Inter Group 1, CA Inter Group 2",
     heroTag: "",
     icon: "FaChartBar",
     duration: "10 Months",
     fee: "₹65,000 per group",
-    nextBatch: "August 2026",
+    nextBatch: "January,February,June,July,August,December",
     eligibility: "CA Foundation Pass",
-    overview: `The CA Intermediate level is where the real depth of Chartered Accountancy begins, and Vyasas Studies ensures that students navigate this critical stage with confidence and competence. Our CA Intermediate program offers both group-wise and combined coaching, allowing students the flexibility to choose a schedule that works best for their preparation strategy.
+    overview: `The CA Intermediate level is where the real depth of Chartered Accountancy begins, and Vyasa Institute ensures that students navigate this critical stage with confidence and competence. Our CA Intermediate program offers both group-wise and combined coaching, allowing students the flexibility to choose a schedule that works best for their preparation strategy.
 
 Our CA Intermediate coaching is distinguished by its focus on practical application alongside theoretical knowledge. Each subject is taught by a specialist faculty member who brings both academic expertise and real-world professional experience to the classroom. This dual perspective helps students understand not just exam requirements but how these concepts apply in actual practice.
 
-The Group I subjects — Accounting, Corporate Laws & Other Laws, Cost and Management Accounting, and Taxation — are taught with an emphasis on problem-solving and application. Students work through hundreds of practice problems, past exam questions, and specially designed scenarios that test depth of understanding.
+The Group I subjects — Accounting, Corporate Laws & Other Laws, and Taxation — are taught with an emphasis on problem-solving and application. Students work through hundreds of practice problems, past exam questions, and specially designed scenarios that test depth of understanding.
 
-Group II subjects — Advanced Accounting, Auditing and Assurance, Enterprise Information Systems & Strategic Management, and Financial Management & Economics for Finance — receive equally rigorous treatment. Our approach to these subjects combines theoretical frameworks with practical case studies and real-world examples.
+Group II subjects — Cost and Management Accounting, Auditing and Ethics, Financial Management & Strategical Management — receive equally rigorous treatment. Our approach to these subjects combines theoretical frameworks with practical case studies and real-world examples.
 
 The test series is one of the most comprehensive in the industry. Students take over 60 tests throughout the course, including chapter tests, revision tests, and full-length mock exams. Each test is followed by detailed analysis, performance tracking, and personalized feedback from faculty. Students receive their results within 48 hours with detailed solution discussions.
 
@@ -112,9 +112,9 @@ The results from our CA Intermediate program have been exceptional, with our stu
     slug: "ca-final",
     title: "CA Final Course",
     shortTitle: "CA Final",
-    metaTitle: "CA Final Coaching | Rank-Oriented CA Final Classes – Vyasas Studies",
+    metaTitle: "CA Final Coaching | Rank-Oriented CA Final Classes – Vyasa Institute",
     metaDescription:
-      "Rank-oriented CA Final coaching at Vyasas Studies. Advanced preparation with expert CAs, case study approach, and personal mentorship. Achieve your CA Final rank.",
+      "Rank-oriented CA Final coaching at Vyasa Institute. Advanced preparation with expert CAs, case study approach, and personal mentorship. Achieve your CA Final rank.",
     keywords: "CA Final coaching, CA Final classes, best CA Final institute, CA Final rank preparation, CA Final coaching Hyderabad",
     heroTag: "Rank Course",
     icon: "FaGraduationCap",
@@ -122,7 +122,7 @@ The results from our CA Intermediate program have been exceptional, with our stu
     fee: "₹75,000 per group",
     nextBatch: "September 2026",
     eligibility: "CA Intermediate Pass + Articleship",
-    overview: `The CA Final is the culmination of the Chartered Accountancy journey, and at Vyasas Studies, we ensure our students are prepared not just to pass but to excel at the highest level. Our CA Final program is specifically designed with a rank-oriented approach that has consistently produced All India Rank holders and top performers.
+    overview: `The CA Final is the culmination of the Chartered Accountancy journey, and at Vyasa Institute, we ensure our students are prepared not just to pass but to excel at the highest level. Our CA Final program is specifically designed with a rank-oriented approach that has consistently produced All India Rank holders and top performers.
 
 Our CA Final coaching stands apart because of the caliber of our faculty. Every subject is taught by a practicing Chartered Accountant or a seasoned academic with deep expertise in their domain. Many of our faculty members are themselves rank holders who understand exactly what it takes to achieve exceptional scores at this level.
 
@@ -138,7 +138,7 @@ Personal mentorship is a cornerstone of our CA Final program. Each student is as
 
 The program also includes advanced workshops on emerging topics, amendments, and areas that ICAI frequently tests. Guest lectures by practicing CAs and industry professionals provide insights into practical applications that enhance exam preparation. Our alumni network of CA rank holders regularly interacts with current students, sharing strategies and motivation.
 
-Our CA Final results are a source of immense pride — multiple All India Rank holders, consistently high pass rates, and a growing list of successful CAs who attribute their success to the foundation built at Vyasas Studies.`,
+Our CA Final results are a source of immense pride — multiple All India Rank holders, consistently high pass rates, and a growing list of successful CAs who attribute their success to the foundation built at Vyasa Institute.`,
     highlights: [
       "Rank-oriented preparation methodology",
       "Faculty of practicing CAs and rank holders",
@@ -158,7 +158,7 @@ Our CA Final results are a source of immense pride — multiple All India Rank h
       { paper: "Paper 6B", name: "Indirect Tax Laws", topics: "GST Advanced, Customs Law, Foreign Trade Policy" },
     ],
     faqs: [
-      { q: "What makes Vyasas Studies CA Final coaching different?", a: "Our rank-oriented approach, practicing CA faculty, case-study methodology, and personalized mentorship set us apart. Our consistent rank production speaks for itself." },
+      { q: "What makes Vyasa Institute CA Final coaching different?", a: "Our rank-oriented approach, practicing CA faculty, case-study methodology, and personalized mentorship set us apart. Our consistent rank production speaks for itself." },
       { q: "Can I join for one group only?", a: "Yes, both group-wise and combined enrollment options are available with flexible batch timings." },
       { q: "How do you prepare students for rank?", a: "Through advanced problem-solving sessions, rigorous mock exams evaluated on ICAI patterns, personalized mentorship, and targeted preparation strategies for each student." },
       { q: "Do you cover recent amendments?", a: "Absolutely. We conduct dedicated amendment workshops before each exam attempt, covering all legislative and regulatory changes relevant to the syllabus." },
@@ -171,9 +171,9 @@ Our CA Final results are a source of immense pride — multiple All India Rank h
     slug: "cma-course",
     title: "Cost & Management Accounting (CMA India)",
     shortTitle: "CMA Course",
-    metaTitle: "CMA Course | CMA Foundation, Inter & Final Coaching – Vyasas Studies",
+    metaTitle: "CMA Course | CMA Foundation, Inter & Final Coaching – Vyasa Institute",
     metaDescription:
-      "Complete CMA coaching at Vyasas Studies covering all three stages — Foundation, Intermediate & Final. Expert faculty, proven results, comprehensive study material. Enroll now.",
+      "Complete CMA coaching at Vyasa Institute covering all three stages — Foundation, Intermediate & Final. Expert faculty, proven results, comprehensive study material. Enroll now.",
     keywords: "CMA coaching, CMA Foundation coaching, CMA Intermediate coaching, CMA Final coaching, Cost Management Accounting, CMA classes Vijayawada, CMA India course",
     heroTag: "All 3 Stages",
     icon: "FaFileAlt",
@@ -183,9 +183,9 @@ Our CA Final results are a source of immense pride — multiple All India Rank h
     eligibility: "10+2 / Intermediate or equivalent",
     overview: `In order to promote, oversee, and advance the cost accounting profession, the then-British Government of India established the Institute of Cost Accountants of India (also known as the Institute of Cost and Works Accountants of India) in 1944. The institute is a controlled organisation governed by the Companies Act. Only one established professional organisation and licencing authority in India, the Institute of Cost Accountants of India, is completely focused on cost and management accounting. A special statute passed by our parliament in 1959 by the Government of India gave the autonomous statutory authority.
 
-The CMA (Cost and Management Accountant) course at Vyasas Studies consists of three stages — Foundation, Intermediate, and Final — each designed to progressively build your expertise in cost and management accounting. Our comprehensive coaching covers all three levels with a structured, result-oriented approach that has consistently produced excellent results.
+The CMA (Cost and Management Accountant) course at Vyasa Institute consists of three stages — Foundation, Intermediate, and Final — each designed to progressively build your expertise in cost and management accounting. Our comprehensive coaching covers all three levels with a structured, result-oriented approach that has consistently produced excellent results.
 
-Cost and Management Accounting is a vital professional qualification that opens doors to careers in cost management, financial planning, strategic decision-making, and management consulting. At Vyasas Studies, we prepare students not just for the CMA exams but for successful careers in this dynamic field. CMAs are in high demand across manufacturing, FMCG, consulting, government organizations, and corporate finance.
+Cost and Management Accounting is a vital professional qualification that opens doors to careers in cost management, financial planning, strategic decision-making, and management consulting. At Vyasa Institute, we prepare students not just for the CMA exams but for successful careers in this dynamic field. CMAs are in high demand across manufacturing, FMCG, consulting, government organizations, and corporate finance.
 
 Our CMA Foundation program covers all four papers with objective-type examinations held in June and December. The Foundation level builds a strong base in business laws, financial accounting, cost accounting, mathematics, statistics, economics, and management fundamentals. Each subject is taught with a focus on conceptual clarity that serves students well as they progress to higher levels.
 
@@ -289,18 +289,151 @@ Our CMA students have an impressive track record of success, with high pass rate
       { q: "Can I pursue CMA alongside graduation?", a: "Yes, CMA can be pursued alongside graduation. We offer flexible batch timings including weekend and evening options for such students." },
       { q: "What is the scope of CMA?", a: "CMAs are in high demand in manufacturing, FMCG, consulting, and government organizations. Roles include cost accountant, financial analyst, management consultant, and CFO. CMA is also recognized globally." },
       { q: "What is the passing criteria for CMA exams?", a: "You need a minimum of 40% in every subject and 50% in aggregate of all papers to pass any stage of the CMA examination." },
-      { q: "Does Vyasas Studies offer CMA Final coaching?", a: "Yes, we offer comprehensive coaching for all three stages — CMA Foundation, CMA Intermediate, and CMA Final — covering all papers and groups." },
+      { q: "Does Vyasa Institute offer CMA Final coaching?", a: "Yes, we offer comprehensive coaching for all three stages — CMA Foundation, CMA Intermediate, and CMA Final — covering all papers and groups." },
     ],
     results: { passRate: "78%+", rankers: 3, topRank: "AIR 7" },
-    relatedCourses: ["ca-foundation", "acca-course"],
+    relatedCourses: ["cma-foundation", "cma-intermediate", "cma-final", "ca-foundation", "acca-course"],
+  },
+  {
+    slug: "cma-foundation",
+    title: "CMA Foundation Course",
+    shortTitle: "CMA Foundation",
+    metaTitle: "CMA Foundation Coaching | Best CMA Foundation Classes – Vyasa Institute",
+    metaDescription:
+      "Start your CMA journey with Vyasa Institute’s CMA Foundation coaching. Concept-focused teaching, updated material, regular tests, and expert guidance for June/December exams.",
+    keywords: "CMA Foundation coaching, CMA Foundation classes, CMA Foundation exam, ICMAI Foundation coaching, CMA coaching Vijayawada",
+    heroTag: "",
+    icon: "FaCalculator",
+    duration: "8 Months",
+    fee: "₹40,000 onwards",
+    nextBatch: "July 2026",
+    eligibility: "10+2 or Intermediate or equivalent",
+    overview: `CMA Foundation is the first stage of the CMA (India) qualification and builds a strong base in accounting, laws, mathematics, statistics, economics, and management. At Vyasa Institute, our CMA Foundation coaching is designed to help students master fundamentals with clarity and confidence.
+
+The program is aligned with the ICMAI syllabus and exam pattern (objective type). We combine concept-building classes with structured practice, chapter-wise tests, and exam-oriented revision so students are fully prepared for the June and December attempts.
+
+Students receive faculty guidance, doubt-solving support, and a disciplined study plan. Our focus is not only on clearing Foundation but also on building the skills needed for CMA Intermediate.`,
+    highlights: [
+      "Concept-focused coaching for all 4 papers",
+      "Objective exam practice with regular tests",
+      "Updated notes and study material support",
+      "Doubt-clearing and mentoring support",
+      "Exam-oriented revision and mock tests",
+      "Batch timing support for students",
+    ],
+    curriculum: [
+      { paper: "Paper 1", name: "Fundamentals of Business Laws & Business Communications", topics: "Contract Act, Sale of Goods Act, Business Communication & Correspondence" },
+      { paper: "Paper 2", name: "Fundamentals of Financial & Cost Accounting", topics: "Accounting Fundamentals, Journal & Ledger, Cost Basics" },
+      { paper: "Paper 3", name: "Fundamentals of Business Mathematics & Statistics", topics: "Algebra, Calculus Basics, Probability, Correlation & Regression" },
+      { paper: "Paper 4", name: "Fundamentals of Business Economics & Management", topics: "Micro & Macro Economics, Management Principles, Business Environment" },
+    ],
+    faqs: [
+      { q: "Who is eligible for CMA Foundation?", a: "Students who have passed 10+2/Intermediate or an equivalent qualification are eligible for CMA Foundation." },
+      { q: "What is the exam pattern for CMA Foundation?", a: "CMA Foundation exams are objective-type and are typically conducted in June and December." },
+      { q: "What is the passing criteria for CMA Foundation?", a: "Minimum 40% in each subject and 50% in aggregate across all papers." },
+      { q: "Do you provide study material and tests?", a: "Yes. We provide structured notes/support material and conduct regular practice tests and mocks." },
+      { q: "Can I do CMA Foundation alongside college?", a: "Yes. Our schedule supports students pursuing graduation alongside CMA preparation." },
+    ],
+    results: { passRate: "78%+", rankers: 3, topRank: "AIR 7" },
+    relatedCourses: ["cma-intermediate", "cma-course"],
+  },
+  {
+    slug: "cma-intermediate",
+    title: "CMA Intermediate Course",
+    shortTitle: "CMA Intermediate",
+    metaTitle: "CMA Intermediate Coaching | Best CMA Inter Classes – Vyasa Institute",
+    metaDescription:
+      "Comprehensive CMA Intermediate coaching at Vyasa Institute for both groups. Strong concepts, answer-writing practice, and test series aligned to ICMAI for June/December exams.",
+    keywords: "CMA Intermediate coaching, CMA Inter classes, ICMAI Intermediate coaching, CMA Group I coaching, CMA Group II coaching",
+    heroTag: "",
+    icon: "FaGraduationCap",
+    duration: "9 Months",
+    fee: "₹40,000 onwards",
+    nextBatch: "July 2026",
+    eligibility: "CMA Foundation or Graduate/PG or Qualified CA Inter or CS Foundation",
+    overview: `CMA Intermediate is the second stage of CMA (India) and is where students build depth across accounting, taxation, laws, management, and finance. At Vyasa Institute, our CMA Intermediate coaching is structured group-wise with a clear preparation roadmap.
+
+We emphasize conceptual clarity and exam writing skills through problem-solving sessions, practice questions, case-based discussions, and periodic tests. Our revision cycles and mock exams are designed to prepare students for the pressure and pattern of ICMAI exams (subjective).`,
+    highlights: [
+      "Group-wise coaching with flexible planning",
+      "Subjective exam preparation + answer writing",
+      "Regular tests, revision tests, and mocks",
+      "Problem-solving and practical application focus",
+      "Mentoring and doubt support throughout",
+      "Updated coverage as per ICMAI syllabus",
+    ],
+    curriculum: [
+      { paper: "Group I", name: "Business Laws & Ethics", topics: "Business Law, Corporate Compliance, Ethics" },
+      { paper: "Group I", name: "Financial Accounting", topics: "Accounting Standards, Company Accounts, Reporting" },
+      { paper: "Group I", name: "Direct & Indirect Taxation", topics: "Income Tax Basics, GST Concepts, Compliance" },
+      { paper: "Group I", name: "Cost Accounting", topics: "Costing Methods, Marginal Costing, Budgeting" },
+      { paper: "Group II", name: "Operational Management & Strategic Management", topics: "Operations, Strategy, Decision Models" },
+      { paper: "Group II", name: "Corporate Accounting & Auditing", topics: "Corporate Accounts, Audit Basics, Assurance" },
+      { paper: "Group II", name: "Financial Management & Business Data Analytics", topics: "FM Concepts, Working Capital, Analytics Basics" },
+      { paper: "Group II", name: "Management Accounting", topics: "Performance Measurement, Decision Making, Control" },
+    ],
+    faqs: [
+      { q: "Can I enroll for one group at a time?", a: "Yes. You can enroll group-wise depending on your preparation plan." },
+      { q: "When are CMA Intermediate exams conducted?", a: "CMA exams are generally held in June and December each year." },
+      { q: "What is the passing criteria for CMA Intermediate?", a: "Minimum 40% in each subject and 50% in aggregate across papers for the group." },
+      { q: "Do you help with revision and mocks?", a: "Yes. We run structured revision cycles and mock exams aligned to ICMAI pattern." },
+      { q: "Is the coaching suitable for working students?", a: "Yes. We support flexible batch timings where possible." },
+    ],
+    results: { passRate: "78%+", rankers: 3, topRank: "AIR 7" },
+    relatedCourses: ["cma-foundation", "cma-final", "cma-course"],
+  },
+  {
+    slug: "cma-final",
+    title: "CMA Final Course",
+    shortTitle: "CMA Final",
+    metaTitle: "CMA Final Coaching | Rank-Focused CMA Final Classes – Vyasa Institute",
+    metaDescription:
+      "Advanced CMA Final coaching at Vyasa Institute with intensive problem-solving, case-based learning, amendments-focused coverage, and mock exams for June/December attempts.",
+    keywords: "CMA Final coaching, CMA Final classes, ICMAI Final coaching, CMA Group III coaching, CMA Group IV coaching",
+    heroTag: "Advanced",
+    icon: "FaCrown",
+    duration: "1 Year",
+    fee: "₹40,000 onwards",
+    nextBatch: "July 2026",
+    eligibility: "CMA Intermediate and complete practical training",
+    overview: `CMA Final is the last stage of the CMA journey and demands strong conceptual depth, practical application, and disciplined exam preparation. Vyasa Institute’s CMA Final coaching is designed to help students handle advanced topics confidently, with a clear focus on problem-solving and exam performance.
+
+We cover Groups III and IV with amendments-focused updates, case-based discussion, writing practice, and rigorous mock exams. Students receive structured revision planning and mentoring support to help them stay consistent throughout the year.`,
+    highlights: [
+      "Advanced coaching for Groups III & IV",
+      "Amendments-focused coverage and updates",
+      "Case-based learning + writing practice",
+      "Rigorous mocks aligned to ICMAI pattern",
+      "Revision planning and performance tracking",
+      "Mentoring and doubt support throughout",
+    ],
+    curriculum: [
+      { paper: "Group III", name: "Corporate & Economic Laws", topics: "Corporate Law, Economic Laws, Compliance" },
+      { paper: "Group III", name: "Strategic Financial Management", topics: "Valuation, Capital Structure, Risk, Advanced FM" },
+      { paper: "Group III", name: "Direct Taxation & International Taxation", topics: "Direct Tax Advanced, International Tax, Transfer Pricing" },
+      { paper: "Group III", name: "Strategic Cost Management", topics: "Strategic Costing, Performance, Decision Models" },
+      { paper: "Group IV", name: "Cost & Management Audit", topics: "Audit Planning, Reporting, Compliance" },
+      { paper: "Group IV", name: "Corporate Financial Reporting", topics: "Advanced Reporting, Consolidation, Standards" },
+      { paper: "Group IV", name: "Indirect Tax Laws & Practice", topics: "GST Advanced, Compliance, Case Problems" },
+      { paper: "Elective", name: "Elective Paper (Choose One)", topics: "Business Valuation / Risk Management / Entrepreneurship" },
+    ],
+    faqs: [
+      { q: "What is the duration of CMA Final coaching?", a: "Typically around 1 year depending on batch schedule and exam attempt plan." },
+      { q: "Do you cover amendments and updates?", a: "Yes. We include amendments-focused sessions and updated practice for the latest syllabus." },
+      { q: "Do you conduct mock exams?", a: "Yes. We run mock exams aligned to ICMAI pattern with evaluation support." },
+      { q: "Can I enroll group-wise?", a: "Yes, subject to batch availability and your preparation plan." },
+      { q: "What support is provided during preparation?", a: "Mentoring, doubt support, and structured revision planning throughout the course." },
+    ],
+    results: { passRate: "78%+", rankers: 3, topRank: "AIR 7" },
+    relatedCourses: ["cma-intermediate", "cma-course"],
   },
   {
     slug: "acca-course",
     title: "ACCA Course",
     shortTitle: "ACCA",
-    metaTitle: "ACCA Course | ACCA Coaching – Applied Knowledge, Skills & Strategic Professional | Vyasas Studies",
+    metaTitle: "ACCA Course | ACCA Coaching – Applied Knowledge, Skills & Strategic Professional | Vyasa Institute",
     metaDescription:
-      "Complete ACCA coaching at Vyasas Studies. Applied Knowledge, Applied Skills & Strategic Professional. 13 exams + Professional Ethics module. Expert faculty, global qualification.",
+      "Complete ACCA coaching at Vyasa Institute. Applied Knowledge, Applied Skills & Strategic Professional. 13 exams + Professional Ethics module. Expert faculty, global qualification.",
     keywords: "ACCA coaching, ACCA course India, ACCA exams, Applied Knowledge ACCA, Applied Skills ACCA, Strategic Professional ACCA, ACCA classes Vijayawada",
     heroTag: "Global Qualification",
     icon: "FaGlobeAsia",
@@ -308,7 +441,7 @@ Our CMA students have an impressive track record of success, with high pass rate
     fee: "Contact for fees",
     nextBatch: "Ongoing Enrollment",
     eligibility: "10+2 / Graduation or equivalent (varies by entry point)",
-    overview: `ACCA (Association of Chartered Certified Accountants) is a globally recognized professional accounting qualification that opens doors to careers in 180+ countries. At Vyasas Studies, we offer comprehensive ACCA coaching covering all levels of the qualification journey.
+    overview: `ACCA (Association of Chartered Certified Accountants) is a globally recognized professional accounting qualification that opens doors to careers in 180+ countries. At Vyasa Institute, we offer comprehensive ACCA coaching covering all levels of the qualification journey.
 
 **Applied Knowledge**
 Your journey towards becoming a qualified accountant starts with the Applied Knowledge module which includes papers BT (F1) through to FA (F3). After passing these papers, you will progress onto the ACCA Applied Skills module.
@@ -421,9 +554,9 @@ In addition to the above 13 exams, students are required to study and sit an on-
     slug: "online-classes",
     title: "Online Live Classes",
     shortTitle: "Online Classes",
-    metaTitle: "Online CA & CMA Classes | Live Interactive Coaching – Vyasas Studies",
+    metaTitle: "Online CA & CMA Classes | Live Interactive Coaching – Vyasa Institute",
     metaDescription:
-      "Join Vyasas Studies online live classes for CA & CMA. Interactive sessions, recorded lectures, online tests, and digital study material. Learn from anywhere.",
+      "Join Vyasa Institute online live classes for CA & CMA. Interactive sessions, recorded lectures, online tests, and digital study material. Learn from anywhere.",
     keywords: "online CA classes, online CMA classes, live CA coaching, online CA Foundation, online CA Intermediate, online CA coaching India",
     heroTag: "New",
     icon: "FaLaptopCode",
@@ -431,7 +564,7 @@ In addition to the above 13 exams, students are required to study and sit an on-
     fee: "₹35,000 onwards",
     nextBatch: "Ongoing Enrollment",
     eligibility: "As per course level",
-    overview: `Vyasas Studies' Online Live Classes bring our proven classroom teaching methodology to students across India and beyond. Our online program is not a compromise — it's a complete, feature-rich learning experience designed to deliver the same results as our offline coaching, with the added convenience of learning from anywhere.
+    overview: `Vyasa Institute' Online Live Classes bring our proven classroom teaching methodology to students across India and beyond. Our online program is not a compromise — it's a complete, feature-rich learning experience designed to deliver the same results as our offline coaching, with the added convenience of learning from anywhere.
 
 Our online classes are conducted live and interactive, meaning students participate in real-time with the same faculty who teach in our physical classrooms. Live interaction ensures that doubts are cleared immediately, concepts are discussed thoroughly, and students remain engaged throughout the session. This is fundamentally different from recorded-only programs where students often lose motivation and fall behind.
 

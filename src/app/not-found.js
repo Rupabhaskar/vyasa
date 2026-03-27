@@ -52,7 +52,7 @@ export default function NotFound() {
       {/* Footer */}
       <footer className="py-6 border-t border-gray-100 text-center text-sm text-muted font-sans">
         <Link href="/" className="inline-flex items-center gap-1.5 hover:text-primary transition-colors">
-          <FaArrowLeft className="text-xs" /> Vyasas Studies
+          <FaArrowLeft className="text-xs" /> Vyasa Institute
         </Link>
       </footer>
     </div>

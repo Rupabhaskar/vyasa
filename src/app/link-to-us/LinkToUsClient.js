@@ -9,25 +9,25 @@ import PageHeader from "@/components/shared/PageHeader";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 
 const suggestedAnchors = [
-  "Vyasas Studies",
+  "Vyasa Institute",
   "CA coaching Vijayawada",
   "best CA institute India",
   "CA & CMA preparatory institute",
-  "Vyasas Studies – CA coaching",
+  "Vyasa Institute – CA coaching",
 ];
 
 const htmlSnippets = [
   {
     name: "Text link",
-    code: '<a href="https://vyasasstudies.com" target="_blank" rel="noopener">Vyasas Studies</a>',
+    code: '<a href="https://vyasasstudies.com" target="_blank" rel="noopener">Vyasa Institute</a>',
   },
   {
     name: "Text link with title",
-    code: '<a href="https://vyasasstudies.com" title="CA & CMA Coaching - Vyasas Studies" target="_blank" rel="noopener">Vyasas Studies</a>',
+    code: '<a href="https://vyasasstudies.com" title="CA & CMA Coaching - Vyasa Institute" target="_blank" rel="noopener">Vyasa Institute</a>',
   },
   {
     name: "Image + link",
-    code: '<a href="https://vyasasstudies.com" target="_blank" rel="noopener"><img src="https://vyasasstudies.com/logo.png" alt="Vyasas Studies - CA & CMA Coaching" width="200" /></a>',
+    code: '<a href="https://vyasasstudies.com" target="_blank" rel="noopener"><img src="https://vyasasstudies.com/logo.png" alt="Vyasa Institute - CA & CMA Coaching" width="200" /></a>',
   },
 ];
 
@@ -47,7 +47,7 @@ export default function LinkToUsClient() {
       <PageHeader
         tag="Partnership & Media"
         title="Link to Us"
-        description="Add a link to Vyasas Studies on your website. Get logos, suggested anchor text, and ready-to-use HTML snippets."
+        description="Add a link to Vyasa Institute on your website. Get logos, suggested anchor text, and ready-to-use HTML snippets."
       />
       <Breadcrumbs items={crumbs} />
 
@@ -116,7 +116,7 @@ export default function LinkToUsClient() {
                 </h2>
                 <div className="flex flex-wrap gap-6 items-center p-6 bg-slate-50 rounded-2xl">
                   <div className="p-4 bg-white rounded-xl shadow-sm">
-                    <Image src="/logo.png" alt="Vyasas Studies" width={200} height={50} className="h-12 w-auto" />
+                    <Image src="/logo.png" alt="Vyasa Institute" width={200} height={50} className="h-12 w-auto" />
                     <p className="text-xs text-muted mt-2">Light background</p>
                   </div>
                   <p className="text-sm text-muted">

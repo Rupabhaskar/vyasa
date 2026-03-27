@@ -16,7 +16,7 @@ const reasons = [
   {
     icon: <FaTrophy />,
     title: "Proven Results, Year After Year",
-    desc: "Consistent All India Ranks, 98% pass rates, and hundreds of successful CA/CMA professionals. Results parents can trust.",
+    desc: "Consistent of High Pass Percentage and Rank, 98% pass rates, and hundreds of successful CA/CMA professionals. Results parents can trust.",
   },
   {
     icon: <FaHeartbeat />,
@@ -40,7 +40,7 @@ export default function ParentsTrustSection() {
             </h2>
             <div className="w-12 h-[2px] bg-gradient-to-r from-gold to-transparent mb-6" />
             <p className="text-muted text-[15px] leading-relaxed font-sans mb-8 max-w-md">
-              {"We understand that choosing an institute for your child is one of the most important decisions you\u2019ll make. Here\u2019s why thousands of parents have placed their trust in Vyasas Studies."}
+              {"We understand that choosing an institute for your child is one of the most important decisions you\u2019ll make. Here\u2019s why thousands of parents have placed their trust in Vyasa Institute."}
             </p>
             <div className="flex items-center gap-4 text-xs text-muted/50 font-sans">
               <div className="flex -space-x-2">

@@ -3,12 +3,13 @@ import { motion } from "framer-motion";
 import { FaChalkboardTeacher, FaClipboardCheck, FaUsersCog, FaClock, FaBookReader, FaMedal } from "react-icons/fa";
 
 const features = [
-  { icon: <FaBookReader />, title: "Structured Programs", desc: "CA & CMA coaching under one roof. Clear pathway from Foundation to Final with continuous support.", stat: "4-in-1", statLabel: "Structured Model" },
-  { icon: <FaClipboardCheck />, title: "Daily Tests & Assessments", desc: "Rigorous daily testing system that keeps students exam-ready at all times. Consistent practice builds confidence.", stat: "365", statLabel: "Tests Per Year" },
-  { icon: <FaUsersCog />, title: "Personal Mentoring", desc: "Every student is assigned a dedicated mentor who tracks progress, addresses weaknesses, and provides guidance.", stat: "1:15", statLabel: "Mentor Ratio" },
-  { icon: <FaClock />, title: "Structured Study Hours", desc: "Disciplined study schedule with monitored study hours ensuring students develop consistency and focus.", stat: "10+", statLabel: "Hours Daily" },
-  { icon: <FaChalkboardTeacher />, title: "Expert Faculty", desc: "Learn from qualified CAs, CMAs, and professors with decades of experience and a passion for student success.", stat: "20+", statLabel: "Expert Teachers" },
-  { icon: <FaMedal />, title: "Proven Track Record", desc: "Consistent All India Ranks and the highest pass percentages in the region, year after year.", stat: "98%", statLabel: "Pass Rate" },
+  { icon: <FaBookReader />, title: "Structured Programs & Study Hours", desc: "CA & CMA coaching with a clear path from Foundation to Final, supported by structured study plans and disciplined study hours." },
+  { icon: <FaClipboardCheck />, title: "Exams", desc: "Weekend Exams and Consolidated Grand Tests will make the Students confort at all times consistent practice builds confidence."},
+  { icon: <FaUsersCog />, title: "Personal Mentoring", desc: "Every student is assigned a dedicated mentor who tracks progress, addresses weaknesses, and provides guidance."},
+  { icon: <FaChalkboardTeacher />, title: "Expert Faculty", desc: "Learn from qualified CAs, CMAs, and professors with decades of experience and a passion for student success." },
+  { icon: <FaMedal />, title: "Proven Track Record", desc: "Consistent All India Ranks and the highest pass percentages in the region, year after year."  },
+  { icon: <FaMedal />, title: "Specialized Materials", desc: "Our Materials covers board materials MTP's and RTP's Previous Years Question Papers and Self Prepared Question covering all conceptual information."},
+
 ];
 
 export default function WhyChooseSection() {
@@ -25,9 +26,9 @@ export default function WhyChooseSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="text-center mb-20">
           <span className="section-label text-gold/70 mb-4 inline-block">The Vyasas Advantage</span>
-          <h2 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white tracking-tight mb-4">Why Choose Us</h2>
+          <h2 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white tracking-tight mb-4">Why Vyasa ?</h2>
           <div className="royal-divider mb-6" />
-          <p className="text-blue-200/40 max-w-xl mx-auto text-[15px] leading-relaxed font-sans">What makes Vyasas Studies different from every other coaching institute.</p>
+          <p className="text-blue-200/40 max-w-xl mx-auto text-[15px] leading-relaxed font-sans">What makes Vyasa Institute different from every other coaching institute.</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -43,10 +44,6 @@ export default function WhyChooseSection() {
             >
               <div className="flex items-start justify-between mb-5">
                 <div className="w-11 h-11 rounded-xl bg-gold/[0.08] border border-gold/10 flex items-center justify-center text-[16px] text-gold/80 group-hover:text-gold transition-colors">{f.icon}</div>
-                <div className="text-right">
-                  <div className="text-xl font-heading font-bold text-gold/80 tracking-tight">{f.stat}</div>
-                  <div className="text-[9px] text-blue-300/30 uppercase tracking-[0.15em] font-sans">{f.statLabel}</div>
-                </div>
               </div>
               <h3 className="text-[16px] font-heading font-semibold text-white mb-2 group-hover:text-gold transition-colors">{f.title}</h3>
               <p className="text-blue-200/35 text-[13px] leading-relaxed font-sans">{f.desc}</p>

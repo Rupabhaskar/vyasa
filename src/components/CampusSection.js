@@ -5,15 +5,15 @@ import { FaTimes, FaExpand, FaBuilding, FaBook, FaDesktop, FaMicrophone, FaLight
 
 const facilities = [
   { title: "Smart Classrooms", icon: <FaLightbulb />, color: "from-primary-dark to-[#0c1d4a]" },
-  { title: "Digital Library", icon: <FaBook />, color: "from-[#0c1d4a] to-primary" },
-  { title: "Computer Lab", icon: <FaDesktop />, color: "from-primary to-accent" },
+  // { title: "Digital Library", icon: <FaBook />, color: "from-[#0c1d4a] to-primary" },
+  // { title: "Computer Lab", icon: <FaDesktop />, color: "from-primary to-accent" },
   { title: "Seminar Hall", icon: <FaMicrophone />, color: "from-[#091638] to-primary-dark" },
   { title: "Study Rooms", icon: <FaClock />, color: "from-primary-dark to-[#091638]" },
   { title: "Hostel Facility", icon: <FaBuilding />, color: "from-[#0c1d4a] to-primary-dark" },
 ];
 
 const dailySchedule = [
-  { time: "6:00 AM", activity: "Morning Study" },
+  
   { time: "8:00 AM", activity: "Classes Begin" },
   { time: "1:00 PM", activity: "Lunch Break" },
   { time: "2:00 PM", activity: "Practice Sessions" },

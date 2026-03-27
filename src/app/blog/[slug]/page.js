@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
       url,
       publishedTime: post.date,
       authors: [post.author],
-      siteName: "Vyasas Studies",
+      siteName: "Vyasa Institute",
       locale: "en_IN",
       images: [
         {

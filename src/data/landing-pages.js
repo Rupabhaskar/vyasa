@@ -1,10 +1,10 @@
 export const landingPages = [
   {
     slug: "ca-coaching-admissions-2026",
-    metaTitle: "CA Coaching Admissions 2026 | Limited Seats – Vyasas Studies",
+    metaTitle: "CA Coaching Admissions 2026 | Limited Seats – Vyasa Institute",
     metaDescription:
-      "Admissions open for CA Foundation, Inter & Final coaching at Vyasas Studies. Expert faculty, proven results with All India Ranks. Apply now — limited seats.",
-    keywords: "CA admissions 2026, CA coaching admissions, CA Foundation admission, Vyasas Studies admission",
+      "Admissions open for CA Foundation, Inter & Final coaching at Vyasa Institute. Expert faculty, proven results with All India Ranks. Apply now — limited seats.",
+    keywords: "CA admissions 2026, CA coaching admissions, CA Foundation admission, Vyasa Institute admission",
     headline: "CA Admissions 2026 Are Open",
     subheadline: "Join the institute that has produced 50+ All India Rank holders. Limited seats available for the upcoming batch.",
     benefits: [
@@ -16,7 +16,7 @@ export const landingPages = [
       { title: "Placement Support", desc: "Articleship placement assistance with top CA firms across India." },
     ],
     testimonials: [
-      { name: "Priya Sharma", rank: "AIR 1 – CA Final", text: "Vyasas Studies transformed my preparation completely. The faculty's approach to teaching helped me secure the top rank." },
+      { name: "Priya Sharma", rank: "AIR 1 – CA Final", text: "Vyasa Institute transformed my preparation completely. The faculty's approach to teaching helped me secure the top rank." },
       { name: "Karthik Rajan", rank: "AIR 5 – CA Inter", text: "The integrated coaching model is brilliant. Personal mentorship made all the difference in my journey." },
       { name: "Divya Sharma", rank: "AIR 8 – CA Foundation", text: "Starting my CA journey at Vyasas was the best decision. The structured preparation and expert faculty were invaluable." },
     ],
@@ -25,10 +25,10 @@ export const landingPages = [
   },
   {
     slug: "free-ca-counseling",
-    metaTitle: "Free CA Career Counseling | Book Your Session – Vyasas Studies",
+    metaTitle: "Free CA Career Counseling | Book Your Session – Vyasa Institute",
     metaDescription:
-      "Book a free one-on-one CA career counseling session with experts at Vyasas Studies. Get personalized guidance on your CA journey.",
-    keywords: "free CA counseling, CA career guidance, CA counseling session, Vyasas Studies counseling",
+      "Book a free one-on-one CA career counseling session with experts at Vyasa Institute. Get personalized guidance on your CA journey.",
+    keywords: "free CA counseling, CA career guidance, CA counseling session, Vyasa Institute counseling",
     headline: "Free CA Career Counseling",
     subheadline: "Not sure about your CA journey? Our expert counselors will help you plan the perfect path — completely free of charge.",
     benefits: [

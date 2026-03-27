@@ -6,7 +6,7 @@ export function CourseSchema({ course }) {
     description: course.metaDescription,
     provider: {
       "@type": "Organization",
-      name: "Vyasas Studies",
+      name: "Vyasa Institute",
       sameAs: "https://vyasasstudies.com",
     },
     hasCourseInstance: {
@@ -37,7 +37,7 @@ export function ArticleSchema({ post }) {
     },
     publisher: {
       "@type": "Organization",
-      name: "Vyasas Studies",
+      name: "Vyasa Institute",
       url: "https://vyasasstudies.com",
     },
   };
@@ -53,7 +53,7 @@ export function LocalBusinessSchema({ location }) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
-    name: `Vyasas Studies ${location.city}`,
+    name: `Vyasa Institute ${location.city}`,
     description: location.metaDescription,
     address: {
       "@type": "PostalAddress",

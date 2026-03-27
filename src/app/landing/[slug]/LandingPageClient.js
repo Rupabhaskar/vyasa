@@ -19,7 +19,7 @@ export default function LandingPageClient({ page }) {
             className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6"
           >
             <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
-            <span className="text-gold-light text-sm font-medium">Vyasas Studies</span>
+            <span className="text-gold-light text-sm font-medium">Vyasa Institute</span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
@@ -60,7 +60,7 @@ export default function LandingPageClient({ page }) {
       {/* Benefits */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-4">Why Choose Vyasas Studies?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-4">Why Choose Vyasa Institute?</h2>
           <p className="text-muted text-center mb-12 max-w-2xl mx-auto">Everything you need for a successful CA journey, all under one roof.</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {page.benefits.map((b, i) => (

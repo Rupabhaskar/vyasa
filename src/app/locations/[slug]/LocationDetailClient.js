@@ -144,7 +144,7 @@ export default function LocationDetailClient({ location }) {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title={`Vyasas Studies ${location.city} Map`}
+                  title={`Vyasa Institute ${location.city} Map`}
                 />
               </div>
             </motion.div>

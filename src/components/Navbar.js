@@ -250,7 +250,7 @@ export default function Navbar() {
             >
               <Image
                 src="/logo.png"
-                alt="Vyasas Studies - Institute for Professional Courses"
+                alt="Vyasa Institute - Institute for Professional Courses"
                 width={280}
                 height={64}
                 className="h-full w-auto object-contain object-left"

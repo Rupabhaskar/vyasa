@@ -2,9 +2,9 @@ import PageLayout from "@/components/shared/PageLayout";
 import LinkToUsClient from "./LinkToUsClient";
 
 export const metadata = {
-  title: "Link to Us | Media Kit & Partnership – Vyasas Studies",
+  title: "Link to Us | Media Kit & Partnership – Vyasa Institute",
   description:
-    "Link to Vyasas Studies. Get logos, suggested anchor text, and HTML snippets for your website. India's premier CA & CMA preparatory institute.",
+    "Link to Vyasa Institute. Get logos, suggested anchor text, and HTML snippets for your website. India's premier CA & CMA preparatory institute.",
   robots: { index: true, follow: true },
 };
 

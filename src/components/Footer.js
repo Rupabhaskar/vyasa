@@ -40,7 +40,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center mb-5" onClick={(e) => scrollToTopIfHome(e, pathname)}>
               <Image
                 src="/logo.png"
-                alt="Vyasas Studies - Institute for Professional Courses"
+                alt="Vyasa Institute - Institute for Professional Courses"
                 width={280}
                 height={74}
                 className="h-24 w-auto object-contain object-left brightness-0 invert"
@@ -90,8 +90,8 @@ export default function Footer() {
             <h3 className="font-heading font-semibold text-[15px] mb-5 text-white/80">Contact</h3>
             <div className="space-y-2.5 text-blue-200/30 text-[13px] font-sans mb-6">
               <p>Vijayawada & Guntur, AP, India</p>
-              <p>+91 98765 43210</p>
-              <p>info@vyasasstudies.com</p>
+              <p>+91 9133660500</p>
+              <p>vyasaprofessionals@gmail.com</p>
               <p className="text-blue-300/20 text-[11px]">Mon - Sat: 8:00 AM - 8:00 PM</p>
             </div>
             <h4 className="font-sans font-semibold text-[11px] mb-3 text-white/40 uppercase tracking-wider">Our Centers</h4>
@@ -105,7 +105,7 @@ export default function Footer() {
 
       <div className="border-t border-white/[0.04]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-blue-300/20 text-[12px] font-sans">{"\u00A9"} 2026 Vyasas Studies. All rights reserved.</p>
+          <p className="text-blue-300/20 text-[12px] font-sans">{"\u00A9"} 2026 Vyasa Institute. All rights reserved.</p>
           <p className="text-blue-300/20 text-[12px] font-sans">Building future Chartered Accountants since 2010</p>
         </div>
       </div>

@@ -173,7 +173,7 @@ export default function ResultsPageClient() {
 
       <CTAForm
         heading="Write Your Own Success Story"
-        subheading="Join Vyasas Studies and become the next rank holder."
+        subheading="Join Vyasa Institute and become the next rank holder."
       />
     </PageLayout>
   );

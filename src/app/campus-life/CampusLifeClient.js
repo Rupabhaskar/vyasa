@@ -84,7 +84,7 @@ export default function CampusLifeClient() {
     <PageLayout>
       <PageHeader
         tag="World-Class Infrastructure"
-        title="Campus Life at Vyasas Studies"
+        title="Campus Life at Vyasa Institute"
         description="A purpose-built learning environment designed to help you focus, grow, and succeed."
       />
       <Breadcrumbs items={crumbs} />

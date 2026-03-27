@@ -94,7 +94,7 @@ export default function TechnicalHealthClient() {
       <div className="max-w-2xl mx-auto">
         <div className="mb-10">
           <Link href="/" className="text-primary hover:text-gold text-sm font-medium">
-            ← Back to Vyasas Studies
+            ← Back to Vyasa Institute
           </Link>
         </div>
 

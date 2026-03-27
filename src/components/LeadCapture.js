@@ -19,9 +19,9 @@ export default function LeadCapture() {
 
             <div className="space-y-5">
               {[
-                { icon: <FaPhoneAlt />, label: "Call Us", value: "+91 98765 43210" },
-                { icon: <FaEnvelope />, label: "Email", value: "info@vyasasstudies.com" },
-                { icon: <FaMapMarkerAlt />, label: "Locations", value: "Vijayawada & Guntur, AP" },
+                { icon: <FaPhoneAlt />, label: "Call Us", value: "+91 9133660500" },
+                { icon: <FaEnvelope />, label: "Email", value: "vyasaprofessionals@gmail.com" },
+                { icon: <FaMapMarkerAlt />, label: "Locations", value: "Vijayawada, AP" },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-4 group">
                   <div className="w-10 h-10 rounded-xl bg-primary-dark/[0.03] text-primary-dark/40 flex items-center justify-center text-[14px] group-hover:bg-gold/10 group-hover:text-gold transition-all duration-300">{item.icon}</div>

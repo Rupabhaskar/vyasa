@@ -3,8 +3,8 @@ import PageHeader from "@/components/shared/PageHeader";
 import OurTeamClient from "./OurTeamClient";
 
 export const metadata = {
-  title: "Our Team | Vyasas Studies",
-  description: "Meet the expert faculty and leadership team at Vyasas Studies. Experienced CAs, CMAs, and educators committed to student success.",
+  title: "Our Team | Vyasa Institute",
+  description: "Meet the expert faculty and leadership team at Vyasa Institute. Experienced CAs, CMAs, and educators committed to student success.",
 };
 
 export default function OurTeamPage() {

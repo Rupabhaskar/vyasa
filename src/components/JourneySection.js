@@ -3,11 +3,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useCallback, useRef } from "react";
 import { FaShieldAlt, FaBookOpen, FaAward, FaCrown, FaCheck, FaArrowRight, FaChevronRight } from "react-icons/fa";
 
-const BLINK_DURATION = 350; // ms per blink (opacity cycle)
-const BLINK_COUNT = 5;
-const INTERVAL = BLINK_COUNT * BLINK_DURATION; // advance after 3 blinks
+// const BLINK_DURATION = 350; // ms per blink (opacity cycle)
+// const BLINK_COUNT = 5;
+// const INTERVAL = BLINK_COUNT * BLINK_DURATION; // advance after 3 blinks
 const CIRCLE_R = 26;
 const CIRCLE_C = 2 * Math.PI * CIRCLE_R;
+
+const TOTAL_DURATION = 5000; // total per step (5s)
+const BLINK_COUNT = 5;
+const BLINK_DURATION = TOTAL_DURATION / BLINK_COUNT; // 1000ms
+const INTERVAL = TOTAL_DURATION;
+
+
 
 const steps = [
   {
