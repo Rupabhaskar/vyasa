@@ -5,12 +5,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
-import { FaChevronDown, FaArrowRight, FaCalculator, FaFileAlt, FaGlobeAsia } from "react-icons/fa";
+import { FaChevronDown, FaArrowRight, FaCalculator, FaFileAlt } from "react-icons/fa";
 
 const courseItems = [
   { label: "CA", href: "/courses", icon: <FaCalculator /> },
   { label: "CMA Course", href: "/courses/cma-course", icon: <FaFileAlt /> },
-  { label: "ACCA Course", href: "/courses/acca-course", icon: <FaGlobeAsia /> },
 ];
 
 const navLinks = [
@@ -18,7 +17,7 @@ const navLinks = [
   { label: "Course", href: "#", mega: "courses" },
   { label: "Upcoming Batches", href: "/upcoming-batches" },
   { label: "Blog", href: "/blog" },
-  { label: "Our Team", href: "/our-team" },
+  { label: "Our Team", href: "/#faculty" },
   { label: "Our Gallery", href: "/our-gallery" },
   { label: "Contact", href: "/#contact" },
 ];
@@ -110,8 +109,6 @@ function CourseDropdown({ pathname }) {
             const isActive =
               item.href === "/courses/cma-course"
                 ? pathname.startsWith("/courses/cma-course")
-                : item.href === "/courses/acca-course"
-                ? pathname.startsWith("/courses/acca-course")
                 : item.label === "CA"
                 ? pathname === "/courses" || pathname.startsWith("/courses/ca-")
                 : false;
@@ -200,16 +197,16 @@ export default function Navbar() {
   return (
     <>
     <motion.div
-      className="fixed top-0 left-0 right-0 z-50"
+      className="fixed top-0 left-0 right-[-100px] z-50"
       initial={{ y: 0 }}
       animate={{ y: navbarVisible ? 0 : -NAVBAR_HEIGHT }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
     >
-      {/* Top banner */}
-      <div className="bg-gradient-to-r from-primary-dark via-[#0c1d4a] to-primary-dark text-white text-center py-2.5 text-[11px] md:text-xs font-medium tracking-[0.15em] uppercase relative overflow-hidden">
+      {/* Top banner
+      <div className="bg-gradient-to-r from-primary-dark via-primary-dark to-primary-dark text-white text-center py-2.5 text-[11px] md:text-xs font-medium tracking-[0.15em] uppercase relative overflow-hidden">
         <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.04),transparent)] animate-shimmer" />
         <div className="relative z-10 flex items-center justify-center gap-3">
-          <span className="inline-block w-1.5 h-1.5 bg-gold rounded-full animate-pulse shadow-[0_0_8px_rgba(201,168,76,0.6)]" />
+          <span className="inline-block w-1.5 h-1.5 bg-gold rounded-full animate-pulse shadow-[0_0_8px_rgba(212,229,222,0.55)]" />
           Admissions Open 2026-27
           <span className="text-white/30">|</span>
           Limited Seats
@@ -218,14 +215,76 @@ export default function Navbar() {
             Apply Now
           </Link>
         </div>
-      </div>
+      </div> */}
+
+      {/* Top marquee banner */}
+<div className="bg-primary-dark text-white text-[12px] md:text-xs font-medium uppercase overflow-hidden">
+
+<div className="marquee">
+  <div className="track">
+
+    {/* Item */}
+    <div className="item ">
+      <span className="new-star">NEW</span>
+      <span>Admissions Open</span>
+
+      <span className="divider">|</span>
+      <span>Limited Seats</span>
+
+      <span className="divider">|</span>
+
+      <Link
+        href="/landing/ca-coaching-admissions-2026"
+        className="apply"
+      >
+        Apply Now
+      </Link>
+
+      <span className="new-star ml-[500px]">NEW</span>
+      <span>Admissions Open</span>
+
+      <span className="divider">|</span>
+      <span>Limited Seats</span>
+
+      <span className="divider">|</span>
+
+      <Link
+        href="/landing/ca-coaching-admissions-2026"
+        className="apply"
+      >
+        Apply Now
+      </Link>
+    </div>
+
+    {/* Duplicate for smooth infinite scroll */}
+    <div className="item">
+      <span className="new-star">NEW</span>
+      <span>Admissions Open</span>
+
+      <span className="divider">|</span>
+      <span>Limited Seats</span>
+
+      <span className="divider">|</span>
+
+      <Link
+        href="/landing/ca-coaching-admissions-2026"
+        className="apply"
+      >
+        Apply Now
+      </Link>
+    </div>
+
+  </div>
+</div>
+
+</div>
 
       {/* Main navbar */}
       <motion.nav
         className={`sticky top-0 transition-all duration-500 ${
           scrolled
-            ? "navbar-blur shadow-[0_4px_24px_rgba(0,0,0,0.06)] border-b border-gray-100/80"
-            : "bg-white/98 backdrop-blur-md border-b border-gray-100/60"
+            ? "navbar-blur shadow-[0_4px_24px_rgba(0,0,0,0.06)] border-b border-gray-200/80"
+            : "bg-background/98 backdrop-blur-md border-b border-gray-200/60"
         }`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -279,7 +338,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <Link
               href="/landing/ca-coaching-admissions-2026"
-              className="hidden lg:inline-flex items-center gap-2.5 bg-gradient-to-r from-gold to-gold-light text-primary-dark pl-6 pr-5 py-3 rounded-full text-[13px] font-bold shadow-[0_4px_16px_rgba(201,168,76,0.35)] hover:shadow-[0_8px_28px_rgba(201,168,76,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
+              className="hidden lg:inline-flex items-center gap-2.5 bg-gradient-to-r from-gold to-gold-light text-primary-dark pl-6 pr-5 py-3 rounded-full text-[13px] font-bold shadow-[0_4px_16px_rgba(158,191,176,0.45)] hover:shadow-[0_8px_28px_rgba(158,191,176,0.55)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
             >
               Apply Now
               <span className="w-6 h-6 rounded-full bg-primary-dark/10 flex items-center justify-center group-hover:bg-primary-dark/15 transition-colors">
@@ -315,7 +374,7 @@ export default function Navbar() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-              className="lg:hidden bg-white border-t border-gray-100 overflow-hidden"
+              className="lg:hidden bg-background border-t border-gray-200 overflow-hidden"
             >
               <div className="py-4 px-6 max-h-[calc(100vh-140px)] overflow-y-auto">
                 {navLinks.map((link, idx) => {
@@ -394,7 +453,7 @@ export default function Navbar() {
                 })}
 
                 <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} className="pt-6 mt-4 border-t border-gray-100">
-                  <Link href="/landing/ca-coaching-admissions-2026" className="flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-light text-primary-dark py-4 rounded-xl text-[14px] font-bold shadow-[0_4px_20px_rgba(201,168,76,0.3)] hover:shadow-[0_6px_24px_rgba(201,168,76,0.4)] transition-all">
+                  <Link href="/landing/ca-coaching-admissions-2026" className="flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-light text-primary-dark py-4 rounded-xl text-[14px] font-bold shadow-[0_4px_20px_rgba(158,191,176,0.4)] hover:shadow-[0_6px_24px_rgba(158,191,176,0.5)] transition-all">
                     Apply Now
                     <FaArrowRight className="text-xs" />
                   </Link>

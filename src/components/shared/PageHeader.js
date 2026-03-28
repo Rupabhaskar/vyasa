@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function PageHeader({ tag, title, description, align = "center" }) {
   return (
-    <section className="relative bg-gradient-to-br from-primary-dark via-primary to-accent py-24 md:py-32 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light py-24 md:py-32 overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-72 h-72 bg-gold/10 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-10 right-10 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-float-delay" />
@@ -31,7 +31,7 @@ export default function PageHeader({ tag, title, description, align = "center" }
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-lg md:text-xl text-blue-200 leading-relaxed max-w-3xl mx-auto"
+            className="text-lg md:text-xl text-emerald-100 leading-relaxed max-w-3xl mx-auto"
           >
             {description}
           </motion.p>

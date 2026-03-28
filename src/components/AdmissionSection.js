@@ -13,7 +13,7 @@ export default function AdmissionSection() {
   return (
     <section id="admissions" className="py-28 relative overflow-hidden">
       <div className="absolute inset-0 bg-primary-dark" />
-      <div className="absolute inset-0 bg-gradient-to-br from-[#060e1f]/95 via-primary-dark/90 to-[#091638]/95" />
+      <div className="absolute inset-0 bg-gradient-to-br from-surface-deep/95 via-primary-dark/90 to-surface-deep-2/95" />
       <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='white'/%3E%3C/svg%3E\")" }} />
 
       <div className="absolute top-8 left-8 w-24 h-24 border-t border-l border-gold/[0.06] rounded-tl-2xl hidden lg:block" />
@@ -24,7 +24,7 @@ export default function AdmissionSection() {
           <span className="section-label text-gold/60 mb-4 inline-block">Get Started</span>
           <h2 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white tracking-tight mb-4">Admission Process</h2>
           <div className="royal-divider mb-6" />
-          <p className="text-blue-200/35 max-w-xl mx-auto text-[15px] leading-relaxed font-sans">A simple, transparent process to get you started on your path.</p>
+          <p className="text-emerald-100/35 max-w-xl mx-auto text-[15px] leading-relaxed font-sans">A simple, transparent process to get you started on your path.</p>
         </motion.div>
 
         <div className="grid md:grid-cols-4 gap-8 relative">
@@ -37,7 +37,7 @@ export default function AdmissionSection() {
               </div>
               <span className="text-[9px] font-sans font-bold uppercase tracking-[0.2em] text-gold/30 mb-2 inline-block">Step {i + 1}</span>
               <h3 className="font-heading font-semibold text-white text-lg mb-2 group-hover:text-gold transition-colors">{step.title}</h3>
-              <p className="text-blue-200/30 text-[13px] leading-relaxed font-sans max-w-[200px] mx-auto">{step.desc}</p>
+              <p className="text-emerald-100/30 text-[13px] leading-relaxed font-sans max-w-[200px] mx-auto">{step.desc}</p>
             </motion.div>
           ))}
         </div>

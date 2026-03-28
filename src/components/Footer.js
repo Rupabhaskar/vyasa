@@ -20,7 +20,6 @@ const courseLinks = [
   { label: "CA Intermediate", href: "/courses/ca-intermediate" },
   { label: "CA Final", href: "/courses/ca-final" },
   { label: "CMA Course", href: "/courses/cma-course" },
-  { label: "ACCA Course", href: "/courses/acca-course" },
 ];
 
 const socials = [
@@ -46,12 +45,12 @@ export default function Footer() {
                 className="h-24 w-auto object-contain object-left brightness-0 invert"
               />
             </Link>
-            <p className="text-blue-200/30 text-[13px] leading-relaxed mb-6 font-sans">
+            <p className="text-emerald-100/30 text-[13px] leading-relaxed mb-6 font-sans">
               {"India\u2019s premier preparatory institute for CA & CMA. Building future leaders since 2010."}
             </p>
             <div className="flex gap-2.5">
               {socials.map((s, i) => (
-                <a key={i} href={s.href} aria-label={s.label} className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-blue-200/30 hover:bg-gold/10 hover:text-gold hover:border-gold/15 transition-all duration-300 text-sm">
+                <a key={i} href={s.href} aria-label={s.label} className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-emerald-100/30 hover:bg-gold/10 hover:text-gold hover:border-gold/15 transition-all duration-300 text-sm">
                   {s.icon}
                 </a>
               ))}
@@ -66,7 +65,7 @@ export default function Footer() {
                   <Link
                     href={link.href}
                     onClick={(e) => link.href === "/" && scrollToTopIfHome(e, pathname)}
-                    className="text-blue-200/30 hover:text-gold transition-colors text-[13px] font-sans"
+                    className="text-emerald-100/30 hover:text-gold transition-colors text-[13px] font-sans"
                   >
                     {link.label}
                   </Link>
@@ -80,7 +79,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {courseLinks.map((c, i) => (
                 <li key={i}>
-                  <Link href={c.href} className="text-blue-200/30 hover:text-gold transition-colors text-[13px] font-sans">{c.label}</Link>
+                  <Link href={c.href} className="text-emerald-100/30 hover:text-gold transition-colors text-[13px] font-sans">{c.label}</Link>
                 </li>
               ))}
             </ul>
@@ -88,16 +87,16 @@ export default function Footer() {
 
           <div>
             <h3 className="font-heading font-semibold text-[15px] mb-5 text-white/80">Contact</h3>
-            <div className="space-y-2.5 text-blue-200/30 text-[13px] font-sans mb-6">
+            <div className="space-y-2.5 text-emerald-100/30 text-[13px] font-sans mb-6">
               <p>Vijayawada & Guntur, AP, India</p>
               <p>+91 9133660500</p>
               <p>vyasaprofessionals@gmail.com</p>
-              <p className="text-blue-300/20 text-[11px]">Mon - Sat: 8:00 AM - 8:00 PM</p>
+              <p className="text-emerald-200/20 text-[11px]">Mon - Sat: 8:00 AM - 8:00 PM</p>
             </div>
             <h4 className="font-sans font-semibold text-[11px] mb-3 text-white/40 uppercase tracking-wider">Our Centers</h4>
             <ul className="space-y-2">
-              <li><Link href="/locations/ca-coaching-in-vijayawada" className="text-blue-200/30 hover:text-gold transition-colors text-[13px] font-sans">Vijayawada</Link></li>
-              <li><Link href="/locations/ca-coaching-in-guntur" className="text-blue-200/30 hover:text-gold transition-colors text-[13px] font-sans">Guntur</Link></li>
+              <li><Link href="/locations/ca-coaching-in-vijayawada" className="text-emerald-100/30 hover:text-gold transition-colors text-[13px] font-sans">Vijayawada</Link></li>
+              <li><Link href="/locations/ca-coaching-in-guntur" className="text-emerald-100/30 hover:text-gold transition-colors text-[13px] font-sans">Guntur</Link></li>
             </ul>
           </div>
         </div>
@@ -105,8 +104,8 @@ export default function Footer() {
 
       <div className="border-t border-white/[0.04]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-blue-300/20 text-[12px] font-sans">{"\u00A9"} 2026 Vyasa Institute. All rights reserved.</p>
-          <p className="text-blue-300/20 text-[12px] font-sans">Building future Chartered Accountants since 2010</p>
+          <p className="text-emerald-200/20 text-[12px] font-sans">{"\u00A9"} 2026 Vyasa Institute. All rights reserved.</p>
+          <p className="text-emerald-200/20 text-[12px] font-sans">Building future Chartered Accountants since 2010</p>
         </div>
       </div>
     </footer>

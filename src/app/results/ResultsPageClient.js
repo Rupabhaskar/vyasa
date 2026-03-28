@@ -113,14 +113,14 @@ export default function ResultsPageClient() {
                 whileHover={{ y: -6 }}
                 className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-xl transition-all group"
               >
-                <div className="bg-gradient-to-r from-primary to-accent p-6 text-white text-center relative overflow-hidden">
+                <div className="bg-gradient-to-r from-primary to-primary-light p-6 text-white text-center relative overflow-hidden">
                   <div className="absolute top-0 right-0 w-20 h-20 bg-gold/20 rounded-full -mr-6 -mt-6 group-hover:scale-150 transition-transform duration-500" />
                   <div className="relative z-10">
                     <div className="w-16 h-16 mx-auto rounded-full bg-white/20 flex items-center justify-center text-2xl font-bold text-gold border-2 border-gold/40 mb-3">
                       {holder.rank.split(" ")[1]}
                     </div>
                     <div className="text-gold-light font-bold text-lg">{holder.rank}</div>
-                    <div className="text-blue-200 text-sm">{holder.exam} – {holder.attempt}</div>
+                    <div className="text-emerald-100 text-sm">{holder.exam} – {holder.attempt}</div>
                   </div>
                 </div>
                 <div className="p-6">

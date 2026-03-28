@@ -29,7 +29,6 @@ export const metadata = {
   keywords: [
     "CA coaching",
     "CMA coaching",
-    "ACCA coaching",
     "CA Foundation",
     "CA Inter",
     "CA Final",

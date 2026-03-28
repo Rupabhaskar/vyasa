@@ -16,7 +16,7 @@ const journey = [
     title: "CA/CMA Foundation",
     duration: "8 Months",
     age: "18-19 years",
-    color: "from-primary to-accent",
+    color: "from-primary to-primary-light",
     description:
       "The Foundation level tests your grasp of fundamental concepts across accounting, law, mathematics, and economics. Our comprehensive coaching covers all 4 papers with regular testing and doubt clearing sessions to ensure you're thoroughly prepared.",
     whatYouLearn: [
@@ -215,10 +215,10 @@ export default function StudentJourneyClient() {
       </section>
 
       {/* Duration overview */}
-      <section className="py-16 bg-gradient-to-r from-primary to-accent text-white">
+      <section className="py-16 bg-gradient-to-r from-primary to-primary-light text-white">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">Total Journey Duration</h2>
-          <p className="text-blue-200 mb-8">From Class 11 to becoming a qualified CA — approximately 5-7 years</p>
+          <p className="text-emerald-100 mb-8">From Class 11 to becoming a qualified CA — approximately 5-7 years</p>
           <div className="flex flex-wrap justify-center gap-4">
             {journey.slice(0, 4).map((step, i) => (
               <div key={i} className="flex items-center gap-2">

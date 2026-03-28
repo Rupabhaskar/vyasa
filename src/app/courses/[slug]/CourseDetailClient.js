@@ -55,7 +55,7 @@ function CMAStagesTable({ stages }) {
         >
           <table className="w-full bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
             <thead>
-              <tr className="bg-gradient-to-r from-primary to-accent text-white">
+              <tr className="bg-gradient-to-r from-primary to-primary-light text-white">
                 <th className="text-left px-6 py-4 font-semibold text-sm" />
                 {stages.map((s) => (
                   <th key={s.stage} className="text-left px-6 py-4 font-bold text-base">
@@ -114,7 +114,7 @@ function CMAStagesTable({ stages }) {
               transition={{ delay: idx * 0.1 }}
               className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden"
             >
-              <div className="bg-gradient-to-r from-primary to-accent px-6 py-4">
+              <div className="bg-gradient-to-r from-primary to-primary-light px-6 py-4">
                 <h3 className="text-lg font-bold text-white">{s.stage}</h3>
               </div>
               <div className="p-6 space-y-4">
@@ -146,76 +146,6 @@ function CMAStagesTable({ stages }) {
             </motion.div>
           ))}
         </div>
-      </div>
-    </section>
-  );
-}
-
-function ACCAProgressionSection({ progression, examRules }) {
-  return (
-    <section className="py-20 bg-slate-50">
-      <div className="max-w-5xl mx-auto px-6">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-3xl font-bold text-primary text-center mb-4"
-        >
-          ACCA Progression Chart
-        </motion.h2>
-        <p className="text-muted text-center mb-12 max-w-2xl mx-auto">
-          Your path from Applied Knowledge to Strategic Professional.
-        </p>
-
-        <div className="space-y-10">
-          {progression.map((level, idx) => (
-            <motion.div
-              key={level.module}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden"
-            >
-              <div className="bg-gradient-to-r from-primary to-accent px-6 py-4">
-                <h3 className="text-lg font-bold text-white">{level.module}</h3>
-              </div>
-              <div className="p-6">
-                <p className="text-muted mb-6">{level.description}</p>
-                <div className="flex flex-wrap gap-3">
-                  {level.papers.map((p) => (
-                    <div
-                      key={p.code}
-                      className="flex items-center gap-2 bg-primary/5 border border-primary/10 rounded-lg px-4 py-3"
-                    >
-                      <span className="font-bold text-primary text-sm">{p.code}</span>
-                      <span className="text-muted text-sm">{p.name}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {examRules && examRules.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="mt-12 bg-white rounded-2xl border border-gray-100 p-8"
-          >
-            <h3 className="text-xl font-bold text-primary mb-6">Exam Rules & Guidelines</h3>
-            <ul className="space-y-3">
-              {examRules.map((rule, i) => (
-                <li key={i} className="flex items-start gap-3 text-muted">
-                  <span className="text-gold mt-1">•</span>
-                  <span>{rule}</span>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        )}
       </div>
     </section>
   );
@@ -277,11 +207,6 @@ export default function CourseDetailClient({ course }) {
 
       {/* CMA Stages Table — only for CMA course */}
       {course.cmaStages && <CMAStagesTable stages={course.cmaStages} />}
-
-      {/* ACCA Progression — only for ACCA course */}
-      {course.accaProgression && (
-        <ACCAProgressionSection progression={course.accaProgression} examRules={course.accaExamRules} />
-      )}
 
       {/* Highlights */}
       <section className="py-20 bg-slate-50">
@@ -359,23 +284,23 @@ export default function CourseDetailClient({ course }) {
       </section>
 
       {/* Results Strip */}
-      <section className="py-16 bg-gradient-to-r from-primary to-accent">
+      <section className="py-16 bg-gradient-to-r from-primary to-primary-light">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid grid-cols-3 gap-8 text-center text-white">
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <FaChartLine className="text-3xl text-gold mx-auto mb-3" />
               <div className="text-3xl font-bold">{course.results.passRate}</div>
-              <div className="text-blue-200 text-sm mt-1">Pass Rate</div>
+              <div className="text-emerald-100 text-sm mt-1">Pass Rate</div>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
               <FaTrophy className="text-3xl text-gold mx-auto mb-3" />
               <div className="text-3xl font-bold">{course.results.topRank}</div>
-              <div className="text-blue-200 text-sm mt-1">Best Rank</div>
+              <div className="text-emerald-100 text-sm mt-1">Best Rank</div>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}>
               <FaMedal className="text-3xl text-gold mx-auto mb-3" />
               <div className="text-3xl font-bold">{course.results.rankers}</div>
-              <div className="text-blue-200 text-sm mt-1">Rank Holders</div>
+              <div className="text-emerald-100 text-sm mt-1">Rank Holders</div>
             </motion.div>
           </div>
         </div>

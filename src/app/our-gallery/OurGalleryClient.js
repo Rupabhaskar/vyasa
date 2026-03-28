@@ -5,11 +5,11 @@ import { FaBuilding, FaBook, FaDesktop, FaMicrophone, FaLightbulb, FaClock } fro
 
 const galleryItems = [
   { title: "Smart Classrooms", icon: <FaLightbulb />, color: "from-primary-dark to-primary" },
-  { title: "Digital Library", icon: <FaBook />, color: "from-primary to-accent" },
+  { title: "Digital Library", icon: <FaBook />, color: "from-primary to-primary-light" },
   { title: "Computer Lab", icon: <FaDesktop />, color: "from-accent to-primary-light" },
-  { title: "Seminar Hall", icon: <FaMicrophone />, color: "from-[#091638] to-primary-dark" },
-  { title: "Study Rooms", icon: <FaClock />, color: "from-primary-dark to-[#091638]" },
-  { title: "Campus View", icon: <FaBuilding />, color: "from-[#0c1d4a] to-primary-dark" },
+  { title: "Seminar Hall", icon: <FaMicrophone />, color: "from-surface-deep-2 to-primary-dark" },
+  { title: "Study Rooms", icon: <FaClock />, color: "from-primary-dark to-surface-deep-2" },
+  { title: "Campus View", icon: <FaBuilding />, color: "from-surface-deep-2 to-primary-dark" },
 ];
 
 export default function OurGalleryClient() {

@@ -4,12 +4,12 @@ import { useState } from "react";
 import { FaTimes, FaExpand, FaBuilding, FaBook, FaDesktop, FaMicrophone, FaLightbulb, FaClock } from "react-icons/fa";
 
 const facilities = [
-  { title: "Smart Classrooms", icon: <FaLightbulb />, color: "from-primary-dark to-[#0c1d4a]" },
-  // { title: "Digital Library", icon: <FaBook />, color: "from-[#0c1d4a] to-primary" },
+  { title: "Smart Classrooms", icon: <FaLightbulb />, color: "from-primary-dark to-surface-deep-2" },
+  // { title: "Digital Library", icon: <FaBook />, color: "from-surface-deep-2 to-primary" },
   // { title: "Computer Lab", icon: <FaDesktop />, color: "from-primary to-accent" },
-  { title: "Seminar Hall", icon: <FaMicrophone />, color: "from-[#091638] to-primary-dark" },
-  { title: "Study Rooms", icon: <FaClock />, color: "from-primary-dark to-[#091638]" },
-  { title: "Hostel Facility", icon: <FaBuilding />, color: "from-[#0c1d4a] to-primary-dark" },
+  { title: "Seminar Hall", icon: <FaMicrophone />, color: "from-surface-deep-2 to-primary-dark" },
+  { title: "Study Rooms", icon: <FaClock />, color: "from-primary-dark to-surface-deep-2" },
+  { title: "Hostel Facility", icon: <FaBuilding />, color: "from-surface-deep-2 to-primary-dark" },
 ];
 
 const dailySchedule = [

@@ -336,10 +336,10 @@ The CA qualification is truly versatile. Your career path will depend on your in
   },
   {
     slug: "best-ca-coaching-in-vijayawada",
-    title: "Best CA Coaching in Vijayawada 2026 | Top Institute for CA, CMA & ACCA",
+    title: "Best CA Coaching in Vijayawada 2026 | Top Institute for CA & CMA",
     metaTitle: "Best CA Coaching in Vijayawada | CA Foundation, Inter, Final – Vyasa Institute",
     metaDescription:
-      "Looking for the best CA coaching in Vijayawada? Vyasa Institute offers CA Foundation, Inter & Final, CMA, and ACCA with expert faculty, proven All India Ranks. Visit our Vijayawada campus.",
+      "Looking for the best CA coaching in Vijayawada? Vyasa Institute offers CA Foundation, Inter & Final and CMA with expert faculty and proven All India Ranks. Visit our Vijayawada campus.",
     keywords: "CA coaching Vijayawada, best CA institute Vijayawada, CA Foundation Vijayawada, CA classes Vijayawada, CA coaching Andhra Pradesh",
     author: "Vyasa Institute",
     authorRole: "Admissions Team",
@@ -348,14 +348,14 @@ The CA qualification is truly versatile. Your career path will depend on your in
     category: "Locations",
     featured: true,
     excerpt:
-      "Vijayawada is the education hub of Andhra Pradesh. Discover why Vyasa Institute is the top choice for CA, CMA & ACCA coaching in Vijayawada — expert faculty, proven results, and a legacy of All India Ranks.",
+      "Vijayawada is the education hub of Andhra Pradesh. Discover why Vyasa Institute is the top choice for CA & CMA coaching in Vijayawada — expert faculty, proven results, and a legacy of All India Ranks.",
     content: `## Why Choose CA Coaching in Vijayawada?
 
-Vijayawada has emerged as one of Andhra Pradesh's premier education hubs. Students from across the state and neighbouring regions flock to the city for quality professional education. When it comes to CA, CMA, and ACCA coaching, Vijayawada offers access to institutes that rival those in metros.
+Vijayawada has emerged as one of Andhra Pradesh's premier education hubs. Students from across the state and neighbouring regions flock to the city for quality professional education. When it comes to CA and CMA coaching, Vijayawada offers access to institutes that rival those in metros.
 
 ## Vyasa Institute Vijayawada — Your Path to CA Success
 
-Our Vijayawada campus on MG Road is strategically located in the heart of the city, easily accessible from all areas including Guntur, Tenali, Mangalagiri, and Eluru. We offer the complete range of programs — CA Foundation, CA Intermediate, CA Final, CMA, and ACCA — all delivered with the same premium quality that defines Vyasa Institute.
+Our Vijayawada campus on MG Road is strategically located in the heart of the city, easily accessible from all areas including Guntur, Tenali, Mangalagiri, and Eluru. We offer the complete range of programs — CA Foundation, CA Intermediate, CA Final, and CMA — all delivered with the same premium quality that defines Vyasa Institute.
 
 ## What Sets Us Apart in Vijayawada
 
@@ -377,7 +377,7 @@ Many of our students commute daily from Guntur (25 km), Tenali (35 km), Mangalag
     title: "Best CA Coaching in Guntur 2026 | CA Foundation, Inter & Final Classes",
     metaTitle: "Best CA Coaching in Guntur | Top CA Institute – Vyasa Institute",
     metaDescription:
-      "Top CA coaching in Guntur by Vyasa Institute. CA Foundation, CA Inter, CA Final, CMA & ACCA coaching with expert faculty and proven results. Limited seats. Enroll now.",
+      "Top CA coaching in Guntur by Vyasa Institute. CA Foundation, CA Inter, CA Final, CMA coaching with expert faculty and proven results. Limited seats. Enroll now.",
     keywords: "CA coaching Guntur, best CA institute Guntur, CA classes Guntur, CA Foundation Guntur, CMA coaching Guntur",
     author: "Vyasa Institute",
     authorRole: "Admissions Team",
@@ -386,7 +386,7 @@ Many of our students commute daily from Guntur (25 km), Tenali (35 km), Mangalag
     category: "Locations",
     featured: false,
     excerpt:
-      "Quality CA education is now in Guntur. Vyasa Institute brings premier CA, CMA & ACCA coaching to the heart of Guntur district. Expert faculty, modern campus, and a track record of success.",
+      "Quality CA education is now in Guntur. Vyasa Institute brings premier CA & CMA coaching to the heart of Guntur district. Expert faculty, modern campus, and a track record of success.",
     content: `## CA Coaching in Guntur — Quality Education, Closer to Home
 
 Guntur is one of Andhra Pradesh's most important educational cities. Students from Guntur district and surrounding areas no longer need to travel to Hyderabad or Vijayawada for quality CA coaching. Vyasa Institute has brought premium CA and CMA education to Guntur.
@@ -401,7 +401,6 @@ Located in the centrally accessible Brodipet area, our Guntur campus features we
 - CA Intermediate (Group I & II)
 - CA Final
 - CMA Foundation & Intermediate
-- ACCA Course
 
 ## Who We Serve
 
@@ -428,7 +427,7 @@ The Guntur center has shown remarkable results since its inception, with a growi
     category: "Locations",
     featured: true,
     excerpt:
-      "Hyderabad is India's coaching capital. Vyasa Institute Hyderabad in Ameerpet offers world-class CA, CMA & ACCA coaching with the highest number of All India Rank holders among our campuses.",
+      "Hyderabad is India's coaching capital. Vyasa Institute Hyderabad in Ameerpet offers world-class CA & CMA coaching with the highest number of All India Rank holders among our campuses.",
     content: `## CA Coaching in Hyderabad — Where Excellence Meets Opportunity
 
 Hyderabad has earned its reputation as India's premier destination for competitive exam coaching. For CA and CMA aspirants, the city offers access to top institutes, vibrant academic community, and networking opportunities with industry professionals.
@@ -457,7 +456,7 @@ We serve students from Warangal, Karimnagar, Nizamabad, and across Telangana. Ou
     title: "CA Coaching Near Eluru | Best CA Institute — Vyasa Institute Vijayawada",
     metaTitle: "CA Coaching for Eluru Students | Vyasa Institute Vijayawada – Best Option",
     metaDescription:
-      "Looking for CA coaching near Eluru? Vyasa Institute Vijayawada is the top choice. Just 60 km away — CA Foundation, Inter, Final, CMA & ACCA. Hostel available for Eluru students.",
+      "Looking for CA coaching near Eluru? Vyasa Institute Vijayawada is the top choice. Just 60 km away — CA Foundation, Inter, Final, CMA. Hostel available for Eluru students.",
     keywords: "CA coaching Eluru, CA coaching near Eluru, best CA institute for Eluru students, CA classes West Godavari",
     author: "Vyasa Institute",
     authorRole: "Admissions Team",
@@ -480,7 +479,7 @@ Eluru, the headquarters of West Godavari district, is home to many bright studen
 
 ## Programs Available
 
-CA Foundation, CA Intermediate, CA Final, CMA, and ACCA — our Vijayawada campus offers the full range. Students from Eluru and surrounding areas can enroll and benefit from our expert faculty and structured programs.
+CA Foundation, CA Intermediate, CA Final, and CMA — our Vijayawada campus offers the full range. Students from Eluru and surrounding areas can enroll and benefit from our expert faculty and structured programs.
 
 ## Commute or Stay
 
@@ -494,7 +493,7 @@ Many Eluru students stay in our hostel during the week and go home on weekends. 
     title: "Best CA Coaching in Andhra Pradesh | Top Institutes in Vijayawada, Guntur & Hyderabad",
     metaTitle: "CA Coaching in Andhra Pradesh | Vijayawada, Guntur, Hyderabad – Vyasa Institute",
     metaDescription:
-      "Complete guide to CA coaching in Andhra Pradesh. Vyasa Institute offers top CA, CMA & ACCA coaching across Vijayawada, Guntur, and Hyderabad. Covering all of AP and Telangana.",
+      "Complete guide to CA coaching in Andhra Pradesh. Vyasa Institute offers top CA, CMA coaching across Vijayawada, Guntur, and Hyderabad. Covering all of AP and Telangana.",
     keywords: "CA coaching Andhra Pradesh, CA coaching AP, best CA institute Andhra Pradesh, CA coaching Vijayawada Guntur, CA classes Telangana",
     author: "Vyasa Institute",
     authorRole: "Admissions Team",
@@ -522,7 +521,6 @@ With campuses in **Vijayawada** (education capital of AP), **Guntur** (central A
 
 - CA Foundation, CA Intermediate, CA Final
 - CMA Foundation, CMA Intermediate, CMA Final
-- ACCA (global qualification)
 - Online live classes for remote locations
 - Hostel facilities at Vijayawada and Hyderabad
 
@@ -642,55 +640,6 @@ Visit the campus. Observe the environment. Does it feel conducive to focused stu
 
 *Visit Vyasa Institute for a free campus tour and counseling session. See the difference for yourself.*`,
     tags: ["Career Guidance", "CA Coaching", "Institute Selection", "Students"],
-  },
-  {
-    slug: "ca-vs-acca-which-should-you-choose",
-    title: "CA vs ACCA: Which Global Accounting Qualification is Right for You?",
-    metaTitle: "CA vs ACCA Comparison | India vs Global Qualification – Vyasa Institute",
-    metaDescription:
-      "CA (India) vs ACCA (global) — detailed comparison. Syllabus, duration, cost, recognition, career scope. Choose the right qualification for your goals.",
-    keywords: "CA vs ACCA, CA or ACCA, ACCA vs CA India, global accounting qualification, CA ACCA comparison",
-    author: "CMA Suresh Reddy",
-    authorRole: "CMA Head",
-    date: "2026-02-10",
-    readTime: "10 min read",
-    category: "Career Guidance",
-    featured: false,
-    excerpt:
-      "Planning to work in India or abroad? CA and ACCA lead to different career paths. Understand the key differences before you decide.",
-    content: `## CA vs ACCA — Two Different Worlds
-
-CA (Chartered Accountancy) is India's most recognized accounting qualification, governed by ICAI. ACCA (Association of Chartered Certified Accountants) is a UK-based global qualification recognized in 180+ countries. Both are prestigious — but they serve different goals.
-
-## Key Differences
-
-| Aspect | CA (India) | ACCA |
-|--------|------------|------|
-| Recognition | India-focused, strong in subcontinent | Global, 180+ countries |
-| Duration | 4-5 years | 3-4 years |
-| Articleship | 3 years mandatory | Practical experience required |
-| Syllabus | Indian laws, taxation, standards | International standards (IFRS) |
-| Career in India | Strong for audit, tax, practice | Growing in MNCs, consulting |
-| Career Abroad | Limited recognition | Widely accepted |
-
-## When to Choose CA
-
-- You plan to practice or work primarily in India
-- You want to pursue audit, Indian taxation, or statutory practice
-- You prefer Indian legal and regulatory framework
-
-## When to Choose ACCA
-
-- You aspire to work in MNCs, international firms, or abroad
-- You want flexibility in exam scheduling
-- You're interested in IFRS and global reporting standards
-
-## Can You Do Both?
-
-Many professionals pursue both qualifications for maximum career flexibility. It's demanding but possible with the right plan.
-
-*Not sure which path is right for you? Book a free counseling session with our experts.*`,
-    tags: ["Career Guidance", "CA", "ACCA", "Comparison"],
   },
   {
     slug: "parents-guide-to-ca-journey",

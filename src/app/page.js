@@ -21,9 +21,9 @@ export default function Home() {
     <PageLayout>
       <WelcomeLeadModal />
       <HeroSection />
-      <StatsBar />
+      {/* <StatsBar /> */}
       <TrustedBySection />
-      <ResultsSection />
+      {/* <ResultsSection /> */}
       <JourneySection />
       <CoursesSection />
       <WhyChooseSection />

@@ -20,33 +20,25 @@ const steps = [
   {
     icon: <FaShieldAlt />,
     title: "Foundation of Discipline",
-    description: "Building strong fundamentals through structured daily routines, disciplined study hours, and a focused academic environment that shapes character and work ethic.",
-    gradient: "from-primary-dark to-[#0c1d4a]",
-    features: ["Daily Study Hours", "Structured Routine", "Character Building"],
+    gradient: "from-primary-dark to-surface-deep-2",
     duration: "Phase 1",
   },
   {
     icon: <FaBookOpen />,
     title: "Concept Mastery",
-    description: "Deep conceptual understanding through expert teaching, regular assessments, and personalized doubt-clearing sessions that build unshakeable confidence.",
-    gradient: "from-[#0c1d4a] to-primary",
-    features: ["Expert Faculty", "Regular Assessments", "Doubt Clearing"],
+   gradient: "from-surface-deep-2 to-primary",
     duration: "Phase 2",
   },
   {
     icon: <FaAward />,
     title: "Exam Excellence",
-    description: "Strategic exam preparation with mock tests, time management training, and revision techniques that maximize scores and minimize stress.",
-    gradient: "from-primary to-accent",
-    features: ["Mock Test Series", "Time Management", "Revision Strategy"],
+    gradient: "from-primary to-primary-light",
     duration: "Phase 3",
   },
   {
     icon: <FaCrown />,
     title: "Professional Success",
-    description: "Final preparation towards becoming a qualified Chartered Accountant with rank-oriented coaching, mentorship, and industry-ready skills.",
-    gradient: "from-[#6b5a1f] to-gold",
-    features: ["Rank-oriented Prep", "Career Guidance", "Industry Readiness"],
+  gradient: "from-primary-dark to-primary",
     duration: "Phase 4",
   },
 ];
@@ -87,12 +79,23 @@ export default function JourneySection() {
     timerRef.current = setInterval(advance, INTERVAL);
     return () => clearInterval(timerRef.current);
   }, [advance, paused, key]);
+  const goPrev = useCallback(() => {
+    setDirection(-1);
+    setActive((prev) => {
+      const next = (prev - 1 + steps.length) % steps.length;
+      if (next === steps.length - 1) setCycle((c) => c + 1);
+      return next;
+    });
+    setKey((k) => k + 1);
+  }, []);
 
   return (
-    <section
-      id="journey"
-      className="py-28 bg-white relative overflow-hidden"
-    >
+      <section
+        id="journey"
+        className="py-28 bg-white relative overflow-hidden"
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-gold/[0.02] rounded-full blur-[120px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -126,7 +129,7 @@ export default function JourneySection() {
                 <button onClick={() => goTo(i)} className="relative w-[64px] h-[64px] flex items-center justify-center">
                   {i === active && (
                     <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 64 64">
-                      <circle cx="32" cy="32" r={CIRCLE_R} fill="none" stroke="rgba(201,168,76,0.12)" strokeWidth="2.5" />
+                      <circle cx="32" cy="32" r={CIRCLE_R} fill="none" stroke="rgba(158,191,176,0.2)" strokeWidth="2.5" />
                       <motion.circle
                         cx="32" cy="32" r={CIRCLE_R} fill="none" stroke="url(#timer-grad)" strokeWidth="2.5"
                         strokeLinecap="round" strokeDasharray={CIRCLE_C}
@@ -137,8 +140,8 @@ export default function JourneySection() {
                       />
                       <defs>
                         <linearGradient id="timer-grad" x1="0" y1="0" x2="1" y2="1">
-                          <stop offset="0%" stopColor="#c9a84c" />
-                          <stop offset="100%" stopColor="#e8d48b" />
+                          <stop offset="0%" stopColor="#9ebfb0" />
+                          <stop offset="100%" stopColor="#d4e5de" />
                         </linearGradient>
                       </defs>
                     </svg>
@@ -147,10 +150,10 @@ export default function JourneySection() {
                     key={`node-${i}-${cycle}`}
                     animate={{
                       background: i === active
-                        ? "linear-gradient(135deg, #0c1d4a, #c9a84c)"
+                        ? "linear-gradient(135deg, #215143, #9ebfb0)"
                         : i < active
-                        ? "linear-gradient(135deg, #1e3a8a, #2563eb)"
-                        : "linear-gradient(135deg, #f1f5f9, #e2e8f0)",
+                        ? "linear-gradient(135deg, #2f6b56, #3d7a66)"
+                        : "linear-gradient(135deg, #eef1ef, #e2e8e6)",
                       opacity: isNextBlinking ? [1, 0.35, 1] : 1,
                     }}
                     transition={{
@@ -161,11 +164,11 @@ export default function JourneySection() {
                     }}
                     whileHover={{ scale: 1.08 }}
                     className={`relative z-10 w-12 h-12 rounded-full flex items-center justify-center text-[15px] ${i <= active ? "text-white" : "text-gray-400"}`}
-                    style={{ boxShadow: i === active ? "0 6px 24px rgba(12,29,74,0.3)" : "none" }}
+                    style={{ boxShadow: i === active ? "0 6px 24px rgba(33,81,67,0.35)" : "none" }}
                   >
                     {i < active ? (
                       <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: "spring", stiffness: 500 }}>
-                        <FaCheck className="text-xs text-gold" />
+                        <FaCheck className="text-xs text-gold-light" />
                       </motion.div>
                     ) : step.icon}
                   </motion.div>
@@ -178,7 +181,7 @@ export default function JourneySection() {
                     <div className={`absolute inset-0 overflow-hidden rounded-full transition-colors ${i === active ? "bg-gold/20" : "bg-gray-100"}`}>
                       <motion.div
                         key={`bar-${i}-${cycle}`}
-                        className={`h-full rounded-full ${i === active ? "bg-gradient-to-r from-gold via-gold-light to-gold shadow-[0_0_8px_rgba(201,168,76,0.5)]" : "bg-gradient-to-r from-primary-dark via-gold to-gold-light"}`}
+                        className={`h-full rounded-full ${i === active ? "bg-gradient-to-r from-primary-light via-gold-light to-primary-light shadow-[0_0_8px_rgba(158,191,176,0.55)]" : "bg-gradient-to-r from-primary-dark via-primary to-primary-light"}`}
                         initial={{ width: "0%" }}
                         animate={{ width: i < active ? "100%" : "0%" }}
                         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
@@ -186,7 +189,7 @@ export default function JourneySection() {
                     </div>
                     <motion.div
                       key={`arrow-${i}-${cycle}`}
-                      className="relative z-10 w-6 h-6 rounded-full bg-white border-2 border-gold flex items-center justify-center shadow-[0_2px_12px_rgba(201,168,76,0.4)]"
+                      className="relative z-10 w-6 h-6 rounded-full bg-white border-2 border-gold flex items-center justify-center shadow-[0_2px_12px_rgba(158,191,176,0.45)]"
                       initial={{ opacity: 0, scale: 0.5 }}
                       animate={{
                         opacity: i < active ? 1 : i === active ? 1 : 0.4,
@@ -194,7 +197,7 @@ export default function JourneySection() {
                       }}
                       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                     >
-                      <FaChevronRight className="text-[9px] text-gold" />
+                      <FaChevronRight className="text-[9px] text-primary" />
                     </motion.div>
                   </div>
                 )}
@@ -225,19 +228,18 @@ export default function JourneySection() {
                   <motion.p initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-white/60 text-[15px] leading-relaxed mb-8 max-w-2xl font-sans">
                     {steps[active].description}
                   </motion.p>
-                  <div className="flex flex-wrap gap-3">
-                    {steps[active].features.map((f, i) => (
-                      <motion.span key={f} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 + i * 0.08 }} className="inline-flex items-center gap-2 bg-white/[0.08] border border-white/[0.08] rounded-full px-4 py-2 text-sm font-sans font-medium">
-                        <FaCheck className="text-[9px] text-gold" /> {f}
-                      </motion.span>
-                    ))}
-                  </div>
                   <div className="flex items-center justify-between pt-6 mt-6 border-t border-white/[0.06]">
                     <div className="flex gap-2">
                       {steps.map((_, i) => (
                         <button key={i} onClick={() => goTo(i)} className={`rounded-full transition-all duration-300 ${i === active ? "w-7 h-1.5 bg-gradient-to-r from-gold to-gold-light" : "w-1.5 h-1.5 bg-white/20 hover:bg-white/30"}`} />
                       ))}
                     </div>
+                    <button
+    onClick={goPrev}
+    className="flex items-center gap-2 text-xs text-white/40 hover:text-white/70 transition-colors font-sans"
+  >
+    ← Previous
+  </button>
                     <button onClick={() => goTo((active + 1) % steps.length)} className="flex items-center gap-2 text-xs text-white/40 hover:text-white/70 transition-colors font-sans">
                       {active < steps.length - 1 ? "Next Phase" : "Start Over"} <FaArrowRight className="text-[9px]" />
                     </button>

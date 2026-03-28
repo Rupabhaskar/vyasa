@@ -13,8 +13,8 @@ export default function HeroSection() {
   return (
     <section id="hero" className="relative min-h-[94vh] flex items-center overflow-hidden">
       {/* Deep navy base */}
-      <div className="absolute inset-0 bg-[#060e1f]" />
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/90 via-[#0c1d4a]/85 to-[#091638]/95" />
+      <div className="absolute inset-0 bg-surface-deep" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/90 via-primary-dark/85 to-surface-deep-2/95" />
 
       {/* Subtle grid pattern */}
       <div
@@ -51,7 +51,7 @@ export default function HeroSection() {
               <span className="text-gradient-gold">Chartered Accountants</span>
             </motion.h1>
 
-            <motion.p variants={fadeUp} className="text-[17px] md:text-lg text-blue-200/60 leading-relaxed mb-10 max-w-xl font-sans">
+            <motion.p variants={fadeUp} className="text-[17px] md:text-lg text-emerald-100/60 leading-relaxed mb-10 max-w-xl font-sans">
               A proven path to CA Rank. Expert faculty, disciplined environment, and a legacy of All India Ranks at India\u2019s premier preparatory institute.
             </motion.p>
 
@@ -59,7 +59,7 @@ export default function HeroSection() {
             <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-4">
               <Link
                 href="/landing/ca-coaching-admissions-2026"
-                className="group inline-flex items-center gap-3 bg-gradient-to-r from-gold to-gold-light text-primary-dark px-8 py-4 rounded-full font-bold text-[15px] shadow-[0_6px_24px_rgba(201,168,76,0.3)] hover:shadow-[0_10px_36px_rgba(201,168,76,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 font-sans"
+                className="group inline-flex items-center gap-3 bg-gradient-to-r from-gold to-gold-light text-primary-dark px-8 py-4 rounded-full font-bold text-[15px] shadow-[0_6px_24px_rgba(158,191,176,0.4)] hover:shadow-[0_10px_36px_rgba(158,191,176,0.5)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 font-sans"
               >
                 Apply Now
                 <FaArrowRight className="text-xs group-hover:translate-x-0.5 transition-transform" />
@@ -76,12 +76,12 @@ export default function HeroSection() {
             </motion.div>
 
             {/* Trust line */}
-            <motion.div variants={fadeUp} className="mt-14 pt-7 border-t border-white/[0.06] flex flex-wrap items-center gap-5 text-blue-300/40 text-xs font-sans tracking-wide">
-              <span>Recognized by <strong className="text-blue-200/60">ICAI</strong></span>
+            <motion.div variants={fadeUp} className="mt-14 pt-7 border-t border-white/[0.06] flex flex-wrap items-center gap-5 text-emerald-200/40 text-xs font-sans tracking-wide">
+              <span>Recognized by <strong className="text-emerald-100/60">ICAI</strong></span>
               <span className="w-1 h-1 bg-gold/30 rounded-full" />
-              <span>Affiliated with <strong className="text-blue-200/60">ICMAI</strong></span>
+              <span>Affiliated with <strong className="text-emerald-100/60">ICMAI</strong></span>
               <span className="w-1 h-1 bg-gold/30 rounded-full hidden sm:block" />
-              <span className="hidden sm:inline">Est. <strong className="text-blue-200/60">2010</strong></span>
+              <span className="hidden sm:inline">Est. <strong className="text-emerald-100/60">2010</strong></span>
             </motion.div>
           </motion.div>
 
@@ -118,7 +118,7 @@ export default function HeroSection() {
               >
                 <div className="bg-white/[0.05] backdrop-blur-xl border border-white/10 rounded-2xl px-6 py-4 min-w-[170px] hover:bg-white/[0.08] transition-colors duration-300">
                   <div className="text-2xl font-heading font-bold text-white tracking-tight">{s.label}</div>
-                  <div className="text-[11px] text-blue-300/50 font-sans font-medium tracking-wide uppercase">{s.sub}</div>
+                  <div className="text-[11px] text-emerald-200/50 font-sans font-medium tracking-wide uppercase">{s.sub}</div>
                 </div>
               </motion.div>
             ))}

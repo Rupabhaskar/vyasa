@@ -14,13 +14,13 @@ const facilities = [
     icon: <FaChalkboard />,
     title: "Smart Classrooms",
     desc: "15+ digitally-equipped classrooms with projectors, smart boards, and comfortable seating for 40-60 students each.",
-    color: "from-blue-500 to-blue-600",
+    color: "from-primary to-primary-light",
   },
   {
     icon: <FaBookReader />,
     title: "Digital Library",
     desc: "5,000+ reference books, ICAI publications, journals, and digital access to online databases and study resources.",
-    color: "from-primary to-accent",
+    color: "from-primary to-primary-light",
   },
   {
     icon: <FaLaptop />,
@@ -75,7 +75,7 @@ export default function CampusLifeClient() {
   const crumbs = [{ label: "Home", href: "/" }, { label: "Campus Life" }];
   const typeColors = {
     class: "bg-primary/10 text-primary border-primary/20",
-    study: "bg-gold/10 text-yellow-700 border-gold/20",
+    study: "bg-gold/10 text-primary-dark border-gold/20",
     break: "bg-green-50 text-green-700 border-green-200",
     personal: "bg-gray-50 text-gray-600 border-gray-200",
   };
@@ -121,12 +121,12 @@ export default function CampusLifeClient() {
       </section>
 
       {/* Hostel */}
-      <section className="py-20 bg-gradient-to-br from-primary-dark via-primary to-accent text-white">
+      <section className="py-20 bg-gradient-to-br from-primary-dark via-primary to-primary-light text-white">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-14">
             <span className="text-gold-light font-semibold text-sm uppercase tracking-widest">Residential Program</span>
             <h2 className="text-3xl md:text-4xl font-bold text-white mt-3">Hostel Facility</h2>
-            <p className="text-blue-200 mt-3 max-w-2xl mx-auto">Safe, comfortable, and disciplined living for outstation students — just minutes from the campus.</p>
+            <p className="text-emerald-100 mt-3 max-w-2xl mx-auto">Safe, comfortable, and disciplined living for outstation students — just minutes from the campus.</p>
           </motion.div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {hostelFeatures.map((hf, i) => (
@@ -140,7 +140,7 @@ export default function CampusLifeClient() {
               >
                 <div className="w-12 h-12 rounded-xl bg-gold/20 flex items-center justify-center text-gold text-xl mb-4">{hf.icon}</div>
                 <h3 className="font-bold text-lg mb-2">{hf.title}</h3>
-                <p className="text-blue-200 text-sm leading-relaxed">{hf.desc}</p>
+                <p className="text-emerald-100 text-sm leading-relaxed">{hf.desc}</p>
               </motion.div>
             ))}
           </div>

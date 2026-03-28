@@ -16,7 +16,7 @@ export default function WhyChooseSection() {
   return (
     <section id="why-us" className="py-28 relative overflow-hidden">
       <div className="absolute inset-0 bg-primary-dark" />
-      <div className="absolute inset-0 bg-gradient-to-br from-[#060e1f]/95 via-primary-dark/90 to-[#091638]/95" />
+      <div className="absolute inset-0 bg-gradient-to-br from-surface-deep/95 via-primary-dark/90 to-surface-deep-2/95" />
       <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='white'/%3E%3C/svg%3E\")" }} />
 
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold/[0.04] rounded-full blur-[140px]" />
@@ -28,7 +28,7 @@ export default function WhyChooseSection() {
           <span className="section-label text-gold/70 mb-4 inline-block">The Vyasas Advantage</span>
           <h2 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-white tracking-tight mb-4">Why Vyasa ?</h2>
           <div className="royal-divider mb-6" />
-          <p className="text-blue-200/40 max-w-xl mx-auto text-[15px] leading-relaxed font-sans">What makes Vyasa Institute different from every other coaching institute.</p>
+          <p className="text-emerald-100/40 max-w-xl mx-auto text-[15px] leading-relaxed font-sans">What makes Vyasa Institute different from every other coaching institute.</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -46,7 +46,7 @@ export default function WhyChooseSection() {
                 <div className="w-11 h-11 rounded-xl bg-gold/[0.08] border border-gold/10 flex items-center justify-center text-[16px] text-gold/80 group-hover:text-gold transition-colors">{f.icon}</div>
               </div>
               <h3 className="text-[16px] font-heading font-semibold text-white mb-2 group-hover:text-gold transition-colors">{f.title}</h3>
-              <p className="text-blue-200/35 text-[13px] leading-relaxed font-sans">{f.desc}</p>
+              <p className="text-emerald-100/35 text-[13px] leading-relaxed font-sans">{f.desc}</p>
             </motion.div>
           ))}
         </div>

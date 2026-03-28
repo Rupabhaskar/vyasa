@@ -11,11 +11,11 @@ export const courses = [
     icon: "FaCalculator",
     duration: "8 Months",
     fee: "₹45,000",
-    nextBatch: "July 2026",
+    nextBatch: "January, February, March, April, May, June",
     eligibility: "Class 12 Pass / Appearing",
     overview: `The CA Foundation course at Vyasa Institute is meticulously designed to give students a rock-solid foundation for their Chartered Accountancy journey. Our integrated approach ensures that students not only clear the exam but develop a deep conceptual understanding that serves them through all levels of CA.
 
-Our CA Foundation program covers all four papers — Principles and Practices of Accounting, Business Laws and Business Correspondence, Business Mathematics and Logical Reasoning & Statistics, and Business Economics and Business and Commercial Knowledge. Each paper is taught by subject-matter experts who have years of experience in CA education.
+Our CA Foundation program covers all four papers — Principles and Practices of Accounting, Business Laws and Business Mathematics and Logical Reasoning & Statistics, and Business Economics. Each paper is taught by subject-matter experts who have years of experience in CA education.
 
 What sets our CA Foundation coaching apart is the emphasis on conceptual clarity over rote learning. We believe that students who understand the "why" behind every concept perform significantly better not just in Foundation but throughout their CA journey. Our teaching methodology involves real-world examples, case studies, and practical applications that make even the most abstract concepts relatable.
 
@@ -128,9 +128,9 @@ Our CA Final coaching stands apart because of the caliber of our faculty. Every 
 
 The teaching methodology at the CA Final level goes beyond traditional classroom instruction. We employ a case-study-driven approach where students work through complex, multi-dimensional problems that reflect the kind of questions ICAI asks in the exam. This approach develops not just knowledge but the analytical thinking and problem-solving skills that differentiate top scorers from average candidates.
 
-Group I subjects — Financial Reporting, Strategic Financial Management, Advanced Auditing and Professional Ethics, and Corporate and Economic Laws — are taught with a focus on depth and application. Each concept is explored through the lens of practical scenarios, judicial pronouncements, and real-world case studies.
+Group I subjects — Financial Reporting, Advanced Financial Management, Advanced Auditing.
 
-Group II subjects — Strategic Cost Management and Performance Evaluation, Elective Paper, Direct Tax Laws and International Taxation, and Indirect Tax Laws — receive intensive treatment with particular emphasis on recent amendments, case laws, and practical problem-solving.
+Group II subjects — Direct Tax Laws , Indirect Tax Laws, Integrated Business Solution.
 
 Our mock exam program at the CA Final level is the most rigorous and realistic in the industry. Students sit for exams in conditions that exactly replicate the actual ICAI examination — same timing, same format, same pressure. Papers are evaluated by experienced faculty using ICAI marking patterns, and detailed feedback sessions help students understand how to maximize their scores.
 
@@ -229,7 +229,7 @@ Our CMA students have an impressive track record of success, with high pass rate
         tenure: "9 months",
         subjects: 8,
         passingCriteria: "Minimum 40% in every subject and 50% in aggregate of all papers",
-        examsHeldIn: "June & December",
+        examsHeldIn: "January,May,September,December",
         examPattern: "Subjective",
         registration: "Online",
         subjectNames: [
@@ -292,7 +292,7 @@ Our CMA students have an impressive track record of success, with high pass rate
       { q: "Does Vyasa Institute offer CMA Final coaching?", a: "Yes, we offer comprehensive coaching for all three stages — CMA Foundation, CMA Intermediate, and CMA Final — covering all papers and groups." },
     ],
     results: { passRate: "78%+", rankers: 3, topRank: "AIR 7" },
-    relatedCourses: ["cma-foundation", "cma-intermediate", "cma-final", "ca-foundation", "acca-course"],
+    relatedCourses: ["cma-foundation", "cma-intermediate", "cma-final", "ca-foundation"],
   },
   {
     slug: "cma-foundation",
@@ -349,7 +349,7 @@ Students receive faculty guidance, doubt-solving support, and a disciplined stud
     icon: "FaGraduationCap",
     duration: "9 Months",
     fee: "₹40,000 onwards",
-    nextBatch: "July 2026",
+    nextBatch: "January, February, March, April, May, June",
     eligibility: "CMA Foundation or Graduate/PG or Qualified CA Inter or CS Foundation",
     overview: `CMA Intermediate is the second stage of CMA (India) and is where students build depth across accounting, taxation, laws, management, and finance. At Vyasa Institute, our CMA Intermediate coaching is structured group-wise with a clear preparation roadmap.
 
@@ -426,129 +426,6 @@ We cover Groups III and IV with amendments-focused updates, case-based discussio
     ],
     results: { passRate: "78%+", rankers: 3, topRank: "AIR 7" },
     relatedCourses: ["cma-intermediate", "cma-course"],
-  },
-  {
-    slug: "acca-course",
-    title: "ACCA Course",
-    shortTitle: "ACCA",
-    metaTitle: "ACCA Course | ACCA Coaching – Applied Knowledge, Skills & Strategic Professional | Vyasa Institute",
-    metaDescription:
-      "Complete ACCA coaching at Vyasa Institute. Applied Knowledge, Applied Skills & Strategic Professional. 13 exams + Professional Ethics module. Expert faculty, global qualification.",
-    keywords: "ACCA coaching, ACCA course India, ACCA exams, Applied Knowledge ACCA, Applied Skills ACCA, Strategic Professional ACCA, ACCA classes Vijayawada",
-    heroTag: "Global Qualification",
-    icon: "FaGlobeAsia",
-    duration: "3–4 Years",
-    fee: "Contact for fees",
-    nextBatch: "Ongoing Enrollment",
-    eligibility: "10+2 / Graduation or equivalent (varies by entry point)",
-    overview: `ACCA (Association of Chartered Certified Accountants) is a globally recognized professional accounting qualification that opens doors to careers in 180+ countries. At Vyasa Institute, we offer comprehensive ACCA coaching covering all levels of the qualification journey.
-
-**Applied Knowledge**
-Your journey towards becoming a qualified accountant starts with the Applied Knowledge module which includes papers BT (F1) through to FA (F3). After passing these papers, you will progress onto the ACCA Applied Skills module.
-• BT — Business and Technology (F1)
-• MA — Management Accounting (F2)
-• FA — Financial Accounting (F3)
-
-**Applied Skills**
-Through modules LW (F4) to FM (F9), you will develop your understanding of principle technical subjects including: performance management, law, taxation, auditing and financial management as well as financial reporting. By the time you have completed these papers, you will have gained knowledge equating to a bachelor's degree level.
-• LW — Corporate and Business Law (F4)
-• PM — Performance Management (F5)
-• TX — Taxation (F6)
-• FR — Financial Reporting (F7)
-• AA — Audit & Assurance (F8)
-• FM — Financial Management (F9)
-
-**Strategic Professional (Essentials)**
-The Essentials module will equip you with the skills and knowledge needed to become an expert accountant in either a consultancy or high-level advisory role. The two ACCA papers are assessed through paper-based exams, both lasting three hours.
-• SBL — Strategic Business Leader (P1–P3)
-• SBR — Strategic Business Reporting (P2)
-
-**Strategic Professional (Options)**
-When you progress onto the Strategic Professional module, you will need to pick two courses from the following four. The aim is to develop advanced technical skills in areas such as taxation and audit, whilst learning about the professional code of ethics.
-• AFM — Advanced Financial Management (P4)
-• APM — Advanced Performance Management (P5)
-• ATX — Advanced Taxation (P6)
-• AAA — Advanced Audit & Assurance (P7)
-
-In addition to the above 13 exams, students are required to study and sit an on-line module in Professional Ethics (recommended alongside SBL). The pass mark for all examinations is 50%. Our faculty bring international perspective and exam-focused teaching to help you succeed.`,
-    highlights: [
-      "Global qualification recognized in 180+ countries",
-      "Applied Knowledge (BT, MA, FA) — Foundation level",
-      "Applied Skills (LW–FM) — 6 papers, degree-equivalent",
-      "Strategic Professional — 2 Essentials + 2 Options",
-      "Professional Ethics online module included",
-      "7-year time limit at Strategic Professional level",
-      "Exams can be sat in flexible order within modules",
-      "Expert faculty with ACCA exam experience",
-    ],
-    accaProgression: [
-      {
-        module: "Applied Knowledge",
-        description: "Your journey towards becoming a qualified accountant starts with the Applied Knowledge module which includes papers BT (F1) through to FA (F3). After passing these papers, you will progress onto the ACCA Applied Skills module.",
-        papers: [
-          { code: "BT", name: "Business and Technology (F1)", href: "#" },
-          { code: "MA", name: "Management Accounting (F2)", href: "#" },
-          { code: "FA", name: "Financial Accounting (F3)", href: "#" },
-        ],
-      },
-      {
-        module: "Applied Skills",
-        description: "Through modules LW (F4) to FM (F9), you will develop your understanding of principle technical subjects including: performance management, law, taxation, auditing and financial management as well as financial reporting. By the time you have completed these papers, you will have gained knowledge equating to a bachelor's degree level.",
-        papers: [
-          { code: "LW", name: "Corporate and Business Law (F4)", href: "#" },
-          { code: "PM", name: "Performance Management (F5)", href: "#" },
-          { code: "TX", name: "Taxation (F6)", href: "#" },
-          { code: "FR", name: "Financial Reporting (F7)", href: "#" },
-          { code: "AA", name: "Audit & Assurance (F8)", href: "#" },
-          { code: "FM", name: "Financial Management (F9)", href: "#" },
-        ],
-      },
-      {
-        module: "Strategic Professional (Essentials)",
-        description: "The Essentials module will equip you with the skills and knowledge needed to become an expert accountant in either a consultancy or high-level advisory role. The two ACCA papers that make up this module are assessed through two paper-based exams, both lasting a duration of three-hours.",
-        papers: [
-          { code: "SBL", name: "Strategic Business Leader (P1–P3)", href: "#" },
-          { code: "SBR", name: "Strategic Business Reporting (P2)", href: "#" },
-        ],
-      },
-      {
-        module: "Strategic Professional (Options)",
-        description: "When you progress onto the Strategic Professional module, you will need to pick two courses from the following four. The aim of the module is to help you develop advanced technical skills and expert knowledge in areas such as taxation and audit, whilst learning about the professional code of ethics followed by any accountant.",
-        papers: [
-          { code: "AFM", name: "Advanced Financial Management (P4)", href: "#" },
-          { code: "APM", name: "Advanced Performance Management (P5)", href: "#" },
-          { code: "ATX", name: "Advanced Taxation (P6)", href: "#" },
-          { code: "AAA", name: "Advanced Audit & Assurance (P7)", href: "#" },
-        ],
-      },
-    ],
-    accaExamRules: [
-      "Maximum of four exams to be taken in one sitting",
-      "The two Essentials and two optional exams do not have to be sat together",
-      "Exams within a module may be sat in any order",
-      "Exams from a variety of levels may be sat at any one time — e.g. Applied Knowledge and Applied Skills, or Applied Skills and Strategic Professional Essentials",
-      "The two Essentials ACCA exams do not have to be sat together",
-      "Under the new rules a seven year time limit is introduced at the Strategic Professional level. There are no time limits for Foundations in Accountancy or for exams BT–FM at Applied Knowledge and Applied Skills of the ACCA Qualification",
-      "Students have 7 years to pass the exams at Strategic Professional level (SBR, SBL and two of the options papers AFM–AAA). The 7 year time limit starts when a student passes their first Strategic Professional level exam",
-      "The pass mark for all examinations is 50%",
-      "In addition to the above 13 exams, students are required to study and sit an on-line module in Professional Ethics. It is recommended that this is studied at the same time as SBL",
-    ],
-    curriculum: [
-      { paper: "BT–FA", name: "Applied Knowledge", topics: "Business & Technology, Management Accounting, Financial Accounting", icon: "FaBookOpen" },
-      { paper: "LW–FM", name: "Applied Skills", topics: "Corporate Law, PM, Taxation, Financial Reporting, Audit & Assurance, Financial Management", icon: "FaGraduationCap" },
-      { paper: "SBL + SBR", name: "Strategic Professional Essentials", topics: "Strategic Business Leader, Strategic Business Reporting", icon: "FaCrown" },
-      { paper: "AFM–AAA", name: "Strategic Professional Options", topics: "Choose 2 from: AFM, APM, ATX, AAA", icon: "FaFileAlt" },
-    ],
-    faqs: [
-      { q: "What is ACCA?", a: "ACCA (Association of Chartered Certified Accountants) is a globally recognized professional accounting qualification offered by a UK-based body. It is accepted in 180+ countries." },
-      { q: "How many papers are there in ACCA?", a: "ACCA has 13 exam papers plus a mandatory Professional Ethics online module. Applied Knowledge: 3 papers. Applied Skills: 6 papers. Strategic Professional: 2 Essentials + 2 Options (choose 2 from 4)." },
-      { q: "What is the pass mark for ACCA exams?", a: "The pass mark for all ACCA examinations is 50%." },
-      { q: "Is there a time limit for completing ACCA?", a: "A 7-year time limit applies at the Strategic Professional level, starting when you pass your first SP exam. There are no time limits for Applied Knowledge and Applied Skills." },
-      { q: "Can I sit exams from different levels together?", a: "Yes. Exams from different levels may be sat at the same time, e.g. Applied Knowledge and Applied Skills, or Applied Skills and Strategic Professional Essentials." },
-      { q: "What is the Professional Ethics module?", a: "An online module that students must complete in addition to the 13 exams. It is recommended to study alongside SBL (Strategic Business Leader)." },
-    ],
-    results: { passRate: "75%+", rankers: 0, topRank: "Global Pass" },
-    relatedCourses: ["ca-foundation", "cma-course"],
   },
   {
     slug: "online-classes",

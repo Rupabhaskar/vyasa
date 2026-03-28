@@ -7,7 +7,7 @@ export default function LandingPageClient({ page }) {
   return (
     <PageLayout>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-primary-dark via-primary to-accent py-20 md:py-28 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-72 h-72 bg-gold/10 rounded-full blur-3xl animate-float" />
           <div className="absolute bottom-10 right-10 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-float-delay" />
@@ -33,7 +33,7 @@ export default function LandingPageClient({ page }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-lg md:text-xl text-blue-200 max-w-3xl mx-auto mb-8"
+            className="text-lg md:text-xl text-emerald-100 max-w-3xl mx-auto mb-8"
           >
             {page.subheadline}
           </motion.p>
@@ -110,15 +110,15 @@ export default function LandingPageClient({ page }) {
       </section>
 
       {/* Form */}
-      <section id="landing-form" className="py-20 bg-gradient-to-br from-primary-dark via-primary to-accent relative overflow-hidden">
+      <section id="landing-form" className="py-20 bg-gradient-to-br from-primary-dark via-primary to-primary-light relative overflow-hidden">
         <div className="absolute top-0 right-0 w-80 h-80 bg-gold/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/5 rounded-full blur-3xl" />
         <div className="relative z-10 max-w-xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-white text-center mb-8">{page.formHeading}</h2>
           <form className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 md:p-10 space-y-5" onSubmit={(e) => e.preventDefault()}>
-            <input type="text" placeholder="Full Name" className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white placeholder-blue-200 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all" />
-            <input type="tel" placeholder="Phone Number" className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white placeholder-blue-200 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all" />
-            <input type="email" placeholder="Email Address" className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white placeholder-blue-200 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all" />
+            <input type="text" placeholder="Full Name" className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white placeholder-emerald-100/70 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all" />
+            <input type="tel" placeholder="Phone Number" className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white placeholder-emerald-100/70 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all" />
+            <input type="email" placeholder="Email Address" className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white placeholder-emerald-100/70 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all" />
             <select className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all appearance-none">
               <option value="" className="text-gray-800">Select Course</option>
               <option value="CA Foundation" className="text-gray-800">CA Foundation</option>
@@ -127,19 +127,18 @@ export default function LandingPageClient({ page }) {
               <option value="CMA Foundation" className="text-gray-800">CMA Foundation</option>
               <option value="CMA Inter" className="text-gray-800">CMA Intermediate</option>
               <option value="CMA Final" className="text-gray-800">CMA Final</option>
-              <option value="ACCA" className="text-gray-800">ACCA Course</option>
             </select>
             <button type="submit" className="btn-glow w-full bg-gold hover:bg-gold-light text-primary-dark font-bold py-4 rounded-xl text-lg shadow-lg hover:shadow-2xl transition-all">
               Submit Application
             </button>
-            <p className="text-center text-blue-200 text-sm">We&apos;ll contact you within 24 hours. No spam, ever.</p>
+            <p className="text-center text-emerald-100 text-sm">We&apos;ll contact you within 24 hours. No spam, ever.</p>
           </form>
         </div>
       </section>
 
       {/* WhatsApp CTA */}
       <div className="py-6 bg-green-500 text-white text-center">
-        <a href="https://wa.me/9703589296" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-lg font-bold hover:underline">
+        <a href="https://wa.me/9133660500" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-lg font-bold hover:underline">
           <FaWhatsapp className="text-2xl" /> Chat with us on WhatsApp for instant queries
         </a>
       </div>

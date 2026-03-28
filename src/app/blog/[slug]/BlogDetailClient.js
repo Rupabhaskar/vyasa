@@ -95,12 +95,12 @@ export default function BlogDetailClient({ post }) {
       <BreadcrumbSchema items={crumbs} />
 
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-primary-dark via-primary to-accent py-20 md:py-28 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary-dark via-primary to-primary-light py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-72 h-72 bg-gold/10 rounded-full blur-3xl" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-6">
-          <Link href="/blog" className="inline-flex items-center gap-2 text-blue-200 hover:text-white text-sm mb-6 transition-colors">
+          <Link href="/blog" className="inline-flex items-center gap-2 text-emerald-100 hover:text-white text-sm mb-6 transition-colors">
             <FaArrowLeft /> Back to Blog
           </Link>
           <div className="flex items-center gap-3 mb-4">
@@ -113,7 +113,7 @@ export default function BlogDetailClient({ post }) {
           >
             {post.title}
           </motion.h1>
-          <div className="flex flex-wrap items-center gap-6 text-blue-200 text-sm">
+          <div className="flex flex-wrap items-center gap-6 text-emerald-100 text-sm">
             <span className="flex items-center gap-2"><FaUser /> {post.author}</span>
             <span className="flex items-center gap-2"><FaCalendar /> {post.date}</span>
             <span className="flex items-center gap-2"><FaClock /> {post.readTime}</span>

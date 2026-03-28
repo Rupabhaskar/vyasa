@@ -108,7 +108,7 @@ export default function ResultsSection() {
                   <span className="text-gold font-heading font-bold text-lg">{holder.rank}</span>
                 </div>
                 <h3 className="text-white font-heading font-semibold text-lg mb-1">{holder.name}</h3>
-                <p className="text-blue-300/40 text-xs font-sans">{holder.exam}</p>
+                <p className="text-emerald-200/40 text-xs font-sans">{holder.exam}</p>
               </div>
             </motion.div>
           ))}

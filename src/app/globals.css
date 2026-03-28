@@ -1,16 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
-  --primary: #1e3a8a;
-  --primary-light: #3b82f6;
-  --primary-dark: #0c1d4a;
-  --gold: #c9a84c;
-  --gold-light: #e8d48b;
-  --accent: #2563eb;
-  --muted: #64748b;
-  --card-bg: rgba(255, 255, 255, 0.7);
+  /* Brand palette — forest green + cool grey (logo-inspired) */
+  --background: #e5e7e6;
+  --foreground: #1a2e28;
+  --primary-dark: #215143;
+  --primary: #2f6b56;
+  --primary-light: #4a9e82;
+  /* Highlights / CTAs — soft sage & mint (replaces gold) */
+  --gold: #9ebfb0;
+  --gold-light: #d4e5de;
+  --accent: #3d7a66;
+  --muted: #5c6d65;
+  --surface-deep: #0a1412;
+  --surface-deep-2: #0f221c;
+  --card-bg: rgba(255, 255, 255, 0.78);
   --glass-bg: rgba(255, 255, 255, 0.15);
   --glass-border: rgba(255, 255, 255, 0.25);
   --font-heading: var(--font-playfair), "Georgia", serif;
@@ -26,10 +30,100 @@
   --color-gold-light: var(--gold-light);
   --color-accent: var(--accent);
   --color-muted: var(--muted);
+  --color-surface-deep: var(--surface-deep);
+  --color-surface-deep-2: var(--surface-deep-2);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-playfair);
 }
+
+/* ===== MARQUEE (navbar banner) ===== */
+.marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  /* ~20s per full sweep (2× viewport); adjust for speed */
+  animation: marquee-banner 20s linear infinite;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 14px;
+  flex-shrink: 0;
+  /* One full viewport per segment so each loop is a full right → left sweep */
+  min-width: 100vw;
+  width: 100vw;
+  max-width: 100vw;
+  padding-left: max(24px, env(safe-area-inset-left, 0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+/* divider */
+.divider {
+  opacity: 0.4;
+}
+
+/* apply link */
+.apply {
+  color: var(--gold-light);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Full-viewport slide left; 0 → -100vw matches duplicate .item (no loop flash) */
+@keyframes marquee-banner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+/* ===== STAR BADGE ===== */
+.new-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  font-size: 10px;
+  font-weight: 900;
+  color: red;
+  background: yellow;
+  clip-path: polygon(
+    50% 0%, 60% 20%, 82% 10%, 75% 30%,
+    100% 50%, 75% 70%, 82% 90%, 60% 80%,
+    50% 100%, 40% 80%, 18% 90%, 25% 70%,
+    0% 50%, 25% 30%, 18% 10%, 40% 20%
+  );
+  animation: blink 1s infinite;
+}
+
+/* blinking */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.track:hover {
+  animation-play-state: paused;
+}
+.new-star {
+  filter: drop-shadow(0 0 6px var(--gold-light));
+}
+
+
+
+
+
 
 * {
   scroll-behavior: smooth;
@@ -73,7 +167,7 @@ h1, h2, h3 {
 
 /* Navbar blur */
 .navbar-blur {
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(229, 231, 230, 0.92);
   backdrop-filter: blur(24px) saturate(180%);
   -webkit-backdrop-filter: blur(24px) saturate(180%);
 }
@@ -87,7 +181,7 @@ h1, h2, h3 {
   position: absolute;
   inset: -6px -10px;
   border-radius: 10px;
-  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(30,58,138,0.06), transparent 70%);
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(33, 81, 67, 0.08), transparent 70%);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -98,7 +192,7 @@ h1, h2, h3 {
 
 /* Gold gradient text */
 .text-gradient-gold {
-  background: linear-gradient(135deg, var(--gold), #e8d48b, var(--gold));
+  background: linear-gradient(135deg, var(--gold), var(--gold-light), var(--gold));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -182,8 +276,8 @@ h1, h2, h3 {
 
 /* Pulse glow */
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(30, 58, 138, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(30, 58, 138, 0.6); }
+  0%, 100% { box-shadow: 0 0 20px rgba(33, 81, 67, 0.35); }
+  50% { box-shadow: 0 0 40px rgba(33, 81, 67, 0.55); }
 }
 .animate-pulse-glow {
   animation: pulse-glow 2s ease-in-out infinite;
@@ -210,7 +304,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   height: 60px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60'%3E%3Cpath fill='%23ffffff' d='M0,30 C360,60 720,0 1080,30 C1260,45 1380,30 1440,30 L1440,60 L0,60 Z'/%3E%3C/svg%3E");
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60'%3E%3Cpath fill='%23e5e7e6' d='M0,30 C360,60 720,0 1080,30 C1260,45 1380,30 1440,30 L1440,60 L0,60 Z'/%3E%3C/svg%3E");
   background-size: cover;
 }
 
@@ -251,7 +345,7 @@ h1, h2, h3 {
   width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #f8fafc;
+  background: #e8eae9;
 }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, var(--primary-dark), var(--gold));

@@ -316,10 +316,10 @@ export default function CoursesListingClient({ courses = [] }) {
               </tr>
 
               <tr>
-                <td className="border p-2 font-medium">Exams</td>
-                <td className="border p-2">June & December</td>
-                <td className="border p-2">May & November</td>
-                <td className="border p-2">May & November</td>
+                <td className="border p-2 font-medium">Exams Held In</td>
+                <td className="border p-2">January, May, September</td>
+                <td className="border p-2">January, May, September</td>
+                <td className="border p-2">January, May, September</td>
               </tr>
 
               <tr>

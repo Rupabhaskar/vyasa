@@ -37,11 +37,11 @@ export default function LocationsListingClient({ locations }) {
                   href={`/locations/${loc.slug}`}
                   className="group block bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-xl hover:border-primary/20 transition-all duration-300 h-full"
                 >
-                  <div className="h-40 bg-gradient-to-br from-primary to-accent flex items-center justify-center relative">
+                  <div className="h-40 bg-gradient-to-br from-primary to-primary-light flex items-center justify-center relative">
                     <FaMapMarkerAlt className="text-white/20 text-8xl absolute" />
                     <div className="relative z-10 text-center text-white">
                       <h2 className="text-2xl font-bold">{loc.city}</h2>
-                      <p className="text-blue-200 text-sm">{loc.state}</p>
+                      <p className="text-emerald-100 text-sm">{loc.state}</p>
                     </div>
                   </div>
                   <div className="p-6">

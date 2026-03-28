@@ -40,7 +40,7 @@ export default function BlogListingClient({ posts }) {
                 >
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="group block bg-gradient-to-br from-primary to-accent rounded-2xl overflow-hidden hover:shadow-2xl transition-all h-full"
+                    className="group block bg-gradient-to-br from-primary to-primary-light rounded-2xl overflow-hidden hover:shadow-2xl transition-all h-full"
                   >
                     <div className="p-8 md:p-10 text-white">
                       <div className="flex items-center gap-3 mb-4">
@@ -54,10 +54,10 @@ export default function BlogListingClient({ posts }) {
                       <h3 className="text-xl md:text-2xl font-bold mb-4 group-hover:text-gold-light transition-colors leading-snug">
                         {post.title}
                       </h3>
-                      <p className="text-blue-200 leading-relaxed mb-6 line-clamp-3">
+                      <p className="text-emerald-100 leading-relaxed mb-6 line-clamp-3">
                         {post.excerpt}
                       </p>
-                      <div className="flex items-center justify-between text-sm text-blue-200">
+                      <div className="flex items-center justify-between text-sm text-emerald-100">
                         <div className="flex items-center gap-4">
                           <span className="flex items-center gap-1"><FaUser className="text-xs" /> {post.author}</span>
                           <span className="flex items-center gap-1"><FaClock className="text-xs" /> {post.readTime}</span>

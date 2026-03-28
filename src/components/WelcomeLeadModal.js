@@ -39,7 +39,7 @@ export default function WelcomeLeadModal() {
             <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
               <div className="bg-gradient-to-r from-primary-dark to-primary px-6 py-5 relative">
                 <h3 className="text-xl font-bold text-white font-heading pr-8">Get Free Career Guidance</h3>
-                <p className="text-blue-200 text-sm mt-1">Share your details. Our experts will call you.</p>
+                <p className="text-emerald-100 text-sm mt-1">Share your details. Our experts will call you.</p>
                 <button
                   onClick={handleClose}
                   className="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"
@@ -79,7 +79,6 @@ export default function WelcomeLeadModal() {
                   <option value="ca-intermediate">CA Intermediate</option>
                   <option value="ca-final">CA Final</option>
                   <option value="cma">CMA Course</option>
-                  <option value="acca">ACCA Course</option>
                 </select>
                 <button
                   type="submit"

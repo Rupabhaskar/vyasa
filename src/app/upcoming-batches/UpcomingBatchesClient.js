@@ -8,7 +8,6 @@ const batches = [
   { course: "CA Intermediate", startDate: "August 2026", duration: "10 Months", href: "/courses/ca-intermediate" },
   { course: "CA Final", startDate: "September 2026", duration: "12 Months", href: "/courses/ca-final" },
   { course: "CMA Foundation", startDate: "July 2026", duration: "8 Months", href: "/courses/cma-course" },
-  { course: "ACCA", startDate: "Ongoing", duration: "3–4 Years", href: "/courses/acca-course" },
 ];
 
 export default function UpcomingBatchesClient() {

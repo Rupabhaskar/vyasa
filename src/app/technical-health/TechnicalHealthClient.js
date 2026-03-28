@@ -108,7 +108,7 @@ export default function TechnicalHealthClient() {
               <FaShieldAlt />
               Technical Health Check
             </h1>
-            <p className="text-blue-200 mt-2 text-sm">
+            <p className="text-emerald-100 mt-2 text-sm">
               Quick diagnostics for sitemap, robots, and key pages. Run this to verify technical SEO.
             </p>
           </div>

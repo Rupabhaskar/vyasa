@@ -53,12 +53,11 @@ export default function LeadCapture() {
                 <option value="ca-inter">CA Intermediate</option>
                 <option value="ca-final">CA Final</option>
                 <option value="cma">CMA Course</option>
-                <option value="acca">ACCA Course</option>
               </select>
 
               <textarea placeholder="Any message (optional)" rows={3} className="w-full bg-white border border-gray-100 rounded-xl px-5 py-3.5 text-primary-dark placeholder-muted/40 focus:outline-none focus:border-gold/40 focus:ring-1 focus:ring-gold/20 transition-all resize-none text-[14px] font-sans" />
 
-              <button type="submit" className="w-full bg-gradient-to-r from-gold to-gold-light text-primary-dark font-sans font-bold py-4 rounded-xl text-[15px] shadow-[0_6px_20px_rgba(201,168,76,0.25)] hover:shadow-[0_10px_30px_rgba(201,168,76,0.4)] hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 flex items-center justify-center gap-2 group">
+              <button type="submit" className="w-full bg-gradient-to-r from-gold to-gold-light text-primary-dark font-sans font-bold py-4 rounded-xl text-[15px] shadow-[0_6px_20px_rgba(158,191,176,0.35)] hover:shadow-[0_10px_30px_rgba(158,191,176,0.45)] hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 flex items-center justify-center gap-2 group">
                 Book Free Counseling
                 <FaArrowRight className="text-xs group-hover:translate-x-0.5 transition-transform" />
               </button>
