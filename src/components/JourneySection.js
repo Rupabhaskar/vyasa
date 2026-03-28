@@ -1,6 +1,6 @@
 "use client";
-import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect, useCallback, useRef } from "react";
+import { motion, AnimatePresence, useAnimationControls } from "framer-motion";
+import { useState, useEffect, useCallback } from "react";
 import { FaShieldAlt, FaBookOpen, FaAward, FaCrown, FaCheck, FaArrowRight, FaChevronRight } from "react-icons/fa";
 
 // const BLINK_DURATION = 350; // ms per blink (opacity cycle)
@@ -22,26 +22,74 @@ const steps = [
     title: "Foundation of Discipline",
     gradient: "from-primary-dark to-surface-deep-2",
     duration: "Phase 1",
+    description:
+      "Build habits, attendance, and consistency — the non‑negotiable base that makes everything else possible.",
   },
   {
     icon: <FaBookOpen />,
     title: "Concept Mastery",
-   gradient: "from-surface-deep-2 to-primary",
+    gradient: "from-surface-deep-2 to-primary",
     duration: "Phase 2",
+    description:
+      "Deep understanding over memorisation — clear explanations, practice, and doubt resolution until concepts click.",
   },
   {
     icon: <FaAward />,
     title: "Exam Excellence",
     gradient: "from-primary to-primary-light",
     duration: "Phase 3",
+    description:
+      "Mock tests, time discipline, and paper strategy — training that mirrors the real exam until confidence peaks.",
   },
   {
     icon: <FaCrown />,
     title: "Professional Success",
-  gradient: "from-primary-dark to-primary",
+    gradient: "from-primary-dark to-primary",
     duration: "Phase 4",
+    description:
+      "From clearing papers to career readiness — mentorship and direction for the path after qualification.",
   },
 ];
+
+function JourneyTimerRing({ cycleKey, paused }) {
+  const controls = useAnimationControls();
+
+  useEffect(() => {
+    if (paused) {
+      controls.stop();
+      return;
+    }
+    controls.set({ strokeDashoffset: CIRCLE_C });
+    controls.start({
+      strokeDashoffset: 0,
+      transition: { duration: INTERVAL / 1000, ease: "linear" },
+    });
+  }, [cycleKey, controls, paused]);
+
+  return (
+    <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 64 64" aria-hidden>
+      <circle cx="32" cy="32" r={CIRCLE_R} fill="none" stroke="rgba(158,191,176,0.2)" strokeWidth="2.5" />
+      <motion.circle
+        cx="32"
+        cy="32"
+        r={CIRCLE_R}
+        fill="none"
+        stroke="url(#timer-grad-journey)"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeDasharray={CIRCLE_C}
+        initial={{ strokeDashoffset: CIRCLE_C }}
+        animate={controls}
+      />
+      <defs>
+        <linearGradient id="timer-grad-journey" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stopColor="#9ebfb0" />
+          <stop offset="100%" stopColor="#d4e5de" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+}
 
 const cardVariants = {
   enter: (dir) => ({ x: dir > 0 ? 60 : -60, opacity: 0, scale: 0.96 }),
@@ -52,10 +100,12 @@ const cardVariants = {
 export default function JourneySection() {
   const [active, setActive] = useState(0);
   const [direction, setDirection] = useState(1);
-  const [paused, setPaused] = useState(false);
+  /** Pauses auto-advance + timer ring while pointer is over the section; resumes on leave. */
+  const [hoverPaused, setHoverPaused] = useState(false);
   const [key, setKey] = useState(0);
   const [cycle, setCycle] = useState(0);
-  const timerRef = useRef(null);
+
+  const paused = hoverPaused;
 
   const goTo = useCallback((idx) => {
     setDirection(idx > active ? 1 : -1);
@@ -75,9 +125,11 @@ export default function JourneySection() {
   }, []);
 
   useEffect(() => {
-    if (paused) return;
-    timerRef.current = setInterval(advance, INTERVAL);
-    return () => clearInterval(timerRef.current);
+    if (paused) {
+      return undefined;
+    }
+    const id = setInterval(advance, INTERVAL);
+    return () => clearInterval(id);
   }, [advance, paused, key]);
   const goPrev = useCallback(() => {
     setDirection(-1);
@@ -89,12 +141,18 @@ export default function JourneySection() {
     setKey((k) => k + 1);
   }, []);
 
+  const handlePointerLeave = useCallback(() => {
+    setHoverPaused(false);
+    // Fresh full INTERVAL + ring cycle after hover ends
+    setKey((k) => k + 1);
+  }, []);
+
   return (
       <section
         id="journey"
         className="py-28 bg-white relative overflow-hidden"
-        onMouseEnter={() => setPaused(true)}
-        onMouseLeave={() => setPaused(false)}
+        onPointerEnter={() => setHoverPaused(true)}
+        onPointerLeave={handlePointerLeave}
       >
       <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-gold/[0.02] rounded-full blur-[120px]" />
 
@@ -127,25 +185,7 @@ export default function JourneySection() {
               return (
               <div key={i} className="flex items-center">
                 <button onClick={() => goTo(i)} className="relative w-[64px] h-[64px] flex items-center justify-center">
-                  {i === active && (
-                    <svg className="absolute inset-0 w-full h-full -rotate-90" viewBox="0 0 64 64">
-                      <circle cx="32" cy="32" r={CIRCLE_R} fill="none" stroke="rgba(158,191,176,0.2)" strokeWidth="2.5" />
-                      <motion.circle
-                        cx="32" cy="32" r={CIRCLE_R} fill="none" stroke="url(#timer-grad)" strokeWidth="2.5"
-                        strokeLinecap="round" strokeDasharray={CIRCLE_C}
-                        initial={{ strokeDashoffset: CIRCLE_C }}
-                        animate={{ strokeDashoffset: 0 }}
-                        transition={{ duration: INTERVAL / 1000, ease: "linear" }}
-                        key={key}
-                      />
-                      <defs>
-                        <linearGradient id="timer-grad" x1="0" y1="0" x2="1" y2="1">
-                          <stop offset="0%" stopColor="#9ebfb0" />
-                          <stop offset="100%" stopColor="#d4e5de" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  )}
+                  {i === active && <JourneyTimerRing cycleKey={key} paused={paused} />}
                   <motion.div
                     key={`node-${i}-${cycle}`}
                     animate={{
@@ -213,7 +253,11 @@ export default function JourneySection() {
             <motion.div key={active} custom={direction} variants={cardVariants} initial="enter" animate="center" exit="exit">
               <div className={`relative bg-gradient-to-br ${steps[active].gradient} rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]`}>
                 <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='white'/%3E%3C/svg%3E\")" }} />
-                <motion.div className="absolute top-0 right-0 w-64 h-64 bg-white/[0.04] rounded-full -mr-20 -mt-20 blur-[50px]" animate={{ scale: [1, 1.15, 1] }} transition={{ duration: 5, repeat: Infinity }} />
+                <motion.div
+                  className="absolute top-0 right-0 w-64 h-64 bg-white/[0.04] rounded-full -mr-20 -mt-20 blur-[50px]"
+                  animate={paused ? { scale: 1 } : { scale: [1, 1.15, 1] }}
+                  transition={{ duration: 5, repeat: paused ? 0 : Infinity, ease: "easeInOut" }}
+                />
 
                 <div className="relative z-10 p-10 md:p-14 text-white">
                   <div className="flex items-center gap-5 mb-8">

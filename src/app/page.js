@@ -15,25 +15,28 @@ import DigitalSection from "@/components/DigitalSection";
 import AdmissionSection from "@/components/AdmissionSection";
 import LeadCapture from "@/components/LeadCapture";
 import WelcomeLeadModal from "@/components/WelcomeLeadModal";
+import HomeEntryFlow from "@/components/HomeEntryFlow";
 
 export default function Home() {
   return (
     <PageLayout>
-      <WelcomeLeadModal />
-      <HeroSection />
-      {/* <StatsBar /> */}
-      <TrustedBySection />
-      {/* <ResultsSection /> */}
-      <JourneySection />
-      <CoursesSection />
-      <WhyChooseSection />
-      <FacultySection />
-      <ParentsTrustSection />
-      <TestimonialsSection />
-      <CampusSection />
-      <DigitalSection />
-      <AdmissionSection />
-      <LeadCapture />
+      <HomeEntryFlow>
+        <WelcomeLeadModal />
+        <HeroSection />
+        {/* <StatsBar /> */}
+        <TrustedBySection />
+        {/* <ResultsSection /> */}
+        <JourneySection />
+        <CoursesSection />
+        <WhyChooseSection />
+        <FacultySection />
+        <ParentsTrustSection />
+        <TestimonialsSection />
+        <CampusSection />
+        <DigitalSection />
+        <AdmissionSection />
+        <LeadCapture />
+      </HomeEntryFlow>
     </PageLayout>
   );
 }

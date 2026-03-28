@@ -103,7 +103,6 @@ export default function Footer() {
             <h4 className="font-sans font-semibold text-[11px] mb-3 text-white/40 uppercase tracking-wider">Our Centers</h4>
             <ul className="space-y-2">
               <li><Link href="/locations/ca-coaching-in-vijayawada" className="text-emerald-100/30 hover:text-gold transition-colors text-[13px] font-sans">Vijayawada</Link></li>
-              <li><Link href="/locations/ca-coaching-in-guntur" className="text-emerald-100/30 hover:text-gold transition-colors text-[13px] font-sans">Guntur</Link></li>
             </ul>
           </div>
         </div>
