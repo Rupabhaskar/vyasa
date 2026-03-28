@@ -2,20 +2,66 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaTimes, FaArrowRight, FaShieldAlt } from "react-icons/fa";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { db } from "./lib/firebase";
 
 export default function WelcomeLeadModal() {
   const [isOpen, setIsOpen] = useState(false);
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    course: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => setIsOpen(true), 1000);
     return () => clearTimeout(timer);
   }, []);
 
-  const handleClose = () => setIsOpen(false);
+  const handleClose = () => {
+    setIsOpen(false);
+    setError("");
+    setSuccess(false);
+  };
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    setError("");
+    if (success) setSuccess(false);
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    handleClose();
+    setError("");
+
+    if (!form.name.trim()) return setError("Name is required.");
+    if (!/^[6-9]\d{9}$/.test(form.phone)) return setError("Enter valid 10-digit phone number.");
+    if (!/\S+@\S+\.\S+/.test(form.email)) return setError("Enter valid email address.");
+    if (!form.course) return setError("Please select course.");
+
+    setLoading(true);
+    try {
+      await addDoc(collection(db, "contact"), {
+        name: form.name.trim(),
+        phone: form.phone.trim(),
+        email: form.email.trim(),
+        course: form.course,
+        message: "",
+        source: "welcome-modal",
+        createdAt: serverTimestamp(),
+      });
+      setSuccess(true);
+      setForm({ name: "", phone: "", email: "", course: "" });
+      setTimeout(() => handleClose(), 900);
+    } catch {
+      setError("Failed to submit. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -49,10 +95,14 @@ export default function WelcomeLeadModal() {
                 </button>
               </div>
               <form onSubmit={handleSubmit} className="p-6 space-y-4">
+                {error && <p className="text-red-600 text-sm">{error}</p>}
+                {success && <p className="text-green-600 text-sm">Submitted successfully.</p>}
                 <input
                   type="text"
                   name="name"
                   placeholder="Full Name *"
+                  value={form.name}
+                  onChange={handleChange}
                   required
                   className="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3.5 text-primary-dark placeholder-muted/50 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold/30 transition-all text-sm font-sans"
                 />
@@ -60,6 +110,8 @@ export default function WelcomeLeadModal() {
                   type="tel"
                   name="phone"
                   placeholder="Phone Number *"
+                  value={form.phone}
+                  onChange={handleChange}
                   required
                   className="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3.5 text-primary-dark placeholder-muted/50 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold/30 transition-all text-sm font-sans"
                 />
@@ -67,11 +119,15 @@ export default function WelcomeLeadModal() {
                   type="email"
                   name="email"
                   placeholder="Email Address *"
+                  value={form.email}
+                  onChange={handleChange}
                   required
                   className="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3.5 text-primary-dark placeholder-muted/50 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold/30 transition-all text-sm font-sans"
                 />
                 <select
                   name="course"
+                  value={form.course}
+                  onChange={handleChange}
                   className="w-full bg-gray-50 border border-gray-100 rounded-xl px-4 py-3.5 text-primary-dark focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold/30 transition-all text-sm font-sans appearance-none"
                 >
                   <option value="">Select Course Interest</option>
@@ -82,9 +138,10 @@ export default function WelcomeLeadModal() {
                 </select>
                 <button
                   type="submit"
+                  disabled={loading}
                   className="w-full bg-gradient-to-r from-gold to-gold-light text-primary-dark font-bold py-4 rounded-xl text-sm shadow-lg hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2"
                 >
-                  Get Free Counseling
+                  {loading ? "Submitting..." : "Get Free Counseling"}
                   <FaArrowRight className="text-xs" />
                 </button>
                 <p className="text-center text-muted/40 text-[11px] flex items-center justify-center gap-1.5">

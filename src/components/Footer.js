@@ -31,6 +31,8 @@ const socials = [
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
+
   return (
     <footer className="bg-primary-dark text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
@@ -71,6 +73,11 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link href="/admin/login" className="text-emerald-100/30 bg-gold/10 rounded-md p-2 hover:text-gold transition-colors text-[13px] font-sans">
+                  Login
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -88,7 +95,7 @@ export default function Footer() {
           <div>
             <h3 className="font-heading font-semibold text-[15px] mb-5 text-white/80">Contact</h3>
             <div className="space-y-2.5 text-emerald-100/30 text-[13px] font-sans mb-6">
-              <p>Vijayawada & Guntur, AP, India</p>
+              <p>Vijayawada, AP, India</p>
               <p>+91 9133660500</p>
               <p>vyasaprofessionals@gmail.com</p>
               <p className="text-emerald-200/20 text-[11px]">Mon - Sat: 8:00 AM - 8:00 PM</p>
@@ -110,4 +117,11 @@ export default function Footer() {
       </div>
     </footer>
   );
+}
+
+function scrollToTopIfHome(e, pathname) {
+  if (pathname === "/") {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 }
