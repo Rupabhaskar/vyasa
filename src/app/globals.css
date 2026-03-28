@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand palette — forest green + cool grey (logo-inspired) */
-  --background: #e5e7e6;
-  --foreground: #1a2e28;
-  --primary-dark: #215143;
-  --primary: #2f6b56;
-  --primary-light: #4a9e82;
-  /* Highlights / CTAs — soft sage & mint (replaces gold) */
-  --gold: #9ebfb0;
-  --gold-light: #d4e5de;
-  --accent: #3d7a66;
-  --muted: #5c6d65;
-  --surface-deep: #0a1412;
-  --surface-deep-2: #0f221c;
+  /* Palette ratio target: primary 60%, secondary 30%, accent 10% */
+  --background: #f5fffa;
+  --foreground: #202c68;
+  --primary-dark: #2f3f97;
+  --primary: #3f51b5;
+  --primary-light: #6c7ad1;
+  --secondary: #ff7f50;
+  --gold: #ff7f50;
+  --gold-light: #ff9f7c;
+  --accent: #f5fffa;
+  --muted: #5b6498;
+  --surface-deep: #1f2b63;
+  --surface-deep-2: #273574;
   --card-bg: rgba(255, 255, 255, 0.78);
   --glass-bg: rgba(255, 255, 255, 0.15);
   --glass-border: rgba(255, 255, 255, 0.25);
@@ -26,6 +26,7 @@
   --color-primary: var(--primary);
   --color-primary-light: var(--primary-light);
   --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
   --color-gold: var(--gold);
   --color-gold-light: var(--gold-light);
   --color-accent: var(--accent);
@@ -167,7 +168,7 @@ h1, h2, h3 {
 
 /* Navbar blur */
 .navbar-blur {
-  background: rgba(229, 231, 230, 0.92);
+  background: rgba(245, 255, 250, 0.92);
   backdrop-filter: blur(24px) saturate(180%);
   -webkit-backdrop-filter: blur(24px) saturate(180%);
 }
@@ -304,7 +305,7 @@ h1, h2, h3 {
   left: 0;
   width: 100%;
   height: 60px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60'%3E%3Cpath fill='%23e5e7e6' d='M0,30 C360,60 720,0 1080,30 C1260,45 1380,30 1440,30 L1440,60 L0,60 Z'/%3E%3C/svg%3E");
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60'%3E%3Cpath fill='%23f5fffa' d='M0,30 C360,60 720,0 1080,30 C1260,45 1380,30 1440,30 L1440,60 L0,60 Z'/%3E%3C/svg%3E");
   background-size: cover;
 }
 
@@ -345,7 +346,7 @@ h1, h2, h3 {
   width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #e8eae9;
+  background: #eef8f4;
 }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, var(--primary-dark), var(--gold));
