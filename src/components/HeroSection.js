@@ -1,98 +1,124 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 const slides = [
-  {
-    image: "/hero/tata.png",
-      },
-  {
-    image: "/hero/modi.png",
- },
-  {
-    image: "/hero/image.png",
- },
+  { image: "/hero/signature (1).png" },
+  { image: "/hero/modi1.png" },
+  { image: "/hero/Ratan Tata.png" },
+  { image: "/hero/Afridi poster.png" },
 ];
 
-const BAR_COUNT = 14;
-const BAR_ORDER = [7, 2, 11, 0, 9, 4, 13, 1, 10, 5, 12, 3, 8, 6];
-const BLOCK_COLS = 7;
-const BLOCK_ROWS = 4;
-const TRANSITION_TYPES = ["vertical-bars", "center-curtain", "diagonal-wipe", "blocks"];
+const EASE = [0.22, 1, 0.36, 1];
+const EASE2 = [0.33, 1, 0.68, 1];
 
-function VerticalBarsReveal({ seed }) {
+function VenetianBlindsOverlay({ seed }) {
+  const COUNT = 12;
   return (
-    <div className="absolute inset-0 z-20 flex pointer-events-none">
-      {Array.from({ length: BAR_COUNT }).map((_, i) => {
-        const order = BAR_ORDER[(i + seed) % BAR_COUNT];
-        const fromLeft = (i + seed) % 2 === 0;
-        return (
-          <motion.div
-            key={`${seed}-bar-${i}`}
-            className="flex-1 bg-white/90"
-            initial={{ scaleX: 1, originX: fromLeft ? 0 : 1 }}
-            animate={{ scaleX: 0 }}
-            transition={{
-              delay: order * 0.038,
-              duration: 0.42,
-              ease: [0.33, 1, 0.68, 1],
-            }}
-          />
-        );
-      })}
+    <div className="absolute inset-0 z-30 flex flex-col pointer-events-none">
+      {Array.from({ length: COUNT }).map((_, i) => (
+        <motion.div
+          key={i}
+          className="flex-1 bg-black"
+          style={{ transformOrigin: (i + seed) % 2 === 0 ? "top" : "bottom" }}
+          initial={{ scaleY: 1, rotateX: 0 }}
+          animate={{ scaleY: 0, rotateX: (i + seed) % 2 === 0 ? 90 : -90 }}
+          transition={{ delay: i * 0.04, duration: 0.45, ease: EASE }}
+        />
+      ))}
     </div>
   );
 }
 
-function CenterCurtainReveal() {
+function MosaicDissolveOverlay({ seed }) {
+  const COLS = 10;
+  const ROWS = 6;
+  const total = COLS * ROWS;
+  const order = Array.from({ length: total }, (_, i) => i);
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = (seed * 7 + i * 13) % (i + 1);
+    [order[i], order[j]] = [order[j], order[i]];
+  }
   return (
-    <div className="absolute inset-0 z-20 pointer-events-none">
-      <motion.div
-        className="absolute inset-y-0 left-0 w-1/2 bg-white/90"
-        initial={{ x: 0 }}
-        animate={{ x: "-100%" }}
-        transition={{ duration: 0.5, ease: [0.33, 1, 0.68, 1] }}
-      />
-      <motion.div
-        className="absolute inset-y-0 right-0 w-1/2 bg-white/90"
-        initial={{ x: 0 }}
-        animate={{ x: "100%" }}
-        transition={{ duration: 0.5, ease: [0.33, 1, 0.68, 1] }}
-      />
+    <div
+      className="absolute inset-0 z-30 pointer-events-none grid"
+      style={{
+        gridTemplateColumns: `repeat(${COLS}, 1fr)`,
+        gridTemplateRows: `repeat(${ROWS}, 1fr)`,
+      }}
+    >
+      {Array.from({ length: total }).map((_, i) => (
+        <motion.div
+          key={i}
+          className="bg-black"
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 0 }}
+          transition={{ delay: order[i] * 0.012, duration: 0.3, ease: EASE }}
+        />
+      ))}
     </div>
   );
 }
 
-function DiagonalWipeReveal() {
+function DiamondRevealOverlay() {
   return (
     <motion.div
-      className="absolute inset-0 z-20 pointer-events-none bg-white/90"
-      initial={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)" }}
-      animate={{ clipPath: "polygon(100% 0, 100% 0, 100% 100%, 100% 100%)" }}
-      transition={{ duration: 0.6, ease: [0.45, 0, 0.55, 1] }}
+      className="absolute inset-0 z-30 pointer-events-none bg-black"
+      initial={{ clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)" }}
+      animate={{ clipPath: "polygon(50% -100%, 200% 50%, 50% 200%, -100% 50%)" }}
+      transition={{ duration: 0.7, ease: EASE2 }}
     />
   );
 }
 
-function BlocksReveal({ seed }) {
+function WaveRippleOverlay({ seed }) {
+  const STRIPS = 14;
   return (
-    <div
-      className="absolute inset-0 z-20 pointer-events-none grid"
-      style={{ gridTemplateColumns: `repeat(${BLOCK_COLS}, minmax(0, 1fr))` }}
-    >
-      {Array.from({ length: BLOCK_COLS * BLOCK_ROWS }).map((_, i) => {
-        const order = (i * 5 + seed * 3) % (BLOCK_COLS * BLOCK_ROWS);
+    <div className="absolute inset-0 z-30 flex pointer-events-none">
+      {Array.from({ length: STRIPS }).map((_, i) => {
+        const wave = Math.sin((i / STRIPS) * Math.PI) * 0.12;
+        const dir = seed % 2 === 0 ? 1 : -1;
         return (
           <motion.div
-            key={`${seed}-block-${i}`}
-            className="bg-white/90"
-            initial={{ opacity: 1, scale: 1 }}
-            animate={{ opacity: 0, scale: 0.88 }}
+            key={i}
+            className="flex-1 bg-black"
+            initial={{ y: 0, scaleY: 1 }}
+            animate={{ y: `${dir * 120}%`, scaleY: 0.6 }}
+            transition={{ delay: wave + i * 0.03, duration: 0.5, ease: EASE }}
+          />
+        );
+      })}
+    </div>
+  );
+}
+
+function CheckerboardOverlay({ seed }) {
+  const COLS = 8;
+  const ROWS = 5;
+  const total = COLS * ROWS;
+  return (
+    <div
+      className="absolute inset-0 z-30 pointer-events-none grid"
+      style={{
+        gridTemplateColumns: `repeat(${COLS}, 1fr)`,
+        gridTemplateRows: `repeat(${ROWS}, 1fr)`,
+      }}
+    >
+      {Array.from({ length: total }).map((_, i) => {
+        const row = Math.floor(i / COLS);
+        const col = i % COLS;
+        const isEven = (row + col) % 2 === 0;
+        return (
+          <motion.div
+            key={i}
+            className="bg-black"
+            initial={{ scale: 1, opacity: 1 }}
+            animate={{ scale: 0, opacity: 0, rotate: seed % 2 === 0 ? 45 : -45 }}
             transition={{
-              delay: order * 0.02,
-              duration: 0.3,
-              ease: [0.33, 1, 0.68, 1],
+              delay: isEven ? 0 : 0.2,
+              duration: 0.5,
+              ease: EASE,
             }}
           />
         );
@@ -101,66 +127,195 @@ function BlocksReveal({ seed }) {
   );
 }
 
-function TransitionOverlay({ seed }) {
-  const type = TRANSITION_TYPES[seed % TRANSITION_TYPES.length];
+function CurtainDropOverlay({ seed }) {
+  const STRIPS = 10;
+  const order = [5, 2, 8, 0, 7, 3, 9, 1, 6, 4];
+  return (
+    <div className="absolute inset-0 z-30 flex pointer-events-none">
+      {Array.from({ length: STRIPS }).map((_, i) => (
+        <motion.div
+          key={i}
+          className="flex-1 bg-black"
+          style={{ transformOrigin: "top" }}
+          initial={{ y: 0, scaleY: 1 }}
+          animate={{ y: "110%", scaleY: 0.3 }}
+          transition={{
+            delay: order[(i + seed) % STRIPS] * 0.045,
+            duration: 0.5,
+            ease: EASE2,
+          }}
+        />
+      ))}
+    </div>
+  );
+}
 
-  if (type === "center-curtain") return <CenterCurtainReveal />;
-  if (type === "diagonal-wipe") return <DiagonalWipeReveal />;
-  if (type === "blocks") return <BlocksReveal seed={seed} />;
-  return <VerticalBarsReveal seed={seed} />;
+function PixelScatterOverlay({ seed }) {
+  const COLS = 12;
+  const ROWS = 7;
+  const total = COLS * ROWS;
+  const cx = COLS / 2;
+  const cy = ROWS / 2;
+  return (
+    <div
+      className="absolute inset-0 z-30 pointer-events-none grid"
+      style={{
+        gridTemplateColumns: `repeat(${COLS}, 1fr)`,
+        gridTemplateRows: `repeat(${ROWS}, 1fr)`,
+      }}
+    >
+      {Array.from({ length: total }).map((_, i) => {
+        const row = Math.floor(i / COLS);
+        const col = i % COLS;
+        const dx = (col - cx) * 40;
+        const dy = (row - cy) * 40;
+        const dist = Math.sqrt((col - cx) ** 2 + (row - cy) ** 2);
+        return (
+          <motion.div
+            key={i}
+            className="bg-black"
+            initial={{ x: 0, y: 0, opacity: 1, scale: 1 }}
+            animate={{ x: `${dx}%`, y: `${dy}%`, opacity: 0, scale: 0.2 }}
+            transition={{ delay: dist * 0.035, duration: 0.5, ease: EASE }}
+          />
+        );
+      })}
+    </div>
+  );
+}
+
+function RadialWipeOverlay({ seed }) {
+  const origins = ["50% 50%", "0% 0%", "100% 0%", "0% 100%", "100% 100%"];
+  const origin = origins[seed % origins.length];
+  return (
+    <motion.div
+      className="absolute inset-0 z-30 pointer-events-none bg-black"
+      initial={{ clipPath: `circle(150% at ${origin})` }}
+      animate={{ clipPath: `circle(0% at ${origin})` }}
+      transition={{ duration: 0.75, ease: EASE2 }}
+    />
+  );
+}
+
+function ZigZagOverlay({ seed }) {
+  const STRIPS = 8;
+  return (
+    <div className="absolute inset-0 z-30 flex flex-col pointer-events-none">
+      {Array.from({ length: STRIPS }).map((_, i) => {
+        const dir = i % 2 === 0 ? 1 : -1;
+        return (
+          <motion.div
+            key={i}
+            className="flex-1 bg-black"
+            initial={{ x: 0, skewX: 0 }}
+            animate={{ x: `${dir * 120}%`, skewX: dir * 12 }}
+            transition={{ delay: i * 0.06, duration: 0.45, ease: EASE }}
+          />
+        );
+      })}
+    </div>
+  );
+}
+
+function CrossRevealOverlay() {
+  return (
+    <div className="absolute inset-0 z-30 pointer-events-none">
+      <motion.div
+        className="absolute bg-black"
+        style={{ top: 0, left: 0, right: "50%", bottom: "50%" }}
+        initial={{ x: 0, y: 0 }}
+        animate={{ x: "-110%", y: "-110%" }}
+        transition={{ duration: 0.55, ease: EASE2 }}
+      />
+      <motion.div
+        className="absolute bg-black"
+        style={{ top: 0, left: "50%", right: 0, bottom: "50%" }}
+        initial={{ x: 0, y: 0 }}
+        animate={{ x: "110%", y: "-110%" }}
+        transition={{ duration: 0.55, ease: EASE2 }}
+      />
+      <motion.div
+        className="absolute bg-black"
+        style={{ top: "50%", left: 0, right: "50%", bottom: 0 }}
+        initial={{ x: 0, y: 0 }}
+        animate={{ x: "-110%", y: "110%" }}
+        transition={{ duration: 0.55, ease: EASE2 }}
+      />
+      <motion.div
+        className="absolute bg-black"
+        style={{ top: "50%", left: "50%", right: 0, bottom: 0 }}
+        initial={{ x: 0, y: 0 }}
+        animate={{ x: "110%", y: "110%" }}
+        transition={{ duration: 0.55, ease: EASE2 }}
+      />
+    </div>
+  );
+}
+
+const OVERLAY_TYPES = [
+  "venetian-blinds",
+  "mosaic-dissolve",
+  "diamond-reveal",
+  "wave-ripple",
+  "checkerboard",
+  "curtain-drop",
+  "pixel-scatter",
+  "radial-wipe",
+  "zig-zag",
+  "cross-reveal",
+];
+
+function TransitionOverlay({ seed }) {
+  const type = OVERLAY_TYPES[seed % OVERLAY_TYPES.length];
+  switch (type) {
+    case "venetian-blinds": return <VenetianBlindsOverlay seed={seed} />;
+    case "mosaic-dissolve": return <MosaicDissolveOverlay seed={seed} />;
+    case "diamond-reveal":  return <DiamondRevealOverlay />;
+    case "wave-ripple":     return <WaveRippleOverlay seed={seed} />;
+    case "checkerboard":    return <CheckerboardOverlay seed={seed} />;
+    case "curtain-drop":    return <CurtainDropOverlay seed={seed} />;
+    case "pixel-scatter":   return <PixelScatterOverlay seed={seed} />;
+    case "radial-wipe":     return <RadialWipeOverlay seed={seed} />;
+    case "zig-zag":         return <ZigZagOverlay seed={seed} />;
+    case "cross-reveal":    return <CrossRevealOverlay />;
+    default:                return <VenetianBlindsOverlay seed={seed} />;
+  }
 }
 
 export default function HeroSection() {
   const [index, setIndex] = useState(0);
+  const [showOverlay, setShowOverlay] = useState(false);
+  const seedRef = useRef(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setIndex((prev) => (prev + 1) % slides.length);
+      seedRef.current += 1;
+      setShowOverlay(true);
+      setTimeout(() => {
+        setIndex((prev) => (prev + 1) % slides.length);
+        setShowOverlay(false);
+      }, 700);
     }, 6500);
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <section className="relative h-[240px] sm:h-[340px] md:h-[460px] lg:h-[560px] overflow-hidden bg-white/50">
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={index}
-          className="absolute inset-0"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.25 }}
-        >
-          {/* Soft tinted image background */}
-          <div className="absolute inset-0">
-            <Image
-              src={slides[index].image}
-              alt=""
-              fill
-              aria-hidden="true"
-              sizes="100vw"
-              className="object-cover object-center scale-110 blur-md opacity-45"
-            />
-            <div className="absolute inset-0 bg-white/30" />
-          </div>
+    <section className="relative w-full mt-[-10px] aspect-[96/35] overflow-hidden bg-black">
+      <Image
+        src={slides[index].image}
+        alt={`Hero banner ${index + 1}`}
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center"
+      />
 
-          {/* Main banner image (no crop) */}
-          <div className="absolute inset-0 p-1 sm:p-2 md:p-3">
-            <Image
-              src={slides[index].image}
-              alt={`Hero banner ${index + 1}`}
-              fill
-              priority={index === 0}
-              sizes="100vw"
-              className="object-contain object-center"
-            />
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-white/20 via-transparent to-white/15" />
-          <TransitionOverlay seed={index} />
-        </motion.div>
+      <AnimatePresence>
+        {showOverlay && (
+          <TransitionOverlay seed={seedRef.current} />
+        )}
       </AnimatePresence>
 
-      {/* Dot indicators */}
       <div className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
         {slides.map((_, i) => (
           <button
