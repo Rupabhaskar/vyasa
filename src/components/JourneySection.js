@@ -92,12 +92,12 @@ const cardVariants = {
 export default function JourneySection() {
   const [active, setActive] = useState(0);
   const [direction, setDirection] = useState(1);
-  /** Pauses auto-advance + timer ring while pointer is over the section; resumes on leave. */
+  /** Pauses only the timer ring while pointer is over the section. */
   const [hoverPaused, setHoverPaused] = useState(false);
   const [key, setKey] = useState(0);
   const [cycle, setCycle] = useState(0);
 
-  const paused = hoverPaused;
+  const timerPaused = hoverPaused;
 
   const goTo = useCallback((idx) => {
     setDirection(idx > active ? 1 : -1);
@@ -117,12 +117,9 @@ export default function JourneySection() {
   }, []);
 
   useEffect(() => {
-    if (paused) {
-      return undefined;
-    }
     const id = setInterval(advance, INTERVAL);
     return () => clearInterval(id);
-  }, [advance, paused, key]);
+  }, [advance, key]);
   const goPrev = useCallback(() => {
     setDirection(-1);
     setActive((prev) => {
@@ -173,11 +170,11 @@ export default function JourneySection() {
           <div className="flex items-center">
             {steps.map((step, i) => {
               const nextIndex = (active + 1) % steps.length;
-              const isNextBlinking = i === nextIndex && !paused;
+              const isNextBlinking = i === nextIndex;
               return (
               <div key={i} className="flex items-center">
                 <button onClick={() => goTo(i)} className="relative w-[64px] h-[64px] flex items-center justify-center">
-                  {i === active && <JourneyTimerRing cycleKey={key} paused={paused} />}
+                  {i === active && <JourneyTimerRing cycleKey={key} paused={timerPaused} />}
                   <motion.div
                     key={`node-${i}-${cycle}`}
                     animate={{
@@ -247,8 +244,8 @@ export default function JourneySection() {
                 <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='white'/%3E%3C/svg%3E\")" }} />
                 <motion.div
                   className="absolute top-0 right-0 w-64 h-64 bg-white/[0.04] rounded-full -mr-20 -mt-20 blur-[50px]"
-                  animate={paused ? { scale: 1 } : { scale: [1, 1.15, 1] }}
-                  transition={{ duration: 5, repeat: paused ? 0 : Infinity, ease: "easeInOut" }}
+                  animate={{ scale: [1, 1.15, 1] }}
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
                 />
 
                 <div className="relative z-10 p-10 md:p-14 text-white">
