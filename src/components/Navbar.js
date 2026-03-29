@@ -22,7 +22,7 @@ const navLinks = [
   { label: "Contact", href: "/#contact" },
 ];
 
-function NavLink({ link, pathname, onHoverStart, onHoverEnd, isOpen, pathnameStartsWithCourses, renderDropdown }) {
+function NavLink({ link, pathname, onHoverStart, onHoverEnd, isOpen, pathnameStartsWithCourses, renderDropdown, onNavigate }) {
   const isActive = link.mega === "courses" ? pathnameStartsWithCourses : (link.href === "/" ? pathname === "/" : pathname.startsWith(link.href) || (link.href === "/#contact" && pathname === "/"));
   const hasMega = !!link.mega;
 
@@ -57,6 +57,7 @@ function NavLink({ link, pathname, onHoverStart, onHoverEnd, isOpen, pathnameSta
         <Link
           href={link.href}
           onClick={(e) => {
+            onNavigate?.();
             if (link.href === "/" && pathname === "/") {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
@@ -97,7 +98,7 @@ function NavLink({ link, pathname, onHoverStart, onHoverEnd, isOpen, pathnameSta
   );
 }
 
-function CourseDropdown({ pathname }) {
+function CourseDropdown({ pathname, onNavigate }) {
   return (
     <div className="relative bg-white rounded-xl shadow-[0_16px_48px_rgba(0,0,0,0.12),0_0_0_1px_rgba(0,0,0,0.04)] overflow-hidden w-[240px]">
       {/* Subtle top accent */}
@@ -116,6 +117,7 @@ function CourseDropdown({ pathname }) {
               <Link
                 key={item.label}
                 href={item.href}
+                onClick={onNavigate}
                 className={`group/item flex items-center gap-2.5 rounded-lg px-3 py-2.5 transition-all duration-200 ${
                   isActive ? "bg-primary-dark/5 ring-1 ring-primary-dark/10" : "hover:bg-gray-50/90"
                 }`}
@@ -139,6 +141,7 @@ function CourseDropdown({ pathname }) {
         </div>
         <Link
           href="/#contact"
+          onClick={onNavigate}
           className="mt-3 flex items-center justify-center gap-1.5 w-full py-2.5 rounded-lg bg-gradient-to-r from-gold/10 to-gold/5 border border-gold/15 text-primary-dark text-[12px] font-semibold hover:from-gold/15 hover:to-gold/10 hover:border-gold/25 transition-all duration-200"
         >
           Book Free Counseling
@@ -161,6 +164,11 @@ export default function Navbar() {
   const pathname = usePathname();
   const closeTimer = useRef(null);
   const lastScrollY = useRef(0);
+  const closeAllMenus = useCallback(() => {
+    setMobileOpen(false);
+    setOpenMega(null);
+    setMobileExpanded(null);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => {
@@ -179,12 +187,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    setMobileOpen(false);
-    setOpenMega(null);
-    setMobileExpanded(null);
-  }, [pathname]);
-
   const handleHoverStart = useCallback((mega) => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
     setOpenMega(mega);
@@ -197,7 +199,7 @@ export default function Navbar() {
   return (
     <>
     <motion.div
-      className="fixed top-0 left-0 right-[-100px] z-50"
+      className="fixed top-0 left-0 right-0 z-50"
       initial={{ y: 0 }}
       animate={{ y: navbarVisible ? 0 : -NAVBAR_HEIGHT }}
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
@@ -218,29 +220,14 @@ export default function Navbar() {
       </div> */}
 
       {/* Top marquee banner */}
-<div className="bg-primary-dark text-white text-[12px] md:text-xs font-medium uppercase overflow-hidden">
+<div className="bg-primary-dark text-white text-[11px] md:text-xs font-medium uppercase overflow-hidden">
 
 <div className="marquee">
   <div className="track">
 
     {/* Item */}
-    <div className="item ">
+    <div className="item">
       <span className="new-star">NEW</span>
-      <span>Admissions Open</span>
-
-      <span className="divider">|</span>
-      <span>Limited Seats</span>
-
-      <span className="divider">|</span>
-
-      <Link
-        href="/landing/ca-coaching-admissions-2026"
-        className="apply"
-      >
-        Apply Now
-      </Link>
-
-      <span className="new-star ml-[500px]">NEW</span>
       <span>Admissions Open</span>
 
       <span className="divider">|</span>
@@ -329,7 +316,8 @@ export default function Navbar() {
                 onHoverStart={handleHoverStart}
                 onHoverEnd={handleHoverEnd}
                 isOpen={openMega === link.mega}
-                renderDropdown={() => <CourseDropdown pathname={pathname} />}
+                renderDropdown={() => <CourseDropdown pathname={pathname} onNavigate={closeAllMenus} />}
+                onNavigate={closeAllMenus}
               />
             ))}
           </div>
@@ -338,6 +326,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <Link
               href="/landing/ca-coaching-admissions-2026"
+              onClick={closeAllMenus}
               className="hidden lg:inline-flex items-center gap-2.5 bg-gradient-to-r from-gold to-gold-light text-primary-dark pl-6 pr-5 py-3 rounded-full text-[13px] font-bold shadow-[0_4px_16px_rgba(158,191,176,0.45)] hover:shadow-[0_8px_28px_rgba(158,191,176,0.55)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
             >
               Apply Now
@@ -396,6 +385,7 @@ export default function Navbar() {
                           <Link
                             href={link.href}
                             onClick={(e) => {
+                              closeAllMenus();
                               if (link.href === "/" && pathname === "/") {
                                 e.preventDefault();
                                 window.scrollTo({ top: 0, behavior: "smooth" });
@@ -432,6 +422,7 @@ export default function Navbar() {
                                 <Link
                                   key={item.label}
                                   href={item.href}
+                                  onClick={closeAllMenus}
                                   className={`flex items-center gap-3 rounded-xl px-4 py-3 transition-colors ${
                                     pathname === item.href ? "bg-primary/5 text-primary-dark" : "text-gray-600 hover:bg-gray-50"
                                   }`}
@@ -453,7 +444,7 @@ export default function Navbar() {
                 })}
 
                 <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25 }} className="pt-6 mt-4 border-t border-gray-100">
-                  <Link href="/landing/ca-coaching-admissions-2026" className="flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-light text-primary-dark py-4 rounded-xl text-[14px] font-bold shadow-[0_4px_20px_rgba(158,191,176,0.4)] hover:shadow-[0_6px_24px_rgba(158,191,176,0.5)] transition-all">
+                  <Link href="/landing/ca-coaching-admissions-2026" onClick={closeAllMenus} className="flex items-center justify-center gap-2 bg-gradient-to-r from-gold to-gold-light text-primary-dark py-4 rounded-xl text-[14px] font-bold shadow-[0_4px_20px_rgba(158,191,176,0.4)] hover:shadow-[0_6px_24px_rgba(158,191,176,0.5)] transition-all">
                     Apply Now
                     <FaArrowRight className="text-xs" />
                   </Link>

@@ -22,33 +22,25 @@ const steps = [
     title: "Foundation of Discipline",
     gradient: "from-primary-dark to-surface-deep-2",
     duration: "Phase 1",
-    description:
-      "Build habits, attendance, and consistency — the non‑negotiable base that makes everything else possible.",
   },
   {
     icon: <FaBookOpen />,
     title: "Concept Mastery",
     gradient: "from-surface-deep-2 to-primary",
     duration: "Phase 2",
-    description:
-      "Deep understanding over memorisation — clear explanations, practice, and doubt resolution until concepts click.",
   },
   {
     icon: <FaAward />,
     title: "Exam Excellence",
     gradient: "from-primary to-primary-light",
     duration: "Phase 3",
-    description:
-      "Mock tests, time discipline, and paper strategy — training that mirrors the real exam until confidence peaks.",
-  },
+ },
   {
     icon: <FaCrown />,
     title: "Professional Success",
     gradient: "from-primary-dark to-primary",
     duration: "Phase 4",
-    description:
-      "From clearing papers to career readiness — mentorship and direction for the path after qualification.",
-  },
+ },
 ];
 
 function JourneyTimerRing({ cycleKey, paused }) {
@@ -269,9 +261,6 @@ export default function JourneySection() {
                       <h3 className="text-2xl md:text-3xl font-bold tracking-tight">{steps[active].title}</h3>
                     </div>
                   </div>
-                  <motion.p initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="text-white/60 text-[15px] leading-relaxed mb-8 max-w-2xl font-sans">
-                    {steps[active].description}
-                  </motion.p>
                   <div className="flex items-center justify-between pt-6 mt-6 border-t border-white/[0.06]">
                     <div className="flex gap-2">
                       {steps.map((_, i) => (

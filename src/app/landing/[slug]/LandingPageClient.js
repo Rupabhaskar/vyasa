@@ -42,7 +42,7 @@ export default function LandingPageClient({ page }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             href="#landing-form"
-            className="btn-glow inline-block bg-gold hover:bg-gold-light text-primary-dark px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-2xl transition-all"
+            className="btn-glow inline-block bg-gold hover:bg-gold-light text-primary-dark px-6 sm:px-10 py-3.5 sm:py-4 rounded-full font-bold text-base sm:text-lg shadow-lg hover:shadow-2xl transition-all"
           >
             {page.formHeading}
           </motion.a>
@@ -51,7 +51,7 @@ export default function LandingPageClient({ page }) {
 
       {/* Urgency */}
       <div className="bg-gold/10 border-y border-gold/20 py-4">
-        <div className="max-w-5xl mx-auto px-6 flex items-center justify-center gap-3 text-sm md:text-base">
+        <div className="max-w-5xl mx-auto px-6 flex flex-wrap items-center justify-center gap-2.5 text-center text-sm md:text-base">
           <FaExclamationTriangle className="text-gold shrink-0" />
           <span className="text-primary font-semibold">{page.urgency}</span>
         </div>
@@ -87,7 +87,7 @@ export default function LandingPageClient({ page }) {
       <section className="py-20 bg-slate-50">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-primary text-center mb-12">What Our Students Say</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {page.testimonials.map((t, i) => (
               <motion.div
                 key={i}

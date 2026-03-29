@@ -9,10 +9,7 @@ const quickLinks = [
   { label: "Courses", href: "/courses" },
   { label: "Results", href: "/results" },
   { label: "Student Journey", href: "/student-journey" },
-  { label: "Campus Life", href: "/campus-life" },
   { label: "Blog", href: "/blog" },
-  { label: "Locations", href: "/locations" },
-  { label: "Link to Us", href: "/link-to-us" },
 ];
 
 const courseLinks = [
@@ -32,6 +29,7 @@ const socials = [
 
 export default function Footer() {
   const pathname = usePathname();
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-primary-dark text-white">
@@ -44,7 +42,7 @@ export default function Footer() {
                 alt="Vyasa Institute - Institute for Professional Courses"
                 width={280}
                 height={74}
-                className="h-24 w-auto object-contain object-left brightness-0 invert"
+                className="h-16 sm:h-20 md:h-24 w-auto object-contain object-left brightness-0 invert"
               />
             </Link>
             <p className="text-emerald-100/30 text-[13px] leading-relaxed mb-6 font-sans">
@@ -52,7 +50,12 @@ export default function Footer() {
             </p>
             <div className="flex gap-2.5">
               {socials.map((s, i) => (
-                <a key={i} href={s.href} aria-label={s.label} className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-emerald-100/30 hover:bg-gold/10 hover:text-gold hover:border-gold/15 transition-all duration-300 text-sm">
+                <a
+                  key={i}
+                  href={s.href}
+                  aria-label={s.label}
+                  className="w-9 h-9 rounded-lg bg-[#1e2b63] border border-[#2f3f97] flex items-center justify-center text-emerald-100/80 hover:bg-gold hover:text-primary-dark hover:border-gold hover:-translate-y-0.5 hover:shadow-[0_8px_18px_rgba(255,127,80,0.35)] transition-all duration-300 text-sm"
+                >
                   {s.icon}
                 </a>
               ))}
@@ -67,14 +70,17 @@ export default function Footer() {
                   <Link
                     href={link.href}
                     onClick={(e) => link.href === "/" && scrollToTopIfHome(e, pathname)}
-                    className="text-emerald-100/30 hover:text-gold transition-colors text-[13px] font-sans"
+                    className="text-emerald-100/80 hover:text-gold hover:translate-x-0.5 transition-all duration-300 text-[13px] font-sans inline-flex"
                   >
                     {link.label}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link href="/admin/login" className="text-emerald-100/30 bg-gold/10 rounded-md p-2 hover:text-gold transition-colors text-[13px] font-sans">
+                <Link
+                  href="/admin/login"
+                  className="inline-flex items-center justify-center rounded-md px-3 py-2 bg-gold text-primary-dark font-semibold hover:bg-gold-light hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(255,127,80,0.35)] transition-all duration-300 text-[13px] font-sans"
+                >
                   Login
                 </Link>
               </li>
@@ -86,7 +92,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {courseLinks.map((c, i) => (
                 <li key={i}>
-                  <Link href={c.href} className="text-emerald-100/30 hover:text-gold transition-colors text-[13px] font-sans">{c.label}</Link>
+                  <Link href={c.href} className="text-emerald-100/80 hover:text-gold hover:translate-x-0.5 inline-flex transition-all duration-300 text-[13px] font-sans">{c.label}</Link>
                 </li>
               ))}
             </ul>
@@ -94,23 +100,33 @@ export default function Footer() {
 
           <div>
             <h3 className="font-heading font-semibold text-[15px] mb-5 text-white/80">Contact</h3>
-            <div className="space-y-2.5 text-emerald-100/30 text-[13px] font-sans mb-6">
+            <div className="space-y-2.5 text-emerald-100/70 text-[13px] font-sans mb-6">
               <p>Vijayawada, AP, India</p>
-              <p>+91 9133660500</p>
-              <p>vyasaprofessionals@gmail.com</p>
+              <p>
+                <a
+                  href="tel:+919133660500"
+                  className="hover:text-gold hover:translate-x-0.5 inline-flex transition-all duration-300"
+                >
+                  +91 9133660500
+                </a>
+              </p>
+              <p>
+                <a
+                  href="mailto:vyasaprofessionals@gmail.com"
+                  className="hover:text-gold hover:translate-x-0.5 inline-flex transition-all duration-300"
+                >
+                  vyasaprofessionals@gmail.com
+                </a>
+              </p>
               <p className="text-emerald-200/20 text-[11px]">Mon - Sat: 8:00 AM - 8:00 PM</p>
             </div>
-            <h4 className="font-sans font-semibold text-[11px] mb-3 text-white/40 uppercase tracking-wider">Our Centers</h4>
-            <ul className="space-y-2">
-              <li><Link href="/locations/ca-coaching-in-vijayawada" className="text-emerald-100/30 hover:text-gold transition-colors text-[13px] font-sans">Vijayawada</Link></li>
-            </ul>
           </div>
         </div>
       </div>
 
       <div className="border-t border-white/[0.04]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-emerald-200/20 text-[12px] font-sans">{"\u00A9"} 2026 Vyasa Institute. All rights reserved.</p>
+          <p className="text-emerald-200/20 text-[12px] font-sans">{"\u00A9"} {currentYear} Vyasa Institute. All rights reserved.</p>
           <p className="text-emerald-200/20 text-[12px] font-sans">Building future Chartered Accountants since 2010</p>
         </div>
       </div>

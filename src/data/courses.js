@@ -1,3 +1,5 @@
+const CURRENT_YEAR = new Date().getFullYear();
+
 export const courses = [
   {
     slug: "ca-foundation",
@@ -120,7 +122,7 @@ The results from our CA Intermediate program have been exceptional, with our stu
     icon: "FaGraduationCap",
     duration: "12 Months",
     fee: "₹75,000 per group",
-    nextBatch: "September 2026",
+    nextBatch: `September ${CURRENT_YEAR}`,
     eligibility: "CA Intermediate Pass + Articleship",
     overview: `The CA Final is the culmination of the Chartered Accountancy journey, and at Vyasa Institute, we ensure our students are prepared not just to pass but to excel at the highest level. Our CA Final program is specifically designed with a rank-oriented approach that has consistently produced All India Rank holders and top performers.
 
@@ -179,7 +181,7 @@ Our CA Final results are a source of immense pride — multiple All India Rank h
     icon: "FaFileAlt",
     duration: "Foundation: 8 months | Inter: 9 months | Final: 1 year",
     fee: "₹40,000 onwards",
-    nextBatch: "July 2026",
+    nextBatch: `July ${CURRENT_YEAR}`,
     eligibility: "10+2 / Intermediate or equivalent",
     overview: `In order to promote, oversee, and advance the cost accounting profession, the then-British Government of India established the Institute of Cost Accountants of India (also known as the Institute of Cost and Works Accountants of India) in 1944. The institute is a controlled organisation governed by the Companies Act. Only one established professional organisation and licencing authority in India, the Institute of Cost Accountants of India, is completely focused on cost and management accounting. A special statute passed by our parliament in 1959 by the Government of India gave the autonomous statutory authority.
 
@@ -306,7 +308,7 @@ Our CMA students have an impressive track record of success, with high pass rate
     icon: "FaCalculator",
     duration: "8 Months",
     fee: "₹40,000 onwards",
-    nextBatch: "July 2026",
+    nextBatch: `July ${CURRENT_YEAR}`,
     eligibility: "10+2 or Intermediate or equivalent",
     overview: `CMA Foundation is the first stage of the CMA (India) qualification and builds a strong base in accounting, laws, mathematics, statistics, economics, and management. At Vyasa Institute, our CMA Foundation coaching is designed to help students master fundamentals with clarity and confidence.
 
@@ -394,7 +396,7 @@ We emphasize conceptual clarity and exam writing skills through problem-solving 
     icon: "FaCrown",
     duration: "1 Year",
     fee: "₹40,000 onwards",
-    nextBatch: "July 2026",
+    nextBatch: `July ${CURRENT_YEAR}`,
     eligibility: "CMA Intermediate and complete practical training",
     overview: `CMA Final is the last stage of the CMA journey and demands strong conceptual depth, practical application, and disciplined exam preparation. Vyasa Institute’s CMA Final coaching is designed to help students handle advanced topics confidently, with a clear focus on problem-solving and exam performance.
 

@@ -116,23 +116,24 @@ export default function HomeEntryFlow({ children }) {
             key={phase}
             role="dialog"
             aria-modal="true"
-            className="fixed inset-0 z-[200] flex flex-col bg-black"
+            className="fixed inset-0 z-[200] flex flex-col bg-white/35 backdrop-blur-[2px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.35 }}
           >
-            <div className="relative h-full w-full min-h-0">
-              <Image
-                src="/assets/image1.png"
-                alt=""
-                fill
-                priority
-                className="object-cover"
-                sizes="100vw"
-              />
-
-              <div className="absolute inset-0" />
+            <div className="relative h-full w-full min-h-0 bg-white/35 p-2 flex items-center justify-center">
+              <div className="inline-flex max-w-full max-h-full overflow-hidden rounded-2xl border border-white/90 bg-white/85 shadow-[0_16px_48px_rgba(0,0,0,0.25)]">
+                <Image
+                  src="/assets/image1.png"
+                  alt="Vyasa Institute splash banner"
+                  width={1600}
+                  height={900}
+                  priority
+                  className="w-auto h-auto max-w-full max-h-[calc(100vh-1rem)] object-contain"
+                  sizes="100vw"
+                />
+              </div>
 
               <button
                 type="button"

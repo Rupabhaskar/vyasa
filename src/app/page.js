@@ -1,6 +1,7 @@
 "use client";
 import PageLayout from "@/components/shared/PageLayout";
 import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
 import StatsBar from "@/components/StatsBar";
 import TrustedBySection from "@/components/TrustedBySection";
 import ResultsSection from "@/components/ResultsSection";
@@ -23,6 +24,7 @@ export default function Home() {
       <HomeEntryFlow>
         <WelcomeLeadModal />
         <HeroSection />
+        <AboutSection />
         {/* <StatsBar /> */}
         <TrustedBySection />
         {/* <ResultsSection /> */}

@@ -67,6 +67,24 @@
   white-space: nowrap;
 }
 
+@media (max-width: 640px) {
+  .track {
+    animation-duration: 24s;
+  }
+
+  .item {
+    gap: 10px;
+    padding-left: max(14px, env(safe-area-inset-left, 0px));
+    padding-right: max(14px, env(safe-area-inset-right, 0px));
+  }
+
+  .new-star {
+    width: 30px;
+    height: 30px;
+    font-size: 8px;
+  }
+}
+
 /* divider */
 .divider {
   opacity: 0.4;

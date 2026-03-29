@@ -1,11 +1,13 @@
+const CURRENT_YEAR = new Date().getFullYear();
+
 export const landingPages = [
   {
     slug: "ca-coaching-admissions-2026",
-    metaTitle: "CA Coaching Admissions 2026 | Limited Seats – Vyasa Institute",
+    metaTitle: `CA Coaching Admissions ${CURRENT_YEAR} | Limited Seats – Vyasa Institute`,
     metaDescription:
       "Admissions open for CA Foundation, Inter & Final coaching at Vyasa Institute. Expert faculty, proven results with All India Ranks. Apply now — limited seats.",
-    keywords: "CA admissions 2026, CA coaching admissions, CA Foundation admission, Vyasa Institute admission",
-    headline: "CA Admissions 2026 Are Open",
+    keywords: `CA admissions ${CURRENT_YEAR}, CA coaching admissions, CA Foundation admission, Vyasa Institute admission`,
+    headline: `CA Admissions ${CURRENT_YEAR} Are Open`,
     subheadline: "Join the institute that has produced 50+ All India Rank holders. Limited seats available for the upcoming batch.",
     benefits: [
       { title: "Expert Faculty", desc: "Learn from practicing CAs and rank holders with 10-18 years of teaching experience." },
@@ -20,7 +22,7 @@ export const landingPages = [
       { name: "Karthik Rajan", rank: "AIR 5 – CA Inter", text: "The integrated coaching model is brilliant. Personal mentorship made all the difference in my journey." },
       { name: "Divya Sharma", rank: "AIR 8 – CA Foundation", text: "Starting my CA journey at Vyasas was the best decision. The structured preparation and expert faculty were invaluable." },
     ],
-    urgency: "Only 120 seats remaining for July 2026 batch. Applications close June 30.",
+    urgency: `Only 120 seats remaining for July ${CURRENT_YEAR} batch. Applications close June 30.`,
     formHeading: "Apply Now – Limited Seats",
   },
   {

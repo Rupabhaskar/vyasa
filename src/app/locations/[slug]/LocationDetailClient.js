@@ -29,7 +29,7 @@ export default function LocationDetailClient({ location }) {
       {/* Stats */}
       <section className="bg-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-6 py-8">
-          <div className="grid grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-1 gap-6 text-center sm:grid-cols-3 sm:gap-8">
             <div>
               <FaUsers className="text-2xl text-primary mx-auto mb-2" />
               <div className="text-2xl font-bold text-primary">{location.stats.students}</div>

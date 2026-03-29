@@ -5,11 +5,11 @@ import { FaArrowRight } from "react-icons/fa";
 
 const courses = [
   {
-    title: "CA/CMA + Degree",
-    desc: "Pursue your degree alongside CA or CMA preparation. Triple qualification pathway for maximum career advantage.",
-    duration: "3 Years",
+    title: "CA Foundation",
+    desc: "Comprehensive coaching for all 4 papers with conceptual clarity, structured tests, and exam strategy support.",
+    duration: "8 Months",
     tag: "",
-    href: "/courses",
+    href: "/courses/ca-foundation",
   },
   {
     title: "CMA Foundation",
@@ -19,11 +19,25 @@ const courses = [
     href: "/courses/cma-foundation",
   },
   {
+    title: "CA Intermediate",
+    desc: "Group-wise intensive coaching with practical training, full-length mock exams, and targeted revision crash courses.",
+    duration: "10 Months",
+    tag: "",
+    href: "/courses/ca-intermediate",
+  },
+  {
     title: "CMA Intermediate",
     desc: "Group-wise preparation with answer-writing practice, problem-solving sessions, and mock exams for June/December attempts.",
     duration: "9 Months",
     tag: "",
     href: "/courses/cma-intermediate",
+  },
+  {
+    title: "CA Final",
+    desc: "Rank-oriented preparation with advanced coaching, real-world case studies, and one-on-one mentorship by qualified CAs.",
+    duration: "12 Months",
+    tag: "Rank Course",
+    href: "/courses/ca-final",
   },
   {
     title: "CMA Final",
@@ -33,27 +47,12 @@ const courses = [
     href: "/courses/cma-final",
   },
   {
-    title: "CA Foundation",
-    desc: "Comprehensive coaching covering all 4 papers with structured test series, conceptual clarity sessions, and exam strategies.",
-    duration: "8 Months",
+    title: "CA/CMA + Degree",
+    desc: "Pursue your degree alongside CA or CMA preparation. Triple qualification pathway for maximum career advantage.",
+    duration: "3 Years",
     tag: "",
-    href: "/courses/ca-foundation",
+    href: "/courses",
   },
-  {
-    title: "CA Intermediate",
-    desc: "Group-wise intensive coaching with practical training, full-length mock exams, and targeted revision crash courses.",
-    duration: "10 Months",
-    tag: "",
-    href: "/courses/ca-intermediate",
-  },
-  {
-    title: "CA Final",
-    desc: "Rank-oriented preparation with advanced coaching, real-world case studies, and one-on-one mentorship by qualified CAs.",
-    duration: "12 Months",
-    tag: "Rank Course",
-    href: "/courses/ca-final",
-  },
-  
 ];
 
 export default function CoursesSection() {
@@ -79,7 +78,7 @@ export default function CoursesSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
           {courses.map((course, i) => (
             <motion.div
               key={i}
@@ -92,21 +91,23 @@ export default function CoursesSection() {
             >
               <div className="h-[2px] bg-gradient-to-r from-transparent via-gold/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
 
-              <div className="p-8">
+              <div className="p-4 sm:p-6 lg:p-8">
                 {course.tag && (
-                  <span className="absolute top-5 right-5 text-[9px] font-sans font-bold uppercase tracking-[0.15em] text-gold bg-gold/[0.06] border border-gold/10 px-3 py-1 rounded-full">
+                  <span className="absolute top-3 right-3 sm:top-5 sm:right-5 text-[8px] sm:text-[9px] font-sans font-bold uppercase tracking-[0.15em] text-gold bg-gold/[0.06] border border-gold/10 px-2 sm:px-3 py-1 rounded-full">
                     {course.tag}
                   </span>
                 )}
 
-                <h3 className="text-xl font-bold text-primary-dark mb-3 group-hover:text-gold transition-colors duration-300">
+                <h3 className="text-base sm:text-lg lg:text-xl font-bold text-primary-dark mb-2 sm:mb-3 group-hover:text-gold transition-colors duration-300 leading-snug">
                   {course.title}
                 </h3>
-                <p className="text-muted text-[14px] leading-relaxed mb-6 font-sans">{course.desc}</p>
+                <p className="text-muted text-xs sm:text-[13px] lg:text-[14px] leading-relaxed mb-4 sm:mb-6 font-sans">
+                  {course.desc}
+                </p>
 
-                <div className="flex items-center justify-between pt-5 border-t border-gray-50">
-                  <span className="text-xs text-muted/50 font-sans font-medium uppercase tracking-wider">{course.duration}</span>
-                  <Link href={course.href} className="inline-flex items-center gap-1.5 text-primary-dark/60 hover:text-gold font-sans font-semibold text-xs transition-colors group/link">
+                <div className="flex items-center justify-between pt-4 sm:pt-5 border-t border-gray-50">
+                  <span className="text-[10px] sm:text-xs text-muted/60 font-sans font-medium uppercase tracking-wider">{course.duration}</span>
+                  <Link href={course.href} className="inline-flex items-center gap-1.5 text-primary-dark/70 hover:text-gold font-sans font-semibold text-[11px] sm:text-xs transition-colors group/link">
                     Learn More <FaArrowRight className="text-[8px] group-hover/link:translate-x-0.5 transition-transform" />
                   </Link>
                 </div>

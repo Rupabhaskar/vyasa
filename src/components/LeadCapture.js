@@ -151,12 +151,12 @@ export default function ContactSection() {
 
           {/* Select */}
           <div>
-            <label className="text-sm font-medium">Select Course</label>
+            <label className="text-sm font-medium text-primary-dark">Select Course</label>
             <select
               name="course"
               value={form.course}
               onChange={handleChange}
-              className="input mt-1 border-1 border-black/30 rounded-sm"
+              className="w-full mt-1 bg-white border border-gray-200 rounded-xl px-5 py-3 text-sm focus:ring-2 focus:ring-gold/30 focus:border-gold/40 outline-none transition"
               required
             >
               <option value="">Choose your course</option>
@@ -168,12 +168,12 @@ export default function ContactSection() {
 
           {/* Message */}
           <div>
-            <label className="text-sm font-medium">Message (Optional)</label>
+            <label className="text-sm font-medium text-primary-dark">Message (Optional)</label>
             <textarea
               name="message"
               value={form.message}
               onChange={handleChange}
-              className="input mt-1 border-1 border-black/30 rounded-sm"
+              className="w-full mt-1 bg-white border border-gray-200 rounded-xl px-5 py-3 text-sm focus:ring-2 focus:ring-gold/30 focus:border-gold/40 outline-none transition min-h-[110px] resize-y"
             />
           </div>
 
