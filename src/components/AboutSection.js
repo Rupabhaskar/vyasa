@@ -81,7 +81,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative py-16 sm:py-20 md:py-24 bg-gradient-to-b from-white to-[#f8f7f4] overflow-hidden"
+      className="relative py-16 sm:py-20 md:py-8 bg-gradient-to-b from-white to-[#f8f7f4] overflow-hidden"
     >
       {/* Background Blobs */}
       <div className="absolute -top-20 -right-20 w-60 sm:w-72 h-60 sm:h-72 bg-gold/10 rounded-full blur-3xl animate-pulse" />

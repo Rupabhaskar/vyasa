@@ -1,4 +1,12 @@
-export const blogPosts = [
+const CURRENT_YEAR = new Date().getUTCFullYear();
+const YEAR_PATTERN = /\b2026\b/g;
+
+const EXCLUDED_CITY_POST_SLUGS = new Set([
+  "best-ca-coaching-in-guntur",
+  "best-ca-coaching-in-hyderabad",
+]);
+
+const rawBlogPosts = [
   {
     slug: "how-to-prepare-for-ca-foundation-2026",
     title: "How to Prepare for CA Foundation 2026: Complete Strategy Guide",
@@ -888,6 +896,25 @@ Many institutes (including Vyasa Institute) offer hybrid options — attend in p
     tags: ["Career Guidance", "Online Coaching", "CA Coaching", "Study Tips"],
   },
 ];
+
+function replaceYearTokens(value) {
+  if (typeof value === "string") {
+    return value.replace(YEAR_PATTERN, String(CURRENT_YEAR));
+  }
+  if (Array.isArray(value)) {
+    return value.map(replaceYearTokens);
+  }
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, val]) => [key, replaceYearTokens(val)])
+    );
+  }
+  return value;
+}
+
+export const blogPosts = rawBlogPosts
+  .filter((post) => !EXCLUDED_CITY_POST_SLUGS.has(post.slug))
+  .map(replaceYearTokens);
 
 export function getBlogBySlug(slug) {
   return blogPosts.find((b) => b.slug === slug) || null;

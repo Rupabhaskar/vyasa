@@ -142,7 +142,7 @@ export default function JourneySection() {
   return (
       <section
         id="journey"
-        className="py-28 bg-white relative overflow-hidden"
+        className="py-8 bg-white relative overflow-hidden"
         onPointerEnter={() => setHoverPaused(true)}
         onPointerLeave={handlePointerLeave}
       >

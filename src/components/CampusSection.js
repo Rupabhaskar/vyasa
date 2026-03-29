@@ -25,13 +25,13 @@ export default function CampusSection() {
   const [lightbox, setLightbox] = useState(null);
 
   return (
-    <section className="py-28 bg-[#f9f8f6] relative overflow-hidden">
+    <section className="py-18 bg-[#f9f8f6] relative overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="text-center mb-20">
           <span className="section-label text-gold mb-4 inline-block"><FaBuilding className="text-[9px]" /> Campus Life</span>
           <h2 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-primary-dark tracking-tight mb-4">Campus & Facilities</h2>
           <div className="royal-divider mb-6" />
-          <p className="text-muted max-w-xl mx-auto text-[15px] leading-relaxed font-sans">A disciplined environment designed for focused learning and holistic development.</p>
+          <p className="text-black max-w-xl mx-auto text-[15px] leading-relaxed font-sans">A disciplined environment designed for focused learning and holistic development.</p>
         </motion.div>
 
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10">
@@ -61,13 +61,13 @@ export default function CampusSection() {
           {/* Daily routine */}
           <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="bg-white rounded-2xl border border-gray-100/80 p-8">
             <h3 className="font-heading font-bold text-primary-dark text-xl mb-2">Daily Routine</h3>
-            <p className="text-muted/50 text-xs font-sans mb-6">Classes {"\u2192"} Practice {"\u2192"} Revision</p>
+            <p className="text-primary-dark text-xs font-sans font-semibold mb-6">Classes {"\u2192"} Practice {"\u2192"} Revision</p>
             <div className="space-y-4">
               {dailySchedule.map((item, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }} className="flex items-center gap-4 group">
-                  <span className="text-xs font-sans font-bold text-gold/60 w-16 shrink-0">{item.time}</span>
+                  <span className="text-xs font-sans font-bold text-gold w-16 shrink-0">{item.time}</span>
                   <div className="w-2 h-2 rounded-full bg-primary-dark/10 group-hover:bg-gold transition-colors shrink-0" />
-                  <span className="text-[14px] font-sans text-primary-dark/60 group-hover:text-primary-dark transition-colors">{item.activity}</span>
+                  <span className="text-[14px] font-sans font-medium text-primary-dark group-hover:text-primary-dark transition-colors">{item.activity}</span>
                 </motion.div>
               ))}
             </div>

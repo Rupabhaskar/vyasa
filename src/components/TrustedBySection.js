@@ -58,7 +58,7 @@ const affiliations = [
 
 export default function TrustedBySection() {
   return (
-    <section className="py-20 bg-white border-b border-gray-50">
+    <section className="py-20 bg-white border-b mt-[-50px] border-gray-50">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}

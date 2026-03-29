@@ -12,13 +12,6 @@ const courses = [
     href: "/courses/ca-foundation",
   },
   {
-    title: "CMA Foundation",
-    desc: "Build strong fundamentals with objective exam practice, structured tests, and concept-focused coaching aligned to ICMAI.",
-    duration: "8 Months",
-    tag: "",
-    href: "/courses/cma-foundation",
-  },
-  {
     title: "CA Intermediate",
     desc: "Group-wise intensive coaching with practical training, full-length mock exams, and targeted revision crash courses.",
     duration: "10 Months",
@@ -26,18 +19,25 @@ const courses = [
     href: "/courses/ca-intermediate",
   },
   {
-    title: "CMA Intermediate",
-    desc: "Group-wise preparation with answer-writing practice, problem-solving sessions, and mock exams for June/December attempts.",
-    duration: "9 Months",
-    tag: "",
-    href: "/courses/cma-intermediate",
-  },
-  {
     title: "CA Final",
     desc: "Rank-oriented preparation with advanced coaching, real-world case studies, and one-on-one mentorship by qualified CAs.",
     duration: "12 Months",
     tag: "Rank Course",
     href: "/courses/ca-final",
+  },
+  {
+    title: "CMA Foundation",
+    desc: "Build strong fundamentals with objective exam practice, structured tests, and concept-focused coaching aligned to ICMAI.",
+    duration: "8 Months",
+    tag: "",
+    href: "/courses/cma-foundation",
+  },
+  {
+    title: "CMA Intermediate",
+    desc: "Group-wise preparation with answer-writing practice, problem-solving sessions, and mock exams for June/December attempts.",
+    duration: "9 Months",
+    tag: "",
+    href: "/courses/cma-intermediate",
   },
   {
     title: "CMA Final",
@@ -57,7 +57,7 @@ const courses = [
 
 export default function CoursesSection() {
   return (
-    <section id="courses" className="py-28 bg-[#f9f8f6] relative overflow-hidden">
+    <section id="courses" className="py-10 bg-[#f9f8f6] relative overflow-hidden">
       <div className="absolute top-20 right-0 w-[400px] h-[400px] bg-gold/[0.03] rounded-full blur-[100px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">

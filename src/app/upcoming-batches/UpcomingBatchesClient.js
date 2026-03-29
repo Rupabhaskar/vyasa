@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaCalendarAlt, FaArrowRight } from "react-icons/fa";
 
-const CURRENT_YEAR = new Date().getFullYear();
+const CURRENT_YEAR = new Date().getUTCFullYear();
 
 const batches = [
   { course: "CA Foundation", startDate: `July ${CURRENT_YEAR}`, duration: "8 Months", href: "/courses/ca-foundation" },

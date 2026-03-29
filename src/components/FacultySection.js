@@ -12,7 +12,7 @@ const points = [
 
 export default function FacultySection() {
   return (
-    <section id="faculty" className="py-28 bg-white relative overflow-hidden">
+    <section id="faculty" className="py-10 bg-white relative overflow-hidden">
       
       {/* Soft background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary-dark/[0.02] rounded-full blur-[100px]" />

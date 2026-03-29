@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaUser, FaClock, FaCalendar, FaTag, FaArrowLeft } from "react-icons/fa";
+import { FaUser, FaClock, FaTag, FaArrowLeft } from "react-icons/fa";
 import PageLayout from "@/components/shared/PageLayout";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
 import CTAForm from "@/components/shared/CTAForm";
@@ -115,7 +115,6 @@ export default function BlogDetailClient({ post }) {
           </motion.h1>
           <div className="flex flex-wrap items-center gap-6 text-emerald-100 text-sm">
             <span className="flex items-center gap-2"><FaUser /> {post.author}</span>
-            <span className="flex items-center gap-2"><FaCalendar /> {post.date}</span>
             <span className="flex items-center gap-2"><FaClock /> {post.readTime}</span>
           </div>
         </div>

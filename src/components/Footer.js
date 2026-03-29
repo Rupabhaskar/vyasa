@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -29,7 +30,11 @@ const socials = [
 
 export default function Footer() {
   const pathname = usePathname();
-  const currentYear = new Date().getFullYear();
+  const [currentYear, setCurrentYear] = useState("");
+
+  useEffect(() => {
+    setCurrentYear(String(new Date().getUTCFullYear()));
+  }, []);
 
   return (
     <footer className="bg-primary-dark text-white">
@@ -128,7 +133,9 @@ export default function Footer() {
 
       <div className="border-t mt-[-50px] border-white/[0.04]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-emerald-200/20 text-[12px] font-sans">{"\u00A9"} {currentYear} Vyasa Institute. All rights reserved.</p>
+          <p className="text-emerald-200/20 text-[12px] font-sans">
+            {"\u00A9"} <span suppressHydrationWarning>{currentYear}</span> Vyasa Institute. All rights reserved.
+          </p>
           <p className="text-emerald-200/20 text-[12px] font-sans">Building future Chartered Accountants since 2010</p>
           <p className="text-gold-light/90 text-[12px] font-sans font-semibold">
             desigin and developed by ShyamTechSolucations

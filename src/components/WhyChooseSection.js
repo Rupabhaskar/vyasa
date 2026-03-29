@@ -190,7 +190,7 @@ const features = [
 
 export default function WhyChooseSection() {
   return (
-    <section className="py-24 bg-[#f4f8fb]">
+    <section className="py-8 bg-[#f4f8fb]">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
 
         {/* LEFT SIDE */}

@@ -13,7 +13,7 @@ const features = [
 
 export default function DigitalSection() {
   return (
-    <section className="py-28 bg-white relative overflow-hidden">
+    <section className="py-18 bg-white relative overflow-hidden">
       <div className="absolute top-20 left-0 w-[400px] h-[400px] bg-primary-dark/[0.015] rounded-full blur-[100px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">

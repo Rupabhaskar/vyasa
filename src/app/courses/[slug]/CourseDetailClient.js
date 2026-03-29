@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaClock, FaCalendarAlt, FaUserGraduate, FaCheckCircle, FaTrophy, FaChartLine, FaMedal, FaBalanceScale, FaCalculator, FaChartBar, FaBriefcase, FaGraduationCap, FaBookOpen, FaCrown, FaFileAlt } from "react-icons/fa";
+import { FaClock, FaCalendarAlt, FaUserGraduate, FaCheckCircle, FaTrophy, FaChartLine, FaMedal, FaBalanceScale, FaCalculator, FaChartBar, FaBriefcase, FaGraduationCap, FaBookOpen, FaCrown, FaFileAlt, FaUserShield } from "react-icons/fa";
 
 const curriculumIcons = {
   FaBalanceScale,
@@ -12,6 +12,31 @@ const curriculumIcons = {
   FaCrown,
   FaFileAlt,
 };
+
+const curriculumIconPalette = [
+  "bg-blue-50 text-blue-700",
+  "bg-emerald-50 text-emerald-700",
+  "bg-violet-50 text-violet-700",
+  "bg-amber-50 text-amber-700",
+  "bg-rose-50 text-rose-700",
+  "bg-cyan-50 text-cyan-700",
+];
+
+function pickCurriculumIcon(item, index) {
+  if (item.icon && curriculumIcons[item.icon]) return curriculumIcons[item.icon];
+
+  const text = `${item.paper || ""} ${item.name || ""} ${item.topics || ""}`.toLowerCase();
+  if (text.includes("law") || text.includes("legal")) return FaBalanceScale;
+  if (text.includes("tax")) return FaFileAlt;
+  if (text.includes("audit") || text.includes("ethic")) return FaUserShield;
+  if (text.includes("account")) return FaCalculator;
+  if (text.includes("management") || text.includes("strategy")) return FaBriefcase;
+  if (text.includes("finance") || text.includes("financial")) return FaChartLine;
+  if (text.includes("economics") || text.includes("statistics") || text.includes("analytics")) return FaChartBar;
+
+  const fallback = [FaBookOpen, FaCalculator, FaBalanceScale, FaChartBar, FaBriefcase, FaGraduationCap, FaCrown, FaFileAlt];
+  return fallback[index % fallback.length];
+}
 import PageLayout from "@/components/shared/PageLayout";
 import PageHeader from "@/components/shared/PageHeader";
 import Breadcrumbs from "@/components/shared/Breadcrumbs";
@@ -250,7 +275,8 @@ export default function CourseDetailClient({ course }) {
           </motion.h2>
           <div className="space-y-4">
             {course.curriculum.map((item, i) => {
-              const IconComponent = item.icon ? curriculumIcons[item.icon] : null;
+              const IconComponent = pickCurriculumIcon(item, i);
+              const tone = curriculumIconPalette[i % curriculumIconPalette.length];
               return (
                 <motion.div
                   key={i}
@@ -261,17 +287,11 @@ export default function CourseDetailClient({ course }) {
                   className="bg-slate-50 rounded-2xl p-6 border border-gray-100 hover:shadow-md transition-shadow"
                 >
                   <div className="flex flex-col md:flex-row md:items-center gap-4">
-                    <span className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 text-primary shrink-0">
-                      {IconComponent ? (
-                        <IconComponent className="text-xl" />
-                      ) : (
-                        <span className="font-bold text-sm">{item.paper}</span>
-                      )}
+                    <span className={`inline-flex items-center justify-center w-14 h-14 rounded-xl shrink-0 ${tone}`}>
+                      <IconComponent className="text-xl" />
                     </span>
                     <div className="flex-1">
-                      {item.icon && (
-                        <span className="text-[10px] font-semibold uppercase tracking-wider text-primary/60 block mb-0.5">{item.paper}</span>
-                      )}
+                      <span className="text-[10px] font-semibold uppercase tracking-wider text-primary/70 block mb-0.5">{item.paper}</span>
                       <h3 className="font-bold text-primary text-lg">{item.name}</h3>
                       <p className="text-muted text-sm mt-1">{item.topics}</p>
                     </div>

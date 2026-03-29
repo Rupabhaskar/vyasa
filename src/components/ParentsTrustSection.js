@@ -27,7 +27,7 @@ const reasons = [
 
 export default function ParentsTrustSection() {
   return (
-    <section className="py-28 bg-[#f9f8f6] relative overflow-hidden">
+    <section className="py-12 bg-[#f9f8f6] relative overflow-hidden">
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gold/[0.03] rounded-full blur-[120px]" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
@@ -39,10 +39,10 @@ export default function ParentsTrustSection() {
               {"Why Parents Trust\u00A0Us"}
             </h2>
             <div className="w-12 h-[2px] bg-gradient-to-r from-gold to-transparent mb-6" />
-            <p className="text-muted text-[15px] leading-relaxed font-sans mb-8 max-w-md">
+            <p className="text-black text-[15px] leading-relaxed font-sans mb-8 max-w-md">
               {"We understand that choosing an institute for your child is one of the most important decisions you\u2019ll make. Here\u2019s why thousands of parents have placed their trust in Vyasa Institute."}
             </p>
-            <div className="flex items-center gap-4 text-xs text-muted/50 font-sans">
+            <div className="flex items-center gap-4 text-xs text-black/80 font-sans">
               <div className="flex -space-x-2">
                 {["R", "S", "M", "A"].map((l, i) => (
                   <div key={i} className="w-8 h-8 rounded-full bg-primary-dark/[0.06] border-2 border-white flex items-center justify-center text-[10px] font-bold text-primary-dark/40">{l}</div>
@@ -68,7 +68,7 @@ export default function ParentsTrustSection() {
                   {r.icon}
                 </div>
                 <h3 className="font-heading font-semibold text-primary-dark text-[15px] mb-2 group-hover:text-gold transition-colors">{r.title}</h3>
-                <p className="text-muted/60 text-[13px] leading-relaxed font-sans">{r.desc}</p>
+                <p className="text-black text-[13px] leading-relaxed font-sans">{r.desc}</p>
               </motion.div>
             ))}
           </div>

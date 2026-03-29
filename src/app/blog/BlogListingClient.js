@@ -11,67 +11,15 @@ export default function BlogListingClient({ posts }) {
     { label: "Home", href: "/" },
     { label: "Blog" },
   ];
-  const featured = posts.filter((p) => p.featured);
-  const regular = posts.filter((p) => !p.featured);
 
   return (
     <PageLayout>
       <PageHeader
         tag="Insights & Tips"
         title="Our Blog"
-        description="Expert articles on CA & CMA preparation, career guidance, location guides (Vijayawada, Guntur, Hyderabad, Eluru, AP), and strategies to help you succeed."
+        description="Expert articles on CA & CMA preparation, career guidance, location guides (Vijayawada, AP, India), and strategies to help you succeed."
       />
       <Breadcrumbs items={crumbs} />
-
-      {/* Featured */}
-      {featured.length > 0 && (
-        <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-2xl font-bold text-primary mb-8">Featured Articles</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {featured.map((post, i) => (
-                <motion.div
-                  key={post.slug}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  whileHover={{ y: -6 }}
-                >
-                  <Link
-                    href={`/blog/${post.slug}`}
-                    className="group block bg-gradient-to-br from-primary to-primary-light rounded-2xl overflow-hidden hover:shadow-2xl transition-all h-full"
-                  >
-                    <div className="p-8 md:p-10 text-white">
-                      <div className="flex items-center gap-3 mb-4">
-                        <span className="bg-gold/20 text-gold-light text-xs font-bold px-3 py-1 rounded-full uppercase">
-                          Featured
-                        </span>
-                        <span className="bg-white/10 text-white/80 text-xs px-3 py-1 rounded-full">
-                          {post.category}
-                        </span>
-                      </div>
-                      <h3 className="text-xl md:text-2xl font-bold mb-4 group-hover:text-gold-light transition-colors leading-snug">
-                        {post.title}
-                      </h3>
-                      <p className="text-emerald-100 leading-relaxed mb-6 line-clamp-3">
-                        {post.excerpt}
-                      </p>
-                      <div className="flex items-center justify-between text-sm text-emerald-100">
-                        <div className="flex items-center gap-4">
-                          <span className="flex items-center gap-1"><FaUser className="text-xs" /> {post.author}</span>
-                          <span className="flex items-center gap-1"><FaClock className="text-xs" /> {post.readTime}</span>
-                        </div>
-                        <FaArrowRight className="group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* All posts */}
       <section className="py-16 bg-slate-50">
@@ -97,9 +45,8 @@ export default function BlogListingClient({ posts }) {
                       <span className="bg-primary/5 text-primary text-xs font-medium px-2 py-1 rounded-full flex items-center gap-1">
                         <FaTag className="text-[10px]" /> {post.category}
                       </span>
-                      <span className="text-muted text-xs">{post.date}</span>
                     </div>
-                    <h3 className="text-lg font-bold text-primary mb-3 group-hover:text-accent transition-colors leading-snug line-clamp-2">
+                    <h3 className="text-lg font-bold text-primary mb-3 group-hover:text-black transition-colors leading-snug line-clamp-2">
                       {post.title}
                     </h3>
                     <p className="text-muted text-sm leading-relaxed mb-4 line-clamp-3">

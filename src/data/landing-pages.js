@@ -1,4 +1,4 @@
-const CURRENT_YEAR = new Date().getFullYear();
+const CURRENT_YEAR = new Date().getUTCFullYear();
 
 export const landingPages = [
   {
