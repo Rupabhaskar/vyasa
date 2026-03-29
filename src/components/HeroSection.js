@@ -432,11 +432,11 @@ import Image from "next/image";
 
 const slides = [
 
-  { image: "/hero/vyasa.png" },
+  { image: "/hero/vyasa1.png" },
   { image: "/hero/NO1.png" },
   { image: "/hero/rtata.png" },
   { image: "/hero/modi1.png" },
-  { image: "/hero/Offer.png" },
+  { image: "/hero/offer.png" },
   { image: "/hero/Afraid poster.png" },
 ];
 

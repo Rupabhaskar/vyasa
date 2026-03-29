@@ -9,7 +9,7 @@ const galleryImages = [
     title: "Smart Classrooms",
     icon: <FaLightbulb />,
     color: "from-primary-dark to-surface-deep-2",
-    image: "/gallery/cls.JPEG",
+    image: "/gallery/cls.jpeg",
   },
   {
     title: "Seminar Hall",

@@ -158,7 +158,7 @@ import {
 } from "react-icons/fa";
 
 const galleryItems = [
-  { title: "Smart Classrooms", icon: <FaLightbulb />, color: "from-primary-dark to-primary", image: "/gallery/cls.JPEG" },
+  { title: "Smart Classrooms", icon: <FaLightbulb />, color: "from-primary-dark to-primary", image: "/gallery/cls.jpeg" },
   { title: "Digital Library", icon: <FaBook />, color: "from-primary to-primary-light", image: "/gallery/di.jpeg" },
   { title: "Computer Lab", icon: <FaDesktop />, color: "from-accent to-primary-light", image: "/gallery/cp.png" },
   { title: "Seminar Hall", icon: <FaMicrophone />, color: "from-surface-deep-2 to-primary-dark", image: "/gallery/semi.jpeg" },
