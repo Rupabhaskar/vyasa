@@ -38,7 +38,6 @@ export default function AdminLoginPage() {
     <section className="min-h-[100svh] bg-background flex items-center justify-center px-6 py-16">
       <div className="w-full max-w-md bg-white border border-gray-100 rounded-3xl shadow-xl p-8">
         <h1 className="text-2xl font-bold text-primary-dark mb-2">Admin Login</h1>
-        <p className="text-sm text-muted mb-6">Sign in to view contact form submissions.</p>
 
         {error && <p className="mb-4 text-sm text-red-600">{error}</p>}
 

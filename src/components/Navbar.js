@@ -17,12 +17,14 @@ const navLinks = [
   { label: "Course", href: "#", mega: "courses" },
   { label: "Upcoming Batches", href: "/upcoming-batches" },
   { label: "Blog", href: "/blog" },
-  { label: "Our Team", href: "/#faculty" },
   { label: "Our Gallery", href: "/our-gallery" },
   { label: "Contact", href: "/#contact" },
 ];
 
-function NavLink({ link, pathname, onHoverStart, onHoverEnd, isOpen, pathnameStartsWithCourses, renderDropdown, onNavigate }) {
+const CONTACT_LINK = "/#contact";
+const SKIP_HOME_ENTRY_FLOW_KEY = "vyasa-skip-home-entry-flow";
+
+function NavLink({ link, pathname, onHoverStart, onHoverEnd, isOpen, pathnameStartsWithCourses, renderDropdown, onNavigate, onMarkSkipHomeEntryFlow }) {
   const isActive = link.mega === "courses" ? pathnameStartsWithCourses : (link.href === "/" ? pathname === "/" : pathname.startsWith(link.href) || (link.href === "/#contact" && pathname === "/"));
   const hasMega = !!link.mega;
 
@@ -57,6 +59,9 @@ function NavLink({ link, pathname, onHoverStart, onHoverEnd, isOpen, pathnameSta
         <Link
           href={link.href}
           onClick={(e) => {
+            if (link.href === CONTACT_LINK) {
+              onMarkSkipHomeEntryFlow?.();
+            }
             onNavigate?.();
             if (link.href === "/" && pathname === "/") {
               e.preventDefault();
@@ -98,7 +103,7 @@ function NavLink({ link, pathname, onHoverStart, onHoverEnd, isOpen, pathnameSta
   );
 }
 
-function CourseDropdown({ pathname, onNavigate }) {
+function CourseDropdown({ pathname, onNavigate, onMarkSkipHomeEntryFlow }) {
   return (
     <div className="relative bg-white rounded-xl shadow-[0_16px_48px_rgba(0,0,0,0.12),0_0_0_1px_rgba(0,0,0,0.04)] overflow-hidden w-[240px]">
       {/* Subtle top accent */}
@@ -140,8 +145,11 @@ function CourseDropdown({ pathname, onNavigate }) {
           })}
         </div>
         <Link
-          href="/#contact"
-          onClick={onNavigate}
+          href={CONTACT_LINK}
+          onClick={() => {
+            onMarkSkipHomeEntryFlow?.();
+            onNavigate?.();
+          }}
           className="mt-3 flex items-center justify-center gap-1.5 w-full py-2.5 rounded-lg bg-gradient-to-r from-gold/10 to-gold/5 border border-gold/15 text-primary-dark text-[12px] font-semibold hover:from-gold/15 hover:to-gold/10 hover:border-gold/25 transition-all duration-200"
         >
           Book Free Counseling
@@ -168,6 +176,11 @@ export default function Navbar() {
     setMobileOpen(false);
     setOpenMega(null);
     setMobileExpanded(null);
+  }, []);
+  const markSkipHomeEntryFlow = useCallback(() => {
+    if (typeof window !== "undefined") {
+      window.sessionStorage.setItem(SKIP_HOME_ENTRY_FLOW_KEY, "1");
+    }
   }, []);
 
   useEffect(() => {
@@ -316,8 +329,15 @@ export default function Navbar() {
                 onHoverStart={handleHoverStart}
                 onHoverEnd={handleHoverEnd}
                 isOpen={openMega === link.mega}
-                renderDropdown={() => <CourseDropdown pathname={pathname} onNavigate={closeAllMenus} />}
+                renderDropdown={() => (
+                  <CourseDropdown
+                    pathname={pathname}
+                    onNavigate={closeAllMenus}
+                    onMarkSkipHomeEntryFlow={markSkipHomeEntryFlow}
+                  />
+                )}
                 onNavigate={closeAllMenus}
+                onMarkSkipHomeEntryFlow={markSkipHomeEntryFlow}
               />
             ))}
           </div>
@@ -385,6 +405,9 @@ export default function Navbar() {
                           <Link
                             href={link.href}
                             onClick={(e) => {
+                              if (link.href === CONTACT_LINK) {
+                                markSkipHomeEntryFlow();
+                              }
                               closeAllMenus();
                               if (link.href === "/" && pathname === "/") {
                                 e.preventDefault();

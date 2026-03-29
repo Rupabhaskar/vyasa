@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
@@ -55,8 +55,11 @@ const getChecks = (base) => [
 ];
 
 export default function TechnicalHealthClient() {
-  const baseUrl = typeof window !== "undefined" ? window.location.origin : DEFAULT_BASE;
-  const checks = getChecks(baseUrl);
+  const baseUrl = useMemo(
+    () => (typeof window !== "undefined" ? window.location.origin : DEFAULT_BASE),
+    []
+  );
+  const checks = useMemo(() => getChecks(baseUrl), [baseUrl]);
   const [results, setResults] = useState({});
   const [loading, setLoading] = useState(true);
   const [metaCheck, setMetaCheck] = useState(null);
@@ -83,7 +86,7 @@ export default function TechnicalHealthClient() {
     };
 
     runChecks();
-  }, []);
+  }, [checks]);
 
   const passed = Object.values(results).filter(Boolean).length;
   const total = checks.length;

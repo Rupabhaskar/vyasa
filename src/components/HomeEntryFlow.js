@@ -90,8 +90,31 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaTimes } from "react-icons/fa";
 
+const SKIP_HOME_ENTRY_FLOW_KEY = "vyasa-skip-home-entry-flow";
+
 export default function HomeEntryFlow({ children }) {
-  const [phase, setPhase] = useState("splash");
+  const [phase, setPhase] = useState(() => {
+    if (typeof window === "undefined") return "splash";
+    const shouldSkipEntryFlow =
+      window.sessionStorage.getItem(SKIP_HOME_ENTRY_FLOW_KEY) === "1" ||
+      window.location.hash === "#contact";
+    return shouldSkipEntryFlow ? "main" : "splash";
+  });
+
+  useEffect(() => {
+    const shouldSkipEntryFlow =
+      window.sessionStorage.getItem(SKIP_HOME_ENTRY_FLOW_KEY) === "1" ||
+      window.location.hash === "#contact";
+    if (!shouldSkipEntryFlow) return;
+
+    window.sessionStorage.removeItem(SKIP_HOME_ENTRY_FLOW_KEY);
+
+    if (window.location.hash === "#contact") {
+      requestAnimationFrame(() => {
+        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+  }, []);
 
   useEffect(() => {
     if (phase !== "main") {
@@ -125,7 +148,7 @@ export default function HomeEntryFlow({ children }) {
             <div className="relative h-full w-full min-h-0 bg-white/35 p-2 flex items-center justify-center">
               <div className="inline-flex max-w-full max-h-full overflow-hidden rounded-2xl border border-white/90 bg-white/85 shadow-[0_16px_48px_rgba(0,0,0,0.25)]">
                 <Image
-                  src="/assets/image1.png"
+                  src="/assets/introwall.png"
                   alt="Vyasa Institute splash banner"
                   width={1600}
                   height={900}

@@ -293,7 +293,7 @@ Our CMA students have an impressive track record of success, with high pass rate
       { q: "What is the passing criteria for CMA exams?", a: "You need a minimum of 40% in every subject and 50% in aggregate of all papers to pass any stage of the CMA examination." },
       { q: "Does Vyasa Institute offer CMA Final coaching?", a: "Yes, we offer comprehensive coaching for all three stages — CMA Foundation, CMA Intermediate, and CMA Final — covering all papers and groups." },
     ],
-    results: { passRate: "78%+", rankers: 3, topRank: "AIR 7" },
+    results: { passRate: "95%+", rankers: 3, topRank: "AIR 7" },
     relatedCourses: ["cma-foundation", "cma-intermediate", "cma-final", "ca-foundation"],
   },
   {
@@ -336,7 +336,7 @@ Students receive faculty guidance, doubt-solving support, and a disciplined stud
       { q: "Do you provide study material and tests?", a: "Yes. We provide structured notes/support material and conduct regular practice tests and mocks." },
       { q: "Can I do CMA Foundation alongside college?", a: "Yes. Our schedule supports students pursuing graduation alongside CMA preparation." },
     ],
-    results: { passRate: "78%+", rankers: 3, topRank: "AIR 7" },
+    results: { passRate: "95%+", rankers: 3, topRank: "AIR 7" },
     relatedCourses: ["cma-intermediate", "cma-course"],
   },
   {
@@ -381,7 +381,7 @@ We emphasize conceptual clarity and exam writing skills through problem-solving 
       { q: "Do you help with revision and mocks?", a: "Yes. We run structured revision cycles and mock exams aligned to ICMAI pattern." },
       { q: "Is the coaching suitable for working students?", a: "Yes. We support flexible batch timings where possible." },
     ],
-    results: { passRate: "78%+", rankers: 3, topRank: "AIR 7" },
+    results: { passRate: "95%+", rankers: 3, topRank: "AIR 7" },
     relatedCourses: ["cma-foundation", "cma-final", "cma-course"],
   },
   {
@@ -426,7 +426,7 @@ We cover Groups III and IV with amendments-focused updates, case-based discussio
       { q: "Can I enroll group-wise?", a: "Yes, subject to batch availability and your preparation plan." },
       { q: "What support is provided during preparation?", a: "Mentoring, doubt support, and structured revision planning throughout the course." },
     ],
-    results: { passRate: "78%+", rankers: 3, topRank: "AIR 7" },
+    results: { passRate: "95%+", rankers: 3, topRank: "AIR 7" },
     relatedCourses: ["cma-intermediate", "cma-course"],
   },
   {

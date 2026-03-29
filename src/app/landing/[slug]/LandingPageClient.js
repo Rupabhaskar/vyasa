@@ -1,9 +1,72 @@
 "use client";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { FaCheckCircle, FaQuoteLeft, FaExclamationTriangle, FaWhatsapp } from "react-icons/fa";
+import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import PageLayout from "@/components/shared/PageLayout";
+import { db } from "@/components/lib/firebase";
 
 export default function LandingPageClient({ page }) {
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    course: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((prev) => ({ ...prev, [name]: value }));
+    if (error) setError("");
+    if (success) setSuccess(false);
+  };
+
+  const validate = () => {
+    if (!form.name.trim()) return "Full name is required";
+    if (!/^[6-9]\d{9}$/.test(form.phone.trim())) return "Enter a valid 10-digit Indian phone number";
+    if (!/\S+@\S+\.\S+/.test(form.email.trim())) return "Enter a valid email address";
+    if (!form.course) return "Please select a course";
+    return "";
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const validationError = validate();
+    if (validationError) {
+      setError(validationError);
+      return;
+    }
+
+    setLoading(true);
+    try {
+      await addDoc(collection(db, "contact"), {
+        name: form.name.trim(),
+        phone: form.phone.trim(),
+        email: form.email.trim(),
+        course: form.course,
+        message: `Landing page lead: ${page.slug}`,
+        source: "landing-page",
+        landingSlug: page.slug,
+        createdAt: serverTimestamp(),
+      });
+      setSuccess(true);
+      setError("");
+      setForm({
+        name: "",
+        phone: "",
+        email: "",
+        course: "",
+      });
+    } catch {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <PageLayout>
       {/* Hero */}
@@ -115,11 +178,45 @@ export default function LandingPageClient({ page }) {
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/5 rounded-full blur-3xl" />
         <div className="relative z-10 max-w-xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-white text-center mb-8">{page.formHeading}</h2>
-          <form className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 md:p-10 space-y-5" onSubmit={(e) => e.preventDefault()}>
-            <input type="text" placeholder="Full Name" className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white placeholder-emerald-100/70 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all" />
-            <input type="tel" placeholder="Phone Number" className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white placeholder-emerald-100/70 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all" />
-            <input type="email" placeholder="Email Address" className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white placeholder-emerald-100/70 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all" />
-            <select className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all appearance-none">
+          <form className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 md:p-10 space-y-5" onSubmit={handleSubmit}>
+            {error && (
+              <p className="rounded-xl border border-red-200/40 bg-red-500/10 px-4 py-3 text-sm text-red-100">{error}</p>
+            )}
+            {success && (
+              <p className="rounded-xl border border-green-200/40 bg-green-500/10 px-4 py-3 text-sm text-green-100">
+                Submitted successfully. We will contact you soon.
+              </p>
+            )}
+            <input
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              placeholder="Full Name"
+              className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white placeholder-emerald-100/70 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all"
+            />
+            <input
+              type="tel"
+              name="phone"
+              value={form.phone}
+              onChange={handleChange}
+              placeholder="Phone Number"
+              className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white placeholder-emerald-100/70 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all"
+            />
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              placeholder="Email Address"
+              className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white placeholder-emerald-100/70 focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all"
+            />
+            <select
+              name="course"
+              value={form.course}
+              onChange={handleChange}
+              className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-4 text-white focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all appearance-none"
+            >
               <option value="" className="text-gray-800">Select Course</option>
               <option value="CA Foundation" className="text-gray-800">CA Foundation</option>
               <option value="CA Intermediate" className="text-gray-800">CA Intermediate</option>
@@ -128,8 +225,12 @@ export default function LandingPageClient({ page }) {
               <option value="CMA Inter" className="text-gray-800">CMA Intermediate</option>
               <option value="CMA Final" className="text-gray-800">CMA Final</option>
             </select>
-            <button type="submit" className="btn-glow w-full bg-gold hover:bg-gold-light text-primary-dark font-bold py-4 rounded-xl text-lg shadow-lg hover:shadow-2xl transition-all">
-              Submit Application
+            <button
+              type="submit"
+              disabled={loading}
+              className="btn-glow w-full bg-gold hover:bg-gold-light text-primary-dark font-bold py-4 rounded-xl text-lg shadow-lg hover:shadow-2xl transition-all disabled:opacity-70 disabled:cursor-not-allowed"
+            >
+              {loading ? "Submitting..." : "Submit Application"}
             </button>
             <p className="text-center text-emerald-100 text-sm">We&apos;ll contact you within 24 hours. No spam, ever.</p>
           </form>

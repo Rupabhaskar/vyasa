@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -30,11 +29,7 @@ const socials = [
 
 export default function Footer() {
   const pathname = usePathname();
-  const [currentYear, setCurrentYear] = useState("");
-
-  useEffect(() => {
-    setCurrentYear(String(new Date().getUTCFullYear()));
-  }, []);
+  const currentYear = String(new Date().getUTCFullYear());
 
   return (
     <footer className="bg-primary-dark text-white">

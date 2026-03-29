@@ -1,15 +1,34 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { FaTimes, FaExpand, FaBuilding, FaBook, FaDesktop, FaMicrophone, FaLightbulb, FaClock } from "react-icons/fa";
+import Image from "next/image";
+import { FaTimes, FaExpand, FaBuilding, FaMicrophone, FaLightbulb, FaClock } from "react-icons/fa";
 
-const facilities = [
-  { title: "Smart Classrooms", icon: <FaLightbulb />, color: "from-primary-dark to-surface-deep-2" },
-  // { title: "Digital Library", icon: <FaBook />, color: "from-surface-deep-2 to-primary" },
-  // { title: "Computer Lab", icon: <FaDesktop />, color: "from-primary to-accent" },
-  { title: "Seminar Hall", icon: <FaMicrophone />, color: "from-surface-deep-2 to-primary-dark" },
-  { title: "Study Rooms", icon: <FaClock />, color: "from-primary-dark to-surface-deep-2" },
-  { title: "Hostel Facility", icon: <FaBuilding />, color: "from-surface-deep-2 to-primary-dark" },
+const galleryImages = [
+  {
+    title: "Smart Classrooms",
+    icon: <FaLightbulb />,
+    color: "from-primary-dark to-surface-deep-2",
+    image: "/gallery/cls.JPEG",
+  },
+  {
+    title: "Seminar Hall",
+    icon: <FaMicrophone />,
+    color: "from-surface-deep-2 to-primary-dark",
+    image: "/gallery/semi.jpeg",
+  },
+  {
+    title: "Study Rooms",
+    icon: <FaClock />,
+    color: "from-primary-dark to-surface-deep-2",
+    image: "/gallery/classRomm.JPG",
+  },
+  {
+    title: "Hostel Facility",
+    icon: <FaBuilding />,
+    color: "from-surface-deep-2 to-primary-dark",
+    image: "/assets/why.png",
+  },
 ];
 
 const dailySchedule = [
@@ -37,7 +56,7 @@ export default function CampusSection() {
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10">
           {/* Facility grid */}
           <div className="grid grid-cols-2 gap-4">
-            {facilities.map((fac, i) => (
+            {galleryImages.map((fac, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.96 }}
@@ -46,14 +65,33 @@ export default function CampusSection() {
                 transition={{ delay: i * 0.06, duration: 0.5 }}
                 whileHover={{ scale: 1.02, y: -3 }}
                 onClick={() => setLightbox(i)}
-                className={`relative h-36 md:h-44 rounded-2xl bg-gradient-to-br ${fac.color} overflow-hidden cursor-pointer group transition-all duration-400`}
+                className={`relative h-36 md:h-44 rounded-2xl overflow-hidden cursor-pointer group transition-all duration-400 ${!fac.image ? `bg-gradient-to-br ${fac.color}` : ""}`}
               >
-                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
-                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-lg mb-2 group-hover:scale-110 transition-transform">{fac.icon}</div>
-                  <h3 className="text-sm md:text-base font-heading font-semibold text-center">{fac.title}</h3>
-                  <FaExpand className="mt-2 text-[10px] opacity-0 group-hover:opacity-50 transition-opacity" />
-                </div>
+                {fac.image ? (
+                  <>
+                    <Image
+                      src={fac.image}
+                      alt={fac.title}
+                      fill
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-3 text-white">
+                      <h3 className="text-sm md:text-base font-heading font-semibold text-center">{fac.title}</h3>
+                    </div>
+                    <FaExpand className="absolute top-3 right-3 text-[10px] text-white/70 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </>
+                ) : (
+                  <>
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/5 transition-colors" />
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
+                      <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-lg mb-2 group-hover:scale-110 transition-transform">{fac.icon}</div>
+                      <h3 className="text-sm md:text-base font-heading font-semibold text-center">{fac.title}</h3>
+                      <FaExpand className="mt-2 text-[10px] opacity-0 group-hover:opacity-50 transition-opacity" />
+                    </div>
+                  </>
+                )}
               </motion.div>
             ))}
           </div>
@@ -77,9 +115,25 @@ export default function CampusSection() {
         {/* Lightbox */}
         {lightbox !== null && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-6" onClick={() => setLightbox(null)}>
-            <motion.div initial={{ scale: 0.9 }} animate={{ scale: 1 }} className={`relative w-full max-w-2xl h-80 md:h-[450px] rounded-3xl bg-gradient-to-br ${facilities[lightbox].color} flex flex-col items-center justify-center`} onClick={(e) => e.stopPropagation()}>
-              <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center text-3xl text-white mb-4">{facilities[lightbox].icon}</div>
-              <h2 className="text-2xl font-heading font-bold text-white">{facilities[lightbox].title}</h2>
+            <motion.div initial={{ scale: 0.9 }} animate={{ scale: 1 }} className={`relative w-full max-w-2xl h-80 md:h-[450px] rounded-3xl overflow-hidden ${!galleryImages[lightbox].image ? `bg-gradient-to-br ${galleryImages[lightbox].color} flex flex-col items-center justify-center` : ""}`} onClick={(e) => e.stopPropagation()}>
+              {galleryImages[lightbox].image ? (
+                <>
+                  <Image
+                    src={galleryImages[lightbox].image}
+                    alt={galleryImages[lightbox].title}
+                    fill
+                    sizes="90vw"
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/10" />
+                  <h2 className="absolute bottom-5 left-5 text-xl md:text-2xl font-heading font-bold text-white">{galleryImages[lightbox].title}</h2>
+                </>
+              ) : (
+                <>
+                  <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center text-3xl text-white mb-4">{galleryImages[lightbox].icon}</div>
+                  <h2 className="text-2xl font-heading font-bold text-white">{galleryImages[lightbox].title}</h2>
+                </>
+              )}
               <button onClick={() => setLightbox(null)} className="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-colors text-sm" aria-label="Close"><FaTimes /></button>
             </motion.div>
           </motion.div>

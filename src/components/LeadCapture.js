@@ -85,13 +85,14 @@ export default function ContactSection() {
       {/* Background Glow */}
       <div className="absolute top-[-100px] right-[-100px] w-[400px] h-[400px] bg-gold/10 rounded-full blur-[120px]" />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-20 items-center">
+      <div className="max-w-7xl mx-auto px-6 sm:grid-cols-2 lg:px-8 grid lg:grid-cols-2 gap-20 items-center">
         
         {/* LEFT SIDE */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
+          className="px-5"
         >
           <span className="text-gold font-semibold tracking-widest text-sm uppercase">
             Contact Us

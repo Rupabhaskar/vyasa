@@ -154,6 +154,7 @@
 
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
   FaChalkboardTeacher,
   FaClipboardCheck,
@@ -238,10 +239,12 @@ export default function WhyChooseSection() {
           <div className="relative w-full max-w-[420px] h-[380px] md:h-[480px] lg:h-[520px] rounded-[30px] overflow-hidden border-4 border-blue-200 shadow-lg transition duration-500 hover:scale-[1.02]">
 
             {/* Image */}
-            <img
+            <Image
               src="/assets/why.png"
               alt="students"
-              className="w-full h-full object-cover"
+              fill
+              sizes="(max-width: 1024px) 100vw, 420px"
+              className="object-cover"
             />
 
             {/* Optional soft overlay */}
