@@ -11,7 +11,7 @@
   --gold: #ff7f50;
   --gold-light: #ff9f7c;
   --accent: #f5fffa;
-  --muted: #5b6498;
+  --muted: #000000;
   --surface-deep: #1f2b63;
   --surface-deep-2: #273574;
   --card-bg: rgba(255, 255, 255, 0.78);
@@ -153,6 +153,13 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
+}
+
+/* Force bright readable body copy across pages */
+.text-gray-700,
+.text-gray-600,
+.text-gray-500 {
+  color: #000 !important;
 }
 
 /* Serif headings */

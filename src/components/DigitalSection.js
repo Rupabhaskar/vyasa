@@ -31,7 +31,7 @@ export default function DigitalSection() {
                 <div className="w-11 h-11 shrink-0 rounded-xl bg-primary-dark/[0.04] text-primary-dark/40 flex items-center justify-center text-[16px] group-hover:bg-gold/10 group-hover:text-gold transition-all duration-300">{f.icon}</div>
                 <div>
                   <h3 className="font-heading font-semibold text-primary-dark text-[15px] mb-1.5 group-hover:text-gold transition-colors">{f.title}</h3>
-                  <p className="text-muted/50 text-[13px] leading-relaxed font-sans">{f.desc}</p>
+                  <p className="text-black text-[13px] leading-relaxed font-sans">{f.desc}</p>
                 </div>
               </div>
             </motion.div>

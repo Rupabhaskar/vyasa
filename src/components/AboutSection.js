@@ -133,11 +133,11 @@ export default function AboutSection() {
 
             {/* SECTION TEXT */}
             <motion.div variants={item} className="space-y-4">
-              <p className="text-gray-700 leading-7 sm:leading-8 text-sm sm:text-base">
+              <p className="text-black leading-7 sm:leading-8 text-sm sm:text-base">
                 At Vyasa Institute, we don’t just prepare students for exams — we shape professionals for life. As a trusted name in coaching for CA, CMA, and CS aspirants, Vyasa Institute has developed a unique position for itself by delivering top-notch, affordable education that meets and exceeds national benchmarks.
               </p>
 
-              <p className="text-gray-700 leading-7 sm:leading-8 text-sm sm:text-base">
+              <p className="text-black leading-7 sm:leading-8 text-sm sm:text-base">
                 Every year, over 300 students walk through our doors with dreams in their eyes — and some of them will leave with All India Ranks to their name and many of them will leave with success on their first attempt. We take pride in nurturing academic brilliance, professional growth, and meaningful contributions to society.
               </p>
             </motion.div>
@@ -149,12 +149,12 @@ export default function AboutSection() {
               <motion.div
                 variants={item}
                 whileHover={{ y: -6 }}
-                className="bg-white border border-gray-100 shadow-sm rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:shadow-lg"
+                className="bg-[#f4f7ff] border border-[#dbe4ff] shadow-sm rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:shadow-lg"
               >
                 <h3 className="text-base sm:text-lg font-semibold text-primary-dark mb-2">
                   Our Mission
                 </h3>
-                <p className="text-gray-700 leading-7 sm:leading-8 text-sm sm:text-base">
+                <p className="text-black leading-7 sm:leading-8 text-sm sm:text-base">
                   Our mission is simple yet powerful: to create, share, and apply knowledge through engaging teaching methods, cutting-edge technology, and a culture of continuous improvement. Rooted in values of integrity, inclusivity, and collaborative leadership, Vyasa is more than an institute — it’s a Socio-Corporate movement powered by seasoned professionals who are passionate about performance, transparency, and student success.
                 </p>
               </motion.div>
@@ -163,12 +163,12 @@ export default function AboutSection() {
               <motion.div
                 variants={item}
                 whileHover={{ y: -6 }}
-                className="bg-white border border-gray-100 shadow-sm rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:shadow-lg"
+                className="bg-[#fff9ef] border border-[#ffe5b8] shadow-sm rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:shadow-lg"
               >
                 <h3 className="text-base sm:text-lg font-semibold text-primary-dark mb-2">
                   Our Values
                 </h3>
-                <p className="text-gray-700 leading-7 sm:leading-8 text-sm sm:text-base">
+                <p className="text-black leading-7 sm:leading-8 text-sm sm:text-base">
                   We will maintain integrity in all of our actions, respect for individual differences and diverse opinions, a participative decision-making style, and quality as the test of all of our actions. We will value performance and diversity and operate in an environment of open communication and shared commitment.
                 </p>
               </motion.div>
@@ -180,7 +180,7 @@ export default function AboutSection() {
               whileHover={{ scale: 1.01 }}
               className="bg-gradient-to-r from-primary/5 to-gold/5 border border-gray-100 rounded-2xl p-5 sm:p-6 transition-all duration-300"
             >
-              <p className="text-gray-700 leading-7 sm:leading-8 text-sm sm:text-base">
+              <p className="text-black leading-7 sm:leading-8 text-sm sm:text-base">
                 Vyasa Institute is not just an educational institution, it is a Socio – Corporate body. The institute is managed by an expert who has rich industrial experience and social commitment. Zero tolerance is the guideline to which the management commits itself.
               </p>
             </motion.div>

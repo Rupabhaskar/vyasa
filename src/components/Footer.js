@@ -34,7 +34,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary-dark text-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <div>
             <Link href="/" className="flex items-center mb-5" onClick={(e) => scrollToTopIfHome(e, pathname)}>
               <Image
@@ -118,16 +118,21 @@ export default function Footer() {
                   vyasaprofessionals@gmail.com
                 </a>
               </p>
-              <p className="text-emerald-200/20 text-[11px]">Mon - Sat: 8:00 AM - 8:00 PM</p>
+              <p className="inline-flex items-center rounded-full bg-gold/15 border border-gold/30 px-3 py-1 text-gold-light text-[11px] font-semibold tracking-wide">
+                Mon - Sat: 8:00 AM - 8:00 PM
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-white/[0.04]">
+      <div className="border-t mt-[-50px] border-white/[0.04]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-emerald-200/20 text-[12px] font-sans">{"\u00A9"} {currentYear} Vyasa Institute. All rights reserved.</p>
           <p className="text-emerald-200/20 text-[12px] font-sans">Building future Chartered Accountants since 2010</p>
+          <p className="text-gold-light/90 text-[12px] font-sans font-semibold">
+            desigin and developed by ShyamTechSolucations
+          </p>
         </div>
       </div>
     </footer>
