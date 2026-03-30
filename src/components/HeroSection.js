@@ -432,12 +432,12 @@ import Image from "next/image";
 
 const slides = [
 
-  { image: "/hero/vyasa1.png" },
+  { image: "/hero/vyasa2.png" },
   { image: "/hero/NO1.png" },
-  { image: "/hero/rtata.png" },
+  { image: "/hero/rt4.png" },
   { image: "/hero/modi1.png" },
   { image: "/hero/offer.png" },
-  { image: "/hero/Afraid poster.png" },
+  { image: "/hero/ap1.png" },
 ];
 
 const TRANSITIONS = ["fade", "slide", "clip"];
