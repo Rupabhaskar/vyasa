@@ -14,7 +14,7 @@ export const rankHolders = [
     exam: "CA Inter",
     attempt: "Nov 2025",
     score: "548/800",
-    quote: "The structured preparation and rigorous mock tests at Vyasas made all the difference. I couldn't have done it without them.",
+    quote: "The structured preparation and rigorous Exams at Vyasas made all the difference. I couldn't have done it without them.",
     course: "CA Intermediate",
   },
   {
@@ -50,7 +50,7 @@ export const rankHolders = [
     exam: "CMA Inter",
     attempt: "Dec 2025",
     score: "488/600",
-    quote: "What sets Vyasas apart is the genuine care they show for each student. The mock tests were incredibly helpful.",
+    quote: "What sets Vyasas apart is the genuine care they show for each student. The Exams were incredibly helpful.",
     course: "CMA Course",
   },
   {
@@ -86,7 +86,7 @@ export const rankHolders = [
     exam: "CA Foundation",
     attempt: "Nov 2025",
     score: "362/400",
-    quote: "Consistent practice with Vyasas mock tests built my confidence. I was calm and prepared on exam day.",
+    quote: "Consistent practice with Vyasas Exams built my confidence. I was calm and prepared on exam day.",
     course: "CA Foundation",
   },
 ];

@@ -79,7 +79,7 @@ A recommended daily study schedule during preparation:
 
 1. **Starting too late** — Begin preparation at least 8 months before the exam
 2. **Ignoring practice** — Theory without practice won't get you through
-3. **Skipping mock tests** — These are essential for exam temperament
+3. **Skipping Exams** — These are essential for exam temperament
 4. **Over-relying on guides** — ICAI study material should be your primary source
 5. **Neglecting revision** — Plan for at least 3 rounds of revision
 
@@ -165,12 +165,12 @@ There's no universally "better" option — it depends on your individual strengt
     tags: ["Career Guidance", "CA", "CMA"],
   },
   {
-    slug: "importance-of-mock-tests-in-ca-preparation",
-    title: "Why Mock Tests Are Non-Negotiable in CA Exam Preparation",
-    metaTitle: "Importance of Mock Tests in CA Preparation | Vyasa Institute",
+    slug: "importance-of-Exams-in-ca-preparation",
+    title: "Why Exams Are Non-Negotiable in CA Exam Preparation",
+    metaTitle: "Importance of Exams in CA Preparation | Vyasa Institute",
     metaDescription:
-      "Discover why mock tests are essential for CA exam success. Learn how regular testing improves time management, builds confidence, and helps identify weak areas.",
-    keywords: "CA mock tests, importance of mock tests, CA exam preparation, CA practice tests, mock test benefits CA",
+      "Discover why Exams are essential for CA exam success. Learn how regular testing improves time management, builds confidence, and helps identify weak areas.",
+    keywords: "CA Exams, importance of Exams, CA exam preparation, CA practice tests, Exam benefits CA",
     author: "CA Priya Menon",
     authorRole: "Senior Faculty",
     date: "2026-03-05",
@@ -178,44 +178,44 @@ There's no universally "better" option — it depends on your individual strengt
     category: "Study Tips",
     featured: false,
     excerpt:
-      "Mock tests can make or break your CA preparation. Learn why they're essential, how to use them effectively, and how Vyasa Institute' test series helps students succeed.",
-    content: `## Why Mock Tests Matter
+      "Exams can make or break your CA preparation. Learn why they're essential, how to use them effectively, and how Vyasa Institute' test series helps students succeed.",
+    content: `## Why Exams Matter
 
-If there's one thing that separates successful CA candidates from those who fall short, it's the quality and quantity of their mock test practice. At Vyasa Institute, we've observed this pattern consistently over the years — students who take mock tests seriously almost always perform better than those who rely solely on studying.
+If there's one thing that separates successful CA candidates from those who fall short, it's the quality and quantity of their Exam practice. At Vyasa Institute, we've observed this pattern consistently over the years — students who take Exams seriously almost always perform better than those who rely solely on studying.
 
 ## The Benefits
 
 ### 1. Time Management
-The CA exam is as much about time management as it is about knowledge. Mock tests train your internal clock to allocate time appropriately across questions.
+The CA exam is as much about time management as it is about knowledge.  Exams tests train your internal clock to allocate time appropriately across questions.
 
 ### 2. Exam Temperament
-The pressure of a 3-hour exam can cause even well-prepared students to underperform. Regular mock tests build the mental stamina needed to perform consistently under pressure.
+The pressure of a 3-hour exam can cause even well-prepared students to underperform. Regular Exams build the mental stamina needed to perform consistently under pressure.
 
 ### 3. Identifying Weak Areas
-Mock test analytics reveal patterns in your mistakes that self-study often misses. You might discover that you consistently lose marks in a particular topic or make calculation errors under time pressure.
+Exam analytics reveal patterns in your mistakes that self-study often misses. You might discover that you consistently lose marks in a particular topic or make calculation errors under time pressure.
 
 ### 4. Answer Presentation
-How you present your answers matters enormously in subjective papers. Mock tests give you practice in structuring answers, using proper headings, and presenting workings clearly.
+How you present your answers matters enormously in subjective papers. Exams give you practice in structuring answers, using proper headings, and presenting workings clearly.
 
 ### 5. Confidence Building
-Walking into the exam hall with 30+ mock tests under your belt gives you a confidence that no amount of reading can match.
+Walking into the exam hall with 30+ Exams under your belt gives you a confidence that no amount of reading can match.
 
-## How to Use Mock Tests Effectively
+## How to Use Exams Effectively
 
 1. **Take them under exam conditions** — Full time limit, no distractions, no reference material
 2. **Analyze your performance honestly** — Don't just check the score; understand why you lost marks
 3. **Maintain an error log** — Track your mistakes and review them before each subsequent test
 4. **Gradually increase difficulty** — Start with chapter-wise tests and progress to full-length papers
-5. **Time your progression** — Begin mock tests at least 2 months before the exam
+5. **Time your progression** — Begin Exams at least 2 months before the exam
 
 ## The Vyasa Institute Test Series
 
-Our test series is designed by faculty who understand ICAI's marking patterns intimately. Each test is carefully crafted to cover the exact topics and question styles that ICAI favors. With 50+ tests per level, including chapter tests, revision tests, and full-length mocks, students get more than enough practice to be thoroughly prepared.
+Our test series is designed by faculty who understand ICAI's marking patterns intimately. Each test is carefully crafted to cover the exact topics and question styles that ICAI favors. With 50+ tests per level, including chapter tests, revision tests, and full-length Exams, students get more than enough practice to be thoroughly prepared.
 
 ## Conclusion
 
-If you're serious about clearing your CA exams, make mock tests a non-negotiable part of your preparation. The effort you put into practice tests will pay dividends when it matters most — on exam day.`,
-    tags: ["Study Tips", "Mock Tests", "CA Exam"],
+If you're serious about clearing your CA exams, make Exams a non-negotiable part of your preparation. The effort you put into practice Exams will pay dividends when it matters most — on exam day.`,
+    tags: ["Study Tips", "Exams", "CA Exam"],
   },
   {
     slug: "benefits-of-starting-ca-from-intermediate",
@@ -248,7 +248,7 @@ Students who start during Intermediate effectively save 1-2 years compared to th
 When you study accounting concepts in both your board syllabus and CA Foundation context simultaneously, you develop a much richer understanding than studying them separately.
 
 ### 4. Exam Readiness
-Students in integrated programs become comfortable with the exam pattern and rigorous preparation much earlier. By the time they sit for CA Foundation, they've already been through multiple test series and mock exams.
+Students in integrated programs become comfortable with the exam pattern and rigorous preparation much earlier. By the time they sit for CA Foundation, they've already been through multiple test series and Exams.
 
 ### 5. Reduced Financial Burden
 Combining board preparation with CA coaching is more cost-effective than pursuing them separately. The family saves on tuition fees and the student saves time.
@@ -583,7 +583,7 @@ Taking one group at a time allows focused preparation. Combined attempt works fo
 
 ## The Vyasa Institute CA Inter Program
 
-Our CA Intermediate coaching covers both groups with expert faculty, 60+ mock tests, and personalized mentorship. Many of our students clear both groups in their first attempt.
+Our CA Intermediate coaching covers both groups with expert faculty, 60+ Exams, and personalized mentorship. Many of our students clear both groups in their first attempt.
 
 *Book a free counseling session to plan your CA Inter strategy.*`,
     tags: ["CA Intermediate", "Study Tips", "CA Inter", "Exam Strategy"],
@@ -622,7 +622,7 @@ Smaller batches mean more individual attention. Ask about student-faculty ratio.
 Is the material comprehensive and updated? Does it align with the latest ICAI syllabus?
 
 ### 5. Test Series
-Mock tests are essential. How many tests do they offer? Is there detailed feedback?
+Exams are essential. How many tests do they offer? Is there detailed feedback?
 
 ### 6. Infrastructure
 Classrooms, library, digital facilities — does the institute invest in infrastructure?
@@ -716,7 +716,7 @@ Visit campuses, meet faculty, check results. Involve your child in the decision 
       "CA demands disciplined time management. Learn how to structure your day, prioritize effectively, and still maintain balance.",
     content: `## Time — Your Most Precious Resource
 
-CA students juggle multiple commitments: classes, self-study, articleship (at Inter/Final level), revision, and mock tests. Without effective time management, even the brightest students struggle.
+CA students juggle multiple commitments: classes, self-study, articleship (at Inter/Final level), revision, and Exams. Without effective time management, even the brightest students struggle.
 
 ## Principles of CA Time Management
 
@@ -724,7 +724,7 @@ CA students juggle multiple commitments: classes, self-study, articleship (at In
 - Classes and coaching: Non-negotiable
 - Self-study: Minimum 4-5 hours daily
 - Revision: Build into weekly schedule
-- Mock tests: At least 2 per week in exam term
+- Exams: At least 2 per week in exam term
 
 ### 2. Use the 80/20 Rule
 Focus 80% effort on 20% of topics that carry most weight. Identify high-mark areas in each paper.

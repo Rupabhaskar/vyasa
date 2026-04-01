@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaMobileAlt, FaClipboardList, FaChartPie, FaVideo, FaUserShield, FaCloud } from "react-icons/fa";
 
 const features = [
-  { icon: <FaClipboardList />, title: "Online Test Series", desc: "Chapter-wise and full-length mock tests with instant results, analytics, and performance ranking." },
+  { icon: <FaClipboardList />, title: "Online Test Series", desc: "Chapter-wise and full-length Exams with instant results, analytics, and performance ranking." },
   { icon: <FaChartPie />, title: "Performance Tracking", desc: "Detailed dashboards tracking progress, strengths, and improvement areas over time." },
   { icon: <FaUserShield />, title: "Parent Monitoring", desc: "Parents can track attendance, test scores, and progress through a dedicated portal." },
   { icon: <FaMobileAlt />, title: "Mobile App Support", desc: "Access lectures, study material, and test results on the go with our student app." },

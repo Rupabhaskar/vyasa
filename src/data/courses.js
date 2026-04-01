@@ -7,7 +7,7 @@ export const courses = [
     shortTitle: "CA Foundation",
     metaTitle: "CA Foundation Coaching | Best CA Foundation Classes – Vyasa Institute",
     metaDescription:
-      "Join Vyasa Institute for CA Foundation coaching. Expert faculty, comprehensive study material, mock test series, and proven results with All India Ranks. Enroll now.",
+      "Join Vyasa Institute for CA Foundation coaching. Expert faculty, comprehensive study material, Exam series, and proven results with All India Ranks. Enroll now.",
     keywords: "CA Foundation coaching, CA Foundation classes, CA CPT coaching, best CA Foundation institute, CA Foundation Hyderabad",
     heroTag: "Most Popular",
     icon: "FaCalculator",
@@ -21,7 +21,7 @@ Our CA Foundation program covers all four papers — Principles and Practices of
 
 What sets our CA Foundation coaching apart is the emphasis on conceptual clarity over rote learning. We believe that students who understand the "why" behind every concept perform significantly better not just in Foundation but throughout their CA journey. Our teaching methodology involves real-world examples, case studies, and practical applications that make even the most abstract concepts relatable.
 
-The course includes a comprehensive test series that mirrors the actual ICAI exam pattern. Students take chapter-wise tests, subject-wise tests, and full-length mock exams under simulated exam conditions. Detailed performance analytics help identify weak areas and track improvement over time.
+The course includes a comprehensive test series that mirrors the actual ICAI exam pattern. Students take chapter-wise tests, subject-wise tests, and full-length Exams under simulated exam conditions. Detailed performance analytics help identify weak areas and track improvement over time.
 
 Our study material is developed in-house by our expert faculty and is regularly updated to reflect the latest ICAI syllabus changes and exam trends. The material strikes the perfect balance between being comprehensive and concise, ensuring students have everything they need without information overload.
 
@@ -31,7 +31,6 @@ The results speak for themselves — our CA Foundation students consistently ach
     highlights: [
       "All 4 papers covered comprehensively",
       "200+ hours of classroom instruction",
-      "50+ mock tests with detailed analysis",
       "Personal mentorship and doubt clearing",
       "Digital access to recorded lectures",
       "Scholarship for meritorious students",
@@ -44,13 +43,13 @@ The results speak for themselves — our CA Foundation students consistently ach
     ],
     faqs: [
       { q: "Who is eligible for CA Foundation?", a: "Students who have passed or are appearing for Class 12 examinations are eligible to register for CA Foundation with ICAI." },
-      { q: "How long is the CA Foundation course at Vyasa Institute?", a: "Our CA Foundation course runs for approximately 8 months, covering all 4 papers with ample revision and mock test time built in." },
+      { q: "How long is the CA Foundation course at Vyasa Institute?", a: "Our CA Foundation course runs for approximately 8 months, covering all 4 papers with ample revision and Exam time built in." },
       { q: "What is the pass rate for Vyasa Institute CA Foundation students?", a: "Our CA Foundation students consistently achieve pass rates above 85%, significantly higher than the national average of around 25-30%." },
       { q: "Do you provide study material?", a: "Yes, we provide comprehensive in-house study material that is regularly updated to reflect the latest ICAI syllabus and exam patterns." },
       { q: "Are online classes available for CA Foundation?", a: "Yes, we offer both offline and online live classes for CA Foundation. Online students also get access to recorded lectures and our digital test platform." },
       { q: "Is there a scholarship program?", a: "Yes, we offer merit-based scholarships of up to 50% for students who demonstrate exceptional academic ability in our entrance assessment." },
     ],
-    results: { passRate: "85%+", rankers: 8, topRank: "AIR 2" },
+
     relatedCourses: ["ca-intermediate"],
   },
   {
@@ -59,7 +58,7 @@ The results speak for themselves — our CA Foundation students consistently ach
     shortTitle: "CA Inter",
     metaTitle: "CA Intermediate Coaching | Best CA Inter Classes – Vyasa Institute",
     metaDescription:
-      "Top CA Intermediate coaching at Vyasa Institute. Group-wise coaching, mock tests, practical training, and rank-oriented preparation. Join the best CA Inter institute.",
+      "Top CA Intermediate coaching at Vyasa Institute. Group-wise coaching, Exams, practical training, and rank-oriented preparation. Join the best CA Inter institute.",
     keywords: "CA Intermediate coaching, CA Inter classes, best CA Inter institute, CA Inter coaching Hyderabad, CA Inter Group 1, CA Inter Group 2",
     heroTag: "",
     icon: "FaChartBar",
@@ -75,7 +74,7 @@ The Group I subjects — Accounting, Corporate Laws & Other Laws, and Taxation �
 
 Group II subjects — Cost and Management Accounting, Auditing and Ethics, Financial Management & Strategical Management — receive equally rigorous treatment. Our approach to these subjects combines theoretical frameworks with practical case studies and real-world examples.
 
-The test series is one of the most comprehensive in the industry. Students take over 60 tests throughout the course, including chapter tests, revision tests, and full-length mock exams. Each test is followed by detailed analysis, performance tracking, and personalized feedback from faculty. Students receive their results within 48 hours with detailed solution discussions.
+The test series is one of the most comprehensive in the industry. Students take over 60 tests throughout the course, including chapter tests, revision tests, and full-length Exams. Each test is followed by detailed analysis, performance tracking, and personalized feedback from faculty. Students receive their results within 48 hours with detailed solution discussions.
 
 Our revision program is scientifically designed based on spaced repetition principles. The structured revision schedule ensures that students revisit key concepts at optimal intervals, maximizing retention and recall during the actual exam. The final revision crash course in the weeks before the exam provides a concentrated review of all critical topics.
 
@@ -84,7 +83,7 @@ Practical training and articleship guidance are integral parts of our program. W
 The results from our CA Intermediate program have been exceptional, with our students consistently outperforming national averages. Multiple students have secured All India Ranks in both Group I and Group II, with several achieving ranks in the top 50. This track record is a testament to the quality of our coaching and the dedication of our students and faculty.`,
     highlights: [
       "Group-wise and combined coaching available",
-      "60+ mock tests with detailed feedback",
+      "60+ Exams with detailed feedback",
       "Practical training and articleship guidance",
       "Revision crash courses before each attempt",
       "Performance analytics dashboard",
@@ -104,10 +103,10 @@ The results from our CA Intermediate program have been exceptional, with our stu
       { q: "Can I take Group 1 and Group 2 separately?", a: "Yes, you can enroll for either group separately or opt for our combined coaching program which covers both groups." },
       { q: "What is the duration of CA Inter coaching?", a: "Each group requires approximately 10 months of coaching. Combined preparation takes around 14-16 months." },
       { q: "Do you help with articleship placements?", a: "Yes, we have tie-ups with reputed CA firms and actively help our students secure quality articleship placements." },
-      { q: "How often are mock tests conducted?", a: "Mock tests are conducted every 2-3 weeks, with full-length mocks in the final 2 months before exams." },
+      { q: "How often are Exams conducted?", a: "Exams are conducted every 2-3 weeks, with full-length Exams in the final 2 months before exams." },
       { q: "Is there a separate batch for working professionals?", a: "Yes, we offer weekend batches and evening batches designed specifically for students who are undergoing articleship." },
     ],
-    results: { passRate: "72%+", rankers: 12, topRank: "AIR 5" },
+
     relatedCourses: ["ca-foundation", "ca-final"],
   },
   {
@@ -134,7 +133,7 @@ Group I subjects — Financial Reporting, Advanced Financial Management, Advance
 
 Group II subjects — Direct Tax Laws , Indirect Tax Laws, Integrated Business Solution.
 
-Our mock exam program at the CA Final level is the most rigorous and realistic in the industry. Students sit for exams in conditions that exactly replicate the actual ICAI examination — same timing, same format, same pressure. Papers are evaluated by experienced faculty using ICAI marking patterns, and detailed feedback sessions help students understand how to maximize their scores.
+Our Exams program at the CA Final level is the most rigorous and realistic in the industry. Students sit for exams in conditions that exactly replicate the actual ICAI examination — same timing, same format, same pressure. Papers are evaluated by experienced faculty using ICAI marking patterns, and detailed feedback sessions help students understand how to maximize their scores.
 
 Personal mentorship is a cornerstone of our CA Final program. Each student is assigned a mentor who tracks their progress, identifies areas for improvement, and provides tailored guidance throughout the preparation journey. This personalized attention ensures that no student falls behind and every student reaches their maximum potential.
 
@@ -145,7 +144,7 @@ Our CA Final results are a source of immense pride — multiple All India Rank h
       "Rank-oriented preparation methodology",
       "Faculty of practicing CAs and rank holders",
       "Case-study-driven teaching approach",
-      "Realistic mock exams with ICAI-pattern evaluation",
+      "Realistic Exams with ICAI-pattern evaluation",
       "Personal mentorship throughout the program",
       "Advanced workshops on amendments and emerging topics",
     ],
@@ -162,11 +161,11 @@ Our CA Final results are a source of immense pride — multiple All India Rank h
     faqs: [
       { q: "What makes Vyasa Institute CA Final coaching different?", a: "Our rank-oriented approach, practicing CA faculty, case-study methodology, and personalized mentorship set us apart. Our consistent rank production speaks for itself." },
       { q: "Can I join for one group only?", a: "Yes, both group-wise and combined enrollment options are available with flexible batch timings." },
-      { q: "How do you prepare students for rank?", a: "Through advanced problem-solving sessions, rigorous mock exams evaluated on ICAI patterns, personalized mentorship, and targeted preparation strategies for each student." },
+      { q: "How do you prepare students for rank?", a: "Through advanced problem-solving sessions, rigorous Exams evaluated on ICAI patterns, personalized mentorship, and targeted preparation strategies for each student." },
       { q: "Do you cover recent amendments?", a: "Absolutely. We conduct dedicated amendment workshops before each exam attempt, covering all legislative and regulatory changes relevant to the syllabus." },
       { q: "Is there support during articleship?", a: "Yes, we offer flexible batch timings including weekend and evening options for students undergoing articleship. Online live classes are also available." },
     ],
-    results: { passRate: "68%+", rankers: 5, topRank: "AIR 1" },
+
     relatedCourses: ["ca-intermediate", "cma-course"],
   },
   {
@@ -293,7 +292,7 @@ Our CMA students have an impressive track record of success, with high pass rate
       { q: "What is the passing criteria for CMA exams?", a: "You need a minimum of 40% in every subject and 50% in aggregate of all papers to pass any stage of the CMA examination." },
       { q: "Does Vyasa Institute offer CMA Final coaching?", a: "Yes, we offer comprehensive coaching for all three stages — CMA Foundation, CMA Intermediate, and CMA Final — covering all papers and groups." },
     ],
-    results: { passRate: "95%+", rankers: 3, topRank: "AIR 7" },
+
     relatedCourses: ["cma-foundation", "cma-intermediate", "cma-final", "ca-foundation"],
   },
   {
@@ -302,7 +301,7 @@ Our CMA students have an impressive track record of success, with high pass rate
     shortTitle: "CMA Foundation",
     metaTitle: "CMA Foundation Coaching | Best CMA Foundation Classes – Vyasa Institute",
     metaDescription:
-      "Start your CMA journey with Vyasa Institute’s CMA Foundation coaching. Concept-focused teaching, updated material, regular tests, and expert guidance for June/December exams.",
+      "Start your CMA journey with Vyasa Institute’s CMA Foundation coaching. Concept-focused teaching, updated material, regular tests, and expert guidance for CMA exams.",
     keywords: "CMA Foundation coaching, CMA Foundation classes, CMA Foundation exam, ICMAI Foundation coaching, CMA coaching Vijayawada",
     heroTag: "",
     icon: "FaCalculator",
@@ -320,7 +319,7 @@ Students receive faculty guidance, doubt-solving support, and a disciplined stud
       "Objective exam practice with regular tests",
       "Updated notes and study material support",
       "Doubt-clearing and mentoring support",
-      "Exam-oriented revision and mock tests",
+      "Exam-oriented revision and Exams",
       "Batch timing support for students",
     ],
     curriculum: [
@@ -333,10 +332,10 @@ Students receive faculty guidance, doubt-solving support, and a disciplined stud
       { q: "Who is eligible for CMA Foundation?", a: "Students who have passed 10+2/Intermediate or an equivalent qualification are eligible for CMA Foundation." },
       { q: "What is the exam pattern for CMA Foundation?", a: "CMA Foundation exams are objective-type and are typically conducted in June and December." },
       { q: "What is the passing criteria for CMA Foundation?", a: "Minimum 40% in each subject and 50% in aggregate across all papers." },
-      { q: "Do you provide study material and tests?", a: "Yes. We provide structured notes/support material and conduct regular practice tests and mocks." },
+      { q: "Do you provide study material and tests?", a: "Yes. We provide structured notes/support material and conduct regular practice tests and Exams." },
       { q: "Can I do CMA Foundation alongside college?", a: "Yes. Our schedule supports students pursuing graduation alongside CMA preparation." },
     ],
-    results: { passRate: "95%+", rankers: 3, topRank: "AIR 7" },
+
     relatedCourses: ["cma-intermediate", "cma-course"],
   },
   {
@@ -345,7 +344,7 @@ Students receive faculty guidance, doubt-solving support, and a disciplined stud
     shortTitle: "CMA Intermediate",
     metaTitle: "CMA Intermediate Coaching | Best CMA Inter Classes – Vyasa Institute",
     metaDescription:
-      "Comprehensive CMA Intermediate coaching at Vyasa Institute for both groups. Strong concepts, answer-writing practice, and test series aligned to ICMAI for June/December exams.",
+      "Comprehensive CMA Intermediate coaching at Vyasa Institute for both groups. Strong concepts, answer-writing practice, and test series aligned to ICMAI for CMA exams.",
     keywords: "CMA Intermediate coaching, CMA Inter classes, ICMAI Intermediate coaching, CMA Group I coaching, CMA Group II coaching",
     heroTag: "",
     icon: "FaGraduationCap",
@@ -355,11 +354,11 @@ Students receive faculty guidance, doubt-solving support, and a disciplined stud
     eligibility: "CMA Foundation or Graduate/PG or Qualified CA Inter or CS Foundation",
     overview: `CMA Intermediate is the second stage of CMA (India) and is where students build depth across accounting, taxation, laws, management, and finance. At Vyasa Institute, our CMA Intermediate coaching is structured group-wise with a clear preparation roadmap.
 
-We emphasize conceptual clarity and exam writing skills through problem-solving sessions, practice questions, case-based discussions, and periodic tests. Our revision cycles and mock exams are designed to prepare students for the pressure and pattern of ICMAI exams (subjective).`,
+We emphasize conceptual clarity and exam writing skills through problem-solving sessions, practice questions, case-based discussions, and periodic tests. Our revision cycles and Exams are designed to prepare students for the pressure and pattern of ICMAI exams (subjective).`,
     highlights: [
       "Group-wise coaching with flexible planning",
       "Subjective exam preparation + answer writing",
-      "Regular tests, revision tests, and mocks",
+      "Regular tests, revision tests, and Exams",
       "Problem-solving and practical application focus",
       "Mentoring and doubt support throughout",
       "Updated coverage as per ICMAI syllabus",
@@ -378,10 +377,10 @@ We emphasize conceptual clarity and exam writing skills through problem-solving 
       { q: "Can I enroll for one group at a time?", a: "Yes. You can enroll group-wise depending on your preparation plan." },
       { q: "When are CMA Intermediate exams conducted?", a: "CMA exams are generally held in June and December each year." },
       { q: "What is the passing criteria for CMA Intermediate?", a: "Minimum 40% in each subject and 50% in aggregate across papers for the group." },
-      { q: "Do you help with revision and mocks?", a: "Yes. We run structured revision cycles and mock exams aligned to ICMAI pattern." },
+      { q: "Do you help with revision and Exams?", a: "Yes. We run structured revision cycles and Exams aligned to ICMAI pattern." },
       { q: "Is the coaching suitable for working students?", a: "Yes. We support flexible batch timings where possible." },
     ],
-    results: { passRate: "95%+", rankers: 3, topRank: "AIR 7" },
+
     relatedCourses: ["cma-foundation", "cma-final", "cma-course"],
   },
   {
@@ -390,7 +389,7 @@ We emphasize conceptual clarity and exam writing skills through problem-solving 
     shortTitle: "CMA Final",
     metaTitle: "CMA Final Coaching | Rank-Focused CMA Final Classes – Vyasa Institute",
     metaDescription:
-      "Advanced CMA Final coaching at Vyasa Institute with intensive problem-solving, case-based learning, amendments-focused coverage, and mock exams for June/December attempts.",
+      "Advanced CMA Final coaching at Vyasa Institute with intensive problem-solving, case-based learning, amendments-focused coverage, and Exams for June/December attempts.",
     keywords: "CMA Final coaching, CMA Final classes, ICMAI Final coaching, CMA Group III coaching, CMA Group IV coaching",
     heroTag: "Advanced",
     icon: "FaCrown",
@@ -400,12 +399,12 @@ We emphasize conceptual clarity and exam writing skills through problem-solving 
     eligibility: "CMA Intermediate and complete practical training",
     overview: `CMA Final is the last stage of the CMA journey and demands strong conceptual depth, practical application, and disciplined exam preparation. Vyasa Institute’s CMA Final coaching is designed to help students handle advanced topics confidently, with a clear focus on problem-solving and exam performance.
 
-We cover Groups III and IV with amendments-focused updates, case-based discussion, writing practice, and rigorous mock exams. Students receive structured revision planning and mentoring support to help them stay consistent throughout the year.`,
+We cover Groups III and IV with amendments-focused updates, case-based discussion, writing practice, and rigorous Exams. Students receive structured revision planning and mentoring support to help them stay consistent throughout the year.`,
     highlights: [
       "Advanced coaching for Groups III & IV",
       "Amendments-focused coverage and updates",
       "Case-based learning + writing practice",
-      "Rigorous mocks aligned to ICMAI pattern",
+      "Rigorous Exams aligned to ICMAI pattern",
       "Revision planning and performance tracking",
       "Mentoring and doubt support throughout",
     ],
@@ -422,11 +421,10 @@ We cover Groups III and IV with amendments-focused updates, case-based discussio
     faqs: [
       { q: "What is the duration of CMA Final coaching?", a: "Typically around 1 year depending on batch schedule and exam attempt plan." },
       { q: "Do you cover amendments and updates?", a: "Yes. We include amendments-focused sessions and updated practice for the latest syllabus." },
-      { q: "Do you conduct mock exams?", a: "Yes. We run mock exams aligned to ICMAI pattern with evaluation support." },
+      { q: "Do you conduct Exams?", a: "Yes. We run Exams aligned to ICMAI pattern with evaluation support." },
       { q: "Can I enroll group-wise?", a: "Yes, subject to batch availability and your preparation plan." },
       { q: "What support is provided during preparation?", a: "Mentoring, doubt support, and structured revision planning throughout the course." },
     ],
-    results: { passRate: "95%+", rankers: 3, topRank: "AIR 7" },
     relatedCourses: ["cma-intermediate", "cma-course"],
   },
   {
@@ -481,7 +479,6 @@ Our online students have achieved results on par with our offline students, incl
       { q: "Is the fee less for online classes?", a: "Yes, online classes are typically 20-30% more affordable than our offline programs while delivering the same quality of instruction." },
       { q: "Can I switch from online to offline later?", a: "Yes, you can switch to offline mode at any time by paying the fee difference. Your online progress and recordings will remain accessible." },
     ],
-    results: { passRate: "75%+", rankers: 2, topRank: "AIR 15" },
     relatedCourses: ["ca-foundation", "ca-intermediate", "ca-final"],
   },
 ];

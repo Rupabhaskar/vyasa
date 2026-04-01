@@ -1,8 +1,159 @@
+// "use client";
+// import Link from "next/link";
+// import Image from "next/image";
+// import { usePathname } from "next/navigation";
+// import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin, FaTwitter } from "react-icons/fa";
+
+// const quickLinks = [
+//   { label: "Home", href: "/" },
+//   { label: "Courses", href: "/courses" },
+//   { label: "Results", href: "/results" },
+//   { label: "Student Journey", href: "/student-journey" },
+//   { label: "Blog", href: "/blog" },
+// ];
+
+// const courseLinks = [
+//   { label: "CA Foundation", href: "/courses/ca-foundation" },
+//   { label: "CA Intermediate", href: "/courses/ca-intermediate" },
+//   { label: "CA Final", href: "/courses/ca-final" },
+//   { label: "CMA Course", href: "/courses/cma-course" },
+// ];
+
+// const socials = [
+//   { icon: <FaFacebook />, href: "#", label: "Facebook" },
+//   { icon: <FaInstagram />, href: "#", label: "Instagram" },
+//   { icon: <FaYoutube />, href: "#", label: "YouTube" },
+//   { icon: <FaLinkedin />, href: "#", label: "LinkedIn" },
+//   { icon: <FaTwitter />, href: "#", label: "Twitter" },
+// ];
+
+// export default function Footer() {
+//   const pathname = usePathname();
+//   const currentYear = String(new Date().getUTCFullYear());
+
+//   return (
+//     <footer className="bg-primary-dark text-white">
+//       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+//         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+//           <div>
+//             <Link href="/" className="flex items-center mb-5" onClick={(e) => scrollToTopIfHome(e, pathname)}>
+//               <Image
+//                 src="/logo.png"
+//                 alt="Vyasa Institute - Institute for Professional Courses"
+//                 width={280}
+//                 height={74}
+//                 className="h-16 sm:h-20 md:h-24 w-auto object-contain object-left brightness-0 invert"
+//               />
+//             </Link>
+//             <p className="text-emerald-100/30 text-[13px] leading-relaxed mb-6 font-sans">
+//               {"India\u2019s premier preparatory institute for CA & CMA. Building future leaders since 2010."}
+//             </p>
+//             <div className="flex gap-2.5">
+//               {socials.map((s, i) => (
+//                 <a
+//                   key={i}
+//                   href={s.href}
+//                   aria-label={s.label}
+//                   className="w-9 h-9 rounded-lg bg-[#1e2b63] border border-[#2f3f97] flex items-center justify-center text-emerald-100/80 hover:bg-gold hover:text-primary-dark hover:border-gold hover:-translate-y-0.5 hover:shadow-[0_8px_18px_rgba(255,127,80,0.35)] transition-all duration-300 text-sm"
+//                 >
+//                   {s.icon}
+//                 </a>
+//               ))}
+//             </div>
+//           </div>
+
+//           <div>
+//             <h3 className="font-heading font-semibold text-[15px] mb-5 text-white/80">Quick Links</h3>
+//             <ul className="space-y-2.5">
+//               {quickLinks.map((link, i) => (
+//                 <li key={i}>
+//                   <Link
+//                     href={link.href}
+//                     onClick={(e) => link.href === "/" && scrollToTopIfHome(e, pathname)}
+//                     className="text-emerald-100/80 hover:text-gold hover:translate-x-0.5 transition-all duration-300 text-[13px] font-sans inline-flex"
+//                   >
+//                     {link.label}
+//                   </Link>
+//                 </li>
+//               ))}
+//               <li>
+//                 <Link
+//                   href="/admin/login"
+//                   className="inline-flex items-center justify-center rounded-md px-3 py-2 bg-gold text-primary-dark font-semibold hover:bg-gold-light hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(255,127,80,0.35)] transition-all duration-300 text-[13px] font-sans"
+//                 >
+//                   Login
+//                 </Link>
+//               </li>
+//             </ul>
+//           </div>
+
+//           <div>
+//             <h3 className="font-heading font-semibold text-[15px] mb-5 text-white/80">Courses</h3>
+//             <ul className="space-y-2.5">
+//               {courseLinks.map((c, i) => (
+//                 <li key={i}>
+//                   <Link href={c.href} className="text-emerald-100/80 hover:text-gold hover:translate-x-0.5 inline-flex transition-all duration-300 text-[13px] font-sans">{c.label}</Link>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+
+//           <div>
+//             <h3 className="font-heading font-semibold text-[15px] mb-5 text-white/80">Contact</h3>
+//             <div className="space-y-2.5 text-emerald-100/70 text-[13px] font-sans mb-6">
+//               <p>Vijayawada, AP, India</p>
+//               <p>
+//                 <a
+//                   href="tel:+919133660500"
+//                   className="hover:text-gold hover:translate-x-0.5 inline-flex transition-all duration-300"
+//                 >
+//                   +91 9133660500
+//                 </a>
+//               </p>
+//               <p>
+//                 <a
+//                   href="mailto:vyasaprofessionals@gmail.com"
+//                   className="hover:text-gold hover:translate-x-0.5 inline-flex transition-all duration-300"
+//                 >
+//                   vyasaprofessionals@gmail.com
+//                 </a>
+//               </p>
+//               <p className="inline-flex items-center rounded-full bg-gold/15 border border-gold/30 px-3 py-1 text-gold-light text-[11px] font-semibold tracking-wide">
+//                 Mon - Sat: 8:00 AM - 8:00 PM
+//               </p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+
+//       <div className="border-t mt-[-50px] border-white/[0.04]">
+//         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+//           <p className="text-emerald-200/20 text-[12px] font-sans">
+//             {"\u00A9"} <span suppressHydrationWarning>{currentYear}</span> Vyasa Institute. All rights reserved.
+//           </p>
+//           <p className="text-emerald-200/20 text-[12px] font-sans">Building future Chartered Accountants since 2010</p>
+//           <p className="text-gold-light/90 text-[12px] font-sans font-semibold">
+//             desigin and developed by ShyamTechSolucations
+//           </p>
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// }
+
+// function scrollToTopIfHome(e, pathname) {
+//   if (pathname === "/") {
+//     e.preventDefault();
+//     window.scrollTo({ top: 0, behavior: "smooth" });
+//   }
+// }
+
+
+
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
-import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -11,139 +162,103 @@ const quickLinks = [
   { label: "Student Journey", href: "/student-journey" },
   { label: "Blog", href: "/blog" },
 ];
-
 const courseLinks = [
-  { label: "CA Foundation", href: "/courses/ca-foundation" },
-  { label: "CA Intermediate", href: "/courses/ca-intermediate" },
-  { label: "CA Final", href: "/courses/ca-final" },
+  { label: "CA Course", href: "/courses" },
   { label: "CMA Course", href: "/courses/cma-course" },
 ];
-
-const socials = [
-  { icon: <FaFacebook />, href: "#", label: "Facebook" },
-  { icon: <FaInstagram />, href: "#", label: "Instagram" },
-  { icon: <FaYoutube />, href: "#", label: "YouTube" },
-  { icon: <FaLinkedin />, href: "#", label: "LinkedIn" },
-  { icon: <FaTwitter />, href: "#", label: "Twitter" },
-];
-
 export default function Footer() {
-  const pathname = usePathname();
-  const currentYear = String(new Date().getUTCFullYear());
-
   return (
-    <footer className="bg-primary-dark text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          <div>
-            <Link href="/" className="flex items-center mb-5" onClick={(e) => scrollToTopIfHome(e, pathname)}>
-              <Image
-                src="/logo.png"
-                alt="Vyasa Institute - Institute for Professional Courses"
-                width={280}
-                height={74}
-                className="h-16 sm:h-20 md:h-24 w-auto object-contain object-left brightness-0 invert"
-              />
-            </Link>
-            <p className="text-emerald-100/30 text-[13px] leading-relaxed mb-6 font-sans">
-              {"India\u2019s premier preparatory institute for CA & CMA. Building future leaders since 2010."}
-            </p>
-            <div className="flex gap-2.5">
-              {socials.map((s, i) => (
-                <a
-                  key={i}
-                  href={s.href}
-                  aria-label={s.label}
-                  className="w-9 h-9 rounded-lg bg-[#1e2b63] border border-[#2f3f97] flex items-center justify-center text-emerald-100/80 hover:bg-gold hover:text-primary-dark hover:border-gold hover:-translate-y-0.5 hover:shadow-[0_8px_18px_rgba(255,127,80,0.35)] transition-all duration-300 text-sm"
-                >
-                  {s.icon}
-                </a>
-              ))}
-            </div>
-          </div>
+    <footer className="bg-[#39479B] text-white">
+      <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        
+        {/* LOGO + DESC */}
+        <div>
+          <Image
+            src="/logo.png"
+            alt="Vyasa Institute"
+            width={220}
+            height={70}
+            className="mb-5 invert"
+          />
 
-          <div>
-            <h3 className="font-heading font-semibold text-[15px] mb-5 text-white/80">Quick Links</h3>
-            <ul className="space-y-2.5">
-              {quickLinks.map((link, i) => (
+          <p className="text-sm text-white/60 leading-relaxed mb-6">
+            India’s premier preparatory institute for CA & CMA. Building future leaders since 2010.
+          </p>
+
+          {/* SOCIAL */}
+          <div className="flex gap-3">
+            {[FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn, FaTwitter].map((Icon, i) => (
+              <div
+                key={i}
+                className="w-9 h-9 flex items-center justify-center rounded-md bg-[#2d3a84] hover:bg-[#1f2a6b] transition cursor-pointer"
+              >
+                <Icon className="text-sm text-white/80" />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* QUICK LINKS */}
+        <div>
+          <h3 className="font-semibold mb-5">Quick Links</h3>
+          <ul className="space-y-3 text-sm text-white/70">
+          {quickLinks.map((item, i) => (
                 <li key={i}>
-                  <Link
-                    href={link.href}
-                    onClick={(e) => link.href === "/" && scrollToTopIfHome(e, pathname)}
-                    className="text-emerald-100/80 hover:text-gold hover:translate-x-0.5 transition-all duration-300 text-[13px] font-sans inline-flex"
-                  >
-                    {link.label}
+                  <Link href={item.href} className="hover:text-white transition">
+                    {item.label}
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link
-                  href="/admin/login"
-                  className="inline-flex items-center justify-center rounded-md px-3 py-2 bg-gold text-primary-dark font-semibold hover:bg-gold-light hover:-translate-y-0.5 hover:shadow-[0_10px_20px_rgba(255,127,80,0.35)] transition-all duration-300 text-[13px] font-sans"
-                >
-                  Login
+            <li>
+              <Link
+                href="/admin/login"
+                className="inline-block mt-2 px-4 py-2 bg-orange-400 text-black rounded-md text-sm font-medium"
+              >
+                Login
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* COURSES */}
+        <div>
+          <h3 className="font-semibold mb-5">Courses</h3>
+          <ul className="space-y-3 text-sm text-white/70">
+            {courseLinks.map((item, i) => (
+              <li key={i}>
+                <Link href={item.href} className="hover:text-white transition">
+                  {item.label}
                 </Link>
               </li>
-            </ul>
-          </div>
+            ))}
+          </ul>
+        </div>
 
-          <div>
-            <h3 className="font-heading font-semibold text-[15px] mb-5 text-white/80">Courses</h3>
-            <ul className="space-y-2.5">
-              {courseLinks.map((c, i) => (
-                <li key={i}>
-                  <Link href={c.href} className="text-emerald-100/80 hover:text-gold hover:translate-x-0.5 inline-flex transition-all duration-300 text-[13px] font-sans">{c.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* CONTACT */}
+        <div>
+          <h3 className="font-semibold mb-5">Contact</h3>
+          <div className="space-y-3 text-sm text-white/70">
+            <p>Vijayawada, AP, India</p>
+            <p>+91 9133660500</p>
+            <p>vyasaprofessionals@gmail.com</p>
 
-          <div>
-            <h3 className="font-heading font-semibold text-[15px] mb-5 text-white/80">Contact</h3>
-            <div className="space-y-2.5 text-emerald-100/70 text-[13px] font-sans mb-6">
-              <p>Vijayawada, AP, India</p>
-              <p>
-                <a
-                  href="tel:+919133660500"
-                  className="hover:text-gold hover:translate-x-0.5 inline-flex transition-all duration-300"
-                >
-                  +91 9133660500
-                </a>
-              </p>
-              <p>
-                <a
-                  href="mailto:vyasaprofessionals@gmail.com"
-                  className="hover:text-gold hover:translate-x-0.5 inline-flex transition-all duration-300"
-                >
-                  vyasaprofessionals@gmail.com
-                </a>
-              </p>
-              <p className="inline-flex items-center rounded-full bg-gold/15 border border-gold/30 px-3 py-1 text-gold-light text-[11px] font-semibold tracking-wide">
-                Mon - Sat: 8:00 AM - 8:00 PM
-              </p>
-            </div>
+            <span className="inline-block mt-2 px-3 py-1 text-xs rounded-full border border-orange-400 text-orange-300">
+              Mon - Sat: 8:00 AM - 8:00 PM
+            </span>
           </div>
         </div>
       </div>
 
-      <div className="border-t mt-[-50px] border-white/[0.04]">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-emerald-200/20 text-[12px] font-sans">
-            {"\u00A9"} <span suppressHydrationWarning>{currentYear}</span> Vyasa Institute. All rights reserved.
-          </p>
-          <p className="text-emerald-200/20 text-[12px] font-sans">Building future Chartered Accountants since 2010</p>
-          <p className="text-gold-light/90 text-[12px] font-sans font-semibold">
-            desigin and developed by ShyamTechSolucations
+      {/* BOTTOM BAR */}
+      <div className="border-t border-white/10 py-5 text-xs text-white/50">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-3">
+          <p>© 2026 Vyasa Institute. All rights reserved.</p>
+          <p>Building future Chartered Accountants since 2010</p>
+          <p className="text-orange-400">
+            design and developed by ShyamTechSolutions
           </p>
         </div>
       </div>
     </footer>
   );
-}
-
-function scrollToTopIfHome(e, pathname) {
-  if (pathname === "/") {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
 }

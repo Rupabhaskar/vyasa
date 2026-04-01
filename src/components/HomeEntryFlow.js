@@ -93,19 +93,16 @@ import { FaTimes } from "react-icons/fa";
 const SKIP_HOME_ENTRY_FLOW_KEY = "vyasa-skip-home-entry-flow";
 
 export default function HomeEntryFlow({ children }) {
-  const [phase, setPhase] = useState(() => {
-    if (typeof window === "undefined") return "splash";
-    const shouldSkipEntryFlow =
-      window.sessionStorage.getItem(SKIP_HOME_ENTRY_FLOW_KEY) === "1" ||
-      window.location.hash === "#contact";
-    return shouldSkipEntryFlow ? "main" : "splash";
-  });
+  // Keep server and first client render identical to avoid hydration mismatches.
+  const [phase, setPhase] = useState("splash");
 
   useEffect(() => {
     const shouldSkipEntryFlow =
       window.sessionStorage.getItem(SKIP_HOME_ENTRY_FLOW_KEY) === "1" ||
       window.location.hash === "#contact";
     if (!shouldSkipEntryFlow) return;
+
+    setPhase("main");
 
     window.sessionStorage.removeItem(SKIP_HOME_ENTRY_FLOW_KEY);
 

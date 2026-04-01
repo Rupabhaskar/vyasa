@@ -432,12 +432,13 @@ import Image from "next/image";
 
 const slides = [
 
+  { image: "/hero/n1.png" },
   { image: "/hero/vyasa2.png" },
-  { image: "/hero/NO1.png" },
   { image: "/hero/rt4.png" },
-  { image: "/hero/modi1.png" },
-  { image: "/hero/offer.png" },
+  { image: "/hero/modi1.png" },  
   { image: "/hero/ap1.png" },
+  { image: "/hero/co2.png" },
+
 ];
 
 const TRANSITIONS = ["fade", "slide", "clip"];
@@ -447,16 +448,26 @@ export default function HeroSection() {
   const [prev, setPrev] = useState(null);
   const [type, setType] = useState("fade");
   const typeIndex = useRef(0);
+  const touchStartX = useRef(null);
+  const touchStartY = useRef(null);
+
+  const goToNext = () => {
+    setPrev(current);
+    typeIndex.current = (typeIndex.current + 1) % TRANSITIONS.length;
+    setType(TRANSITIONS[typeIndex.current]);
+    setCurrent((current + 1) % slides.length);
+  };
+
+  const goToPrev = () => {
+    setPrev(current);
+    typeIndex.current = (typeIndex.current + 1) % TRANSITIONS.length;
+    setType(TRANSITIONS[typeIndex.current]);
+    setCurrent((current - 1 + slides.length) % slides.length);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setPrev(current);
-
-      // rotate transition type
-      typeIndex.current = (typeIndex.current + 1) % TRANSITIONS.length;
-      setType(TRANSITIONS[typeIndex.current]);
-
-      setCurrent((current + 1) % slides.length);
+      goToNext();
     }, 5000);
 
     return () => clearInterval(interval);
@@ -494,8 +505,37 @@ export default function HeroSection() {
 
   const animation = getAnimation();
 
+  const handleTouchStart = (e) => {
+    const touch = e.touches[0];
+    touchStartX.current = touch.clientX;
+    touchStartY.current = touch.clientY;
+  };
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX.current === null || touchStartY.current === null) return;
+    const touch = e.changedTouches[0];
+    const deltaX = touch.clientX - touchStartX.current;
+    const deltaY = touch.clientY - touchStartY.current;
+
+    // Only trigger on mostly horizontal swipes; keep vertical page scrolling natural.
+    if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 45) {
+      if (deltaX < 0) {
+        goToNext(); // swipe left => next image
+      } else {
+        goToPrev(); // swipe right => previous image
+      }
+    }
+
+    touchStartX.current = null;
+    touchStartY.current = null;
+  };
+
   return (
-    <section className="relative w-full aspect-[96/35] overflow-hidden bg-black">
+    <section
+      className="relative w-full aspect-[96/35] overflow-hidden bg-black"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
 
       {/* ✅ BACKGROUND IMAGE (FULL FIT, NO ZOOM) */}
       <div className="absolute inset-0 flex items-center justify-center">

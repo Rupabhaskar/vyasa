@@ -302,38 +302,12 @@ export default function CourseDetailClient({ course }) {
           </div>
         </div>
       </section>
-
-      {/* Results Strip */}
-      <section className="py-16 bg-gradient-to-r from-primary to-primary-light">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid grid-cols-1 gap-8 text-center text-white sm:grid-cols-3">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-              <FaChartLine className="text-3xl text-gold mx-auto mb-3" />
-              <div className="text-2xl sm:text-3xl font-bold">{course.results.passRate}</div>
-              <div className="text-emerald-100 text-sm mt-1">Pass Rate</div>
-            </motion.div>
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
-              <FaTrophy className="text-3xl text-gold mx-auto mb-3" />
-              <div className="text-2xl sm:text-3xl font-bold">{course.results.topRank}</div>
-              <div className="text-emerald-100 text-sm mt-1">Best Rank</div>
-            </motion.div>
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}>
-              <FaMedal className="text-3xl text-gold mx-auto mb-3" />
-              <div className="text-2xl sm:text-3xl font-bold">{course.results.rankers}</div>
-              <div className="text-emerald-100 text-sm mt-1">Rank Holders</div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
       <FAQSection faqs={course.faqs} />
-
       <CTAForm
         heading={`Enroll in ${course.shortTitle}`}
         subheading={`Next batch starts ${course.nextBatch}. Limited seats available.`}
         courseName={course.shortTitle}
       />
-
       <InternalLinks currentSlug={course.slug} relatedSlugs={course.relatedCourses} />
     </PageLayout>
   );

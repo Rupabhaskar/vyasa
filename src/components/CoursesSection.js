@@ -13,7 +13,7 @@ const courses = [
   },
   {
     title: "CA Intermediate",
-    desc: "Group-wise intensive coaching with practical training, full-length mock exams, and targeted revision crash courses.",
+    desc: "Group-wise intensive coaching with practical training, full-length Exams, and targeted revision crash courses.",
     duration: "10 Months",
     tag: "",
     href: "/courses/ca-intermediate",
@@ -34,14 +34,14 @@ const courses = [
   },
   {
     title: "CMA Intermediate",
-    desc: "Group-wise preparation with answer-writing practice, problem-solving sessions, and mock exams for June/December attempts.",
+    desc: "Group-wise preparation with answer-writing practice, problem-solving sessions, and Exams for June/December attempts.",
     duration: "9 Months",
     tag: "",
     href: "/courses/cma-intermediate",
   },
   {
     title: "CMA Final",
-    desc: "Advanced, exam-focused coaching with amendments coverage, case-based learning, rigorous mocks, and revision planning support.",
+    desc: "Advanced, exam-focused coaching with amendments coverage, case-based learning, rigorous Exams, and revision planning support.",
     duration: "1 Year",
     tag: "Advanced",
     href: "/courses/cma-final",

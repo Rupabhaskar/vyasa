@@ -32,7 +32,7 @@
 //     name: "Arjun Patel",
 //     role: "CA Final \u2013 First Attempt",
 //     type: "Student",
-//     text: "I cleared CA Final in my first attempt thanks to the rigorous training at Vyasas. The daily tests, mock exams, and personalized feedback system is unmatched anywhere.",
+//     text: "I cleared CA Final in my first attempt thanks to the rigorous training at Vyasas. The daily tests, Exams, and personalized feedback system is unmatched anywhere.",
 //   },
 // ];
 
