@@ -160,7 +160,6 @@ import {
 const galleryItems = [
   { title: "Smart Classrooms", icon: <FaLightbulb />, color: "from-primary-dark to-primary", image: "/gallery/cls.jpeg" },
   { title: "Digital Library", icon: <FaBook />, color: "from-primary to-primary-light", image: "/gallery/di.jpeg" },
-  { title: "Computer Lab", icon: <FaDesktop />, color: "from-accent to-primary-light", image: "/gallery/cp.png" },
   { title: "Seminar Hall", icon: <FaMicrophone />, color: "from-surface-deep-2 to-primary-dark", image: "/gallery/semi.jpeg" },
   { title: "Study Rooms", icon: <FaClock />, color: "from-primary-dark to-surface-deep-2", image: "/gallery/classRomm.JPG" },
   { title: "Campus View", icon: <FaBuilding />, color: "from-surface-deep-2 to-primary-dark", image: "/assets/why.png" },

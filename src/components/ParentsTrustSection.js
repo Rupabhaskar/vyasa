@@ -36,7 +36,7 @@ export default function ParentsTrustSection() {
           <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }}>
             <span className="section-label text-gold mb-4 inline-block">For Parents</span>
             <h2 className="text-4xl md:text-5xl font-bold text-primary-dark tracking-tight mb-4">
-              {"Why Parents Trust\u00A0Us"}
+              {"Why Parents Trust Vyasa"}
             </h2>
             <div className="w-12 h-[2px] bg-gradient-to-r from-gold to-transparent mb-6" />
             <p className="text-black text-[15px] leading-relaxed font-sans mb-8 max-w-md">

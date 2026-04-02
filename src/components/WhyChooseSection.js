@@ -197,7 +197,7 @@ export default function WhyChooseSection() {
         {/* LEFT SIDE */}
         <div>
           <h2 className="text-4xl font-bold text-gray-800 mb-10">
-            Why Choose Us?
+            Why Vyasa ?
           </h2>
 
           <div className="space-y-6">
