@@ -427,7 +427,7 @@
 
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import Image from "next/image";
 
 const slides = [
@@ -451,19 +451,19 @@ export default function HeroSection() {
   const touchStartX = useRef(null);
   const touchStartY = useRef(null);
 
-  const goToNext = () => {
+  const goToNext = useCallback(() => {
     setPrev(current);
     typeIndex.current = (typeIndex.current + 1) % TRANSITIONS.length;
     setType(TRANSITIONS[typeIndex.current]);
     setCurrent((current + 1) % slides.length);
-  };
+  }, [current]);
 
-  const goToPrev = () => {
+  const goToPrev = useCallback(() => {
     setPrev(current);
     typeIndex.current = (typeIndex.current + 1) % TRANSITIONS.length;
     setType(TRANSITIONS[typeIndex.current]);
     setCurrent((current - 1 + slides.length) % slides.length);
-  };
+  }, [current]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -471,7 +471,7 @@ export default function HeroSection() {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [current]);
+  }, [goToNext]);
 
   /* ---------- TRANSITIONS ---------- */
 

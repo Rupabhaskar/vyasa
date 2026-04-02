@@ -6,23 +6,22 @@ export const landingPages = [
     metaTitle: `CA Coaching Admissions ${CURRENT_YEAR} | Limited Seats – Vyasa Institute`,
     metaDescription:
       "Admissions open for CA Foundation, Inter & Final coaching at Vyasa Institute. Expert faculty, proven results with All India Ranks. Apply now — limited seats.",
-    keywords: `CA admissions ${CURRENT_YEAR}, CA coaching admissions, CA Foundation admission, Vyasa Institute admission`,
-    headline: `CA Admissions ${CURRENT_YEAR} Are Open`,
+    keywords: `CA/CMA admissions ${CURRENT_YEAR}, CA coaching admissions, CA Foundation admission, Vyasa Institute admission`,
+    headline: `CA/CMA Admissions Are Open`,
     subheadline: "Join the institute that has produced 50+ All India Rank holders. Limited seats available for the upcoming batch.",
     benefits: [
-      { title: "Expert Faculty", desc: "Learn from practicing CAs and rank holders with 10-18 years of teaching experience." },
-      { title: "Proven Results", desc: "85%+ pass rate and 50+ All India Ranks across CA Foundation, Inter, and Final levels." },
+      { title: "Expert Faculty", desc: "Quality and experienced CA and CMA faculty having more than 10 to 18 years of experience." },
+      { title: "Proven Results", desc: "Secured highest pass percentages in various levels of CA and CMA exams." },
       { title: "Personal Mentorship", desc: "Dedicated mentor for every student to guide your preparation journey from day one." },
       { title: "Digital Learning", desc: "Recorded lectures, online tests, and performance analytics available 24/7." },
       { title: "Scholarship Program", desc: "Merit-based scholarships up to 50% for deserving students." },
       { title: "Placement Support", desc: "Articleship placement assistance with top CA firms across India." },
     ],
     testimonials: [
-      { name: "Priya Sharma", rank: "AIR 1 – CA Final", text: "Vyasa Institute transformed my preparation completely. The faculty's approach to teaching helped me secure the top rank." },
-      { name: "Karthik Rajan", rank: "AIR 5 – CA Inter", text: "The integrated coaching model is brilliant. Personal mentorship made all the difference in my journey." },
-      { name: "Divya Sharma", rank: "AIR 8 – CA Foundation", text: "Starting my CA journey at Vyasas was the best decision. The structured preparation and expert faculty were invaluable." },
+      { name: "R.Bala Krishna", rank: "AIR 35 – CA Final", text: "Vyasa Institute transformed my preparation completely. The faculty's approach to teaching helped me secure the top rank." },
+      { name: "M.Harini", rank: "AIR 5 – CA Inter", text: "The integrated coaching model is brilliant. Personal mentorship made all the difference in my journey." },
+      { name: "K.Chinna Manikanta", rank: "AIR 8 – CA Foundation", text: "Starting my CA journey at Vyasas was the best decision. The structured preparation and expert faculty were invaluable." },
     ],
-    urgency: `Only 120 seats remaining for July ${CURRENT_YEAR} batch. Applications close June 30.`,
     formHeading: "Apply Now – Limited Seats",
   },
   {
@@ -45,7 +44,6 @@ export const landingPages = [
       { name: "Rohit Kumar", rank: "Parent", text: "The counseling session was incredibly informative. It helped us understand the CA path clearly and make an informed decision." },
       { name: "Sneha Rao", rank: "Student", text: "I was confused between CA and CMA. The counselor helped me understand both paths and choose what's right for me." },
     ],
-    urgency: "Limited counseling slots available this week. Book now to secure your preferred time.",
     formHeading: "Book Your Free Session",
   },
 ];

@@ -31,7 +31,7 @@ export default function PageHeader({ tag, title, description, align = "center" }
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-lg md:text-xl text-emerald-100 leading-relaxed max-w-3xl mx-auto"
+            className="text-lg md:text-xl text-emerald-100 leading-relaxed max-w-3xl mx-auto whitespace-pre-line"
           >
             {description}
           </motion.p>

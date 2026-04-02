@@ -102,7 +102,9 @@ export default function HomeEntryFlow({ children }) {
       window.location.hash === "#contact";
     if (!shouldSkipEntryFlow) return;
 
-    setPhase("main");
+    const raf = requestAnimationFrame(() => {
+      setPhase("main");
+    });
 
     window.sessionStorage.removeItem(SKIP_HOME_ENTRY_FLOW_KEY);
 
@@ -111,6 +113,7 @@ export default function HomeEntryFlow({ children }) {
         document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" });
       });
     }
+    return () => cancelAnimationFrame(raf);
   }, []);
 
   useEffect(() => {

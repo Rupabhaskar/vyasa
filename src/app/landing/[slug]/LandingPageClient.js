@@ -76,14 +76,7 @@ export default function LandingPageClient({ page }) {
           <div className="absolute bottom-10 right-10 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-float-delay" />
         </div>
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-6"
-          >
-            <span className="w-2 h-2 bg-gold rounded-full animate-pulse" />
-            <span className="text-gold-light text-sm font-medium">Vyasa Institute</span>
-          </motion.div>
+  
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -112,19 +105,12 @@ export default function LandingPageClient({ page }) {
         </div>
       </section>
 
-      {/* Urgency */}
-      <div className="bg-gold/10 border-y border-gold/20 py-4">
-        <div className="max-w-5xl mx-auto px-6 flex flex-wrap items-center justify-center gap-2.5 text-center text-sm md:text-base">
-          <FaExclamationTriangle className="text-gold shrink-0" />
-          <span className="text-primary font-semibold">{page.urgency}</span>
-        </div>
-      </div>
 
       {/* Benefits */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-4">Why Choose Vyasa Institute?</h2>
-          <p className="text-muted text-center mb-12 max-w-2xl mx-auto">Everything you need for a successful CA journey, all under one roof.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-4">Why Vyasa ?</h2>
+          <p className="text-muted text-center mb-12 max-w-2xl mx-auto">Everything you need for a successful CA/CMA journey, all under one roof.</p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {page.benefits.map((b, i) => (
               <motion.div

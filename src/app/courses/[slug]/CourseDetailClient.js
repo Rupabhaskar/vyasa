@@ -65,10 +65,10 @@ function CMAStagesTable({ stages }) {
           viewport={{ once: true }}
           className="text-3xl font-bold text-primary text-center mb-4"
         >
-          CMA Course — Three Stages
+          CMA Course 
         </motion.h2>
         <p className="text-muted text-center mb-12 max-w-2xl mx-auto">
-          Complete comparison of all three stages of the CMA India examination.
+          Complete comparison of the CMA India examination.
         </p>
 
         {/* Desktop table */}

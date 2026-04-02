@@ -28,7 +28,7 @@ export default function InternalLinks({ currentSlug, relatedSlugs = [] }) {
                 href={`/courses/${course.slug}`}
                 className="group block bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-lg hover:border-primary/20 transition-all"
               >
-                <h3 className="font-bold text-primary text-lg mb-2 group-hover:text-accent transition-colors">
+                <h3 className="font-bold text-primary text-lg mb-2 group-hover:text-blue-400 transition-colors">
                   {course.shortTitle}
                 </h3>
                 <p className="text-muted text-sm mb-4 line-clamp-2">

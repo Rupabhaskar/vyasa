@@ -22,7 +22,7 @@ const courses = [
     title: "CA Final",
     desc: "Rank-oriented preparation with advanced coaching, real-world case studies, and one-on-one mentorship by qualified CAs.",
     duration: "12 Months",
-    tag: "Rank Course",
+    tag: "",
     href: "/courses/ca-final",
   },
   {

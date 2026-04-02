@@ -241,10 +241,10 @@ export default function Navbar() {
     {/* Item */}
     <div className="item">
       <span className="new-star">NEW</span>
-      <span>Admissions Open</span>
+      <span>CA/CMA Foundation Admissions are in progress </span>
 
       <span className="divider">|</span>
-      <span>Limited Seats</span>
+      <span>Limited Seats Available</span>
 
       <span className="divider">|</span>
 
@@ -259,7 +259,7 @@ export default function Navbar() {
     {/* Duplicate for smooth infinite scroll */}
     <div className="item">
       <span className="new-star">NEW</span>
-      <span>Admissions Open</span>
+      <span>CA/CMA Foundation Admissions are in progress </span>
 
       <span className="divider">|</span>
       <span>Limited Seats</span>

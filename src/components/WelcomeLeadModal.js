@@ -134,7 +134,9 @@ export default function WelcomeLeadModal() {
                   <option value="ca-foundation">CA Foundation</option>
                   <option value="ca-intermediate">CA Intermediate</option>
                   <option value="ca-final">CA Final</option>
-                  <option value="cma">CMA Course</option>
+                  <option value="cma-foundation">CMA Foundation</option>
+                  <option value="cma-intermediate">CMA Intermediate</option>
+                  <option value="cma-final">CMA Final</option>
                 </select>
                 <button
                   type="submit"
